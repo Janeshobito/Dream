@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/beam.ogg-44cf8ee6f90bd72981c20bd66065c9c8.oggstr"
+
+[deps]
+
+source_file="res://my game assests/Warped City Phaser/Warped City Phaser/assets/sounds/beam.ogg"
+dest_files=[ "res://.import/beam.ogg-44cf8ee6f90bd72981c20bd66065c9c8.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

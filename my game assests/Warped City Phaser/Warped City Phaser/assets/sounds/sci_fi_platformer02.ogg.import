@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sci_fi_platformer02.ogg-c2c6fa0129fa1c117b4397e7907a2190.oggstr"
+
+[deps]
+
+source_file="res://my game assests/Warped City Phaser/Warped City Phaser/assets/sounds/sci_fi_platformer02.ogg"
+dest_files=[ "res://.import/sci_fi_platformer02.ogg-c2c6fa0129fa1c117b4397e7907a2190.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
