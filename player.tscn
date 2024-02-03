@@ -1,0 +1,147 @@
+[gd_scene load_steps=51 format=2]
+
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-3.png" type="Texture" id=1]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/idle/idle-1.png" type="Texture" id=2]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-2.png" type="Texture" id=3]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITESHEETS/player/jump.png" type="Texture" id=4]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/idle/idle-2.png" type="Texture" id=5]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-1.png" type="Texture" id=6]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-4.png" type="Texture" id=7]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-8.png" type="Texture" id=8]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-15.png" type="Texture" id=9]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-5.png" type="Texture" id=10]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/back-jump/back-jump-3.png" type="Texture" id=11]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run-shoot/run-shoot-8.png" type="Texture" id=12]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run-shoot/run-shoot-5.png" type="Texture" id=13]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/jump/jump-3.png" type="Texture" id=14]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run-shoot/run-shoot-6.png" type="Texture" id=15]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-7.png" type="Texture" id=16]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-8.png" type="Texture" id=17]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-2.png" type="Texture" id=18]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-11.png" type="Texture" id=19]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run-shoot/run-shoot-3.png" type="Texture" id=20]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-12.png" type="Texture" id=21]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/idle/idle-4.png" type="Texture" id=22]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-16.png" type="Texture" id=23]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-6.png" type="Texture" id=24]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/shoot/shoot.png" type="Texture" id=25]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-13.png" type="Texture" id=26]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/idle/idle-3.png" type="Texture" id=27]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-9.png" type="Texture" id=28]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run-shoot/run-shoot-4.png" type="Texture" id=29]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/hurt/hurt.png" type="Texture" id=30]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run-shoot/run-shoot-7.png" type="Texture" id=31]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-5.png" type="Texture" id=32]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/crouch/crouch.png" type="Texture" id=33]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-10.png" type="Texture" id=34]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run-shoot/run-shoot-2.png" type="Texture" id=35]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/back-jump/back-jump-2.png" type="Texture" id=36]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-6.png" type="Texture" id=37]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-7.png" type="Texture" id=38]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-1.png" type="Texture" id=39]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-14.png" type="Texture" id=40]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/back-jump/back-jump-4.png" type="Texture" id=41]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-3.png" type="Texture" id=42]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/walk/walk-4.png" type="Texture" id=43]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run-shoot/run-shoot-1.png" type="Texture" id=44]
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=45]
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 61, 67 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 73, 0, 61, 67 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 146, 0, 61, 67 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 5 ), ExtResource( 27 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "Idle ",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 11 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "back_jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 33 ) ],
+"loop": true,
+"name": "crouch_shoot",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 30 ) ],
+"loop": true,
+"name": "hurt",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "jump",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 3 ), ExtResource( 1 ), ExtResource( 7 ), ExtResource( 32 ), ExtResource( 24 ), ExtResource( 38 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "run",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 44 ), ExtResource( 35 ), ExtResource( 20 ), ExtResource( 29 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 31 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "run_shoot",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 25 ) ],
+"loop": true,
+"name": "shoot",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 18 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 10 ), ExtResource( 37 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 28 ), ExtResource( 34 ), ExtResource( 19 ), ExtResource( 21 ), ExtResource( 26 ), ExtResource( 40 ), ExtResource( 9 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "walk",
+"speed": 10.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 13.0
+height = 28.0
+
+[node name="player" type="KinematicBody2D"]
+position = Vector2( 54, 516 )
+script = ExtResource( 45 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite2d" type="AnimatedSprite" parent="."]
+position = Vector2( 103.75, 79 )
+scale = Vector2( 1.10563, 1.28358 )
+frames = SubResource( 1 )
+animation = "Idle "
+frame = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 105, 91 )
+scale = Vector2( 1, 1.2 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.7, 0.7 )
+process_mode = 0
+limit_left = 3
+limit_top = -127
+limit_right = 3521
+limit_bottom = 1507
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+editor_draw_limits = true
