@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 
 # Declare member variables here. Examples:
-# var a = 2
+# var a = 3
 # var b = "text"
 
 
