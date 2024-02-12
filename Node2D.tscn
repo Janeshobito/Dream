@@ -6,7 +6,7 @@
 [ext_resource path="res://my game assests/oak_woods_v1.0/background/background_layer_1.png" type="Texture" id=4]
 [ext_resource path="res://my game assests/oak_woods_v1.0/background/background_layer_3.png" type="Texture" id=5]
 [ext_resource path="res://my game assests/oak_woods_v1.0/decorations/shop_anim.png" type="Texture" id=6]
-[ext_resource path="res://player.tscn" type="PackedScene" id=7]
+[ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=7]
 [ext_resource path="res://ParallaxLayer4.gd" type="Script" id=8]
 [ext_resource path="res://my game assests/oak_woods_v1.0/decorations/grass_1.png" type="Texture" id=9]
 [ext_resource path="res://my game assests/oak_woods_v1.0/decorations/lamp.png" type="Texture" id=10]
@@ -225,6 +225,9 @@ position = Vector2( 1080, 1235.5 )
 shape = SubResource( 26 )
 one_way_collision = true
 
+[node name="jplayer" parent="." instance=ExtResource( 7 )]
+position = Vector2( 128, 1389 )
+
 [node name="TileMapsolid" type="TileMap" parent="."]
 position = Vector2( 0, 11 )
 tile_set = ExtResource( 1 )
@@ -441,6 +444,3 @@ texture = ExtResource( 10 )
 position = Vector2( 1072, 1309 )
 scale = Vector2( 5.47778, 7.22222 )
 texture = ExtResource( 14 )
-
-[node name="player" parent="." instance=ExtResource( 7 )]
-position = Vector2( 100, 1297 )

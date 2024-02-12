@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/rpg_village02__loop.ogg-bd9dd7b95fe7e701988563395284feaa.oggstr"
+
+[deps]
+
+source_file="res://my game assests/free-fishing-game-assets-pixel-art-pack/GothicVania-town-files/GothicVania-town-files/Music/rpg_village02__loop.ogg"
+dest_files=[ "res://.import/rpg_village02__loop.ogg-bd9dd7b95fe7e701988563395284feaa.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

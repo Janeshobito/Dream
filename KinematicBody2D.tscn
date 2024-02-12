@@ -1,0 +1,64 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/idle/idle-4.png" type="Texture" id=1]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/idle/idle-3.png" type="Texture" id=2]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-6.png" type="Texture" id=3]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-1.png" type="Texture" id=4]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-3.png" type="Texture" id=5]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/idle/idle-1.png" type="Texture" id=6]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/idle/idle-2.png" type="Texture" id=7]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-2.png" type="Texture" id=8]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-4.png" type="Texture" id=9]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-8.png" type="Texture" id=10]
+[ext_resource path="res://newplayer.gd" type="Script" id=11]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-5.png" type="Texture" id=12]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-7.png" type="Texture" id=13]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/back-jump/back-jump-1.png" type="Texture" id=14]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/jump/jump-1.png" type="Texture" id=15]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 14 ) ],
+"loop": true,
+"name": "fall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 8 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 3 ), ExtResource( 13 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "run",
+"speed": 10.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 13.0
+height = 26.0
+
+[node name="jplayer" type="KinematicBody2D"]
+script = ExtResource( 11 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 10 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
