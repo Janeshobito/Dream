@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/rpg_village02_loop.mp3-7afdaf97a781e29eeb9be71cb5de4dcf.mp3str"
+
+[deps]
+
+source_file="res://my game assests/free-fishing-game-assets-pixel-art-pack/GothicVania-town-files/GothicVania-town-files/code/phaser-code/assets/sounds/rpg_village02_loop.mp3"
+dest_files=[ "res://.import/rpg_village02_loop.mp3-7afdaf97a781e29eeb9be71cb5de4dcf.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
