@@ -3,7 +3,7 @@
 [ext_resource path="res://my game assests/oak_woods_v1.0/oak_woods_tileset.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 11.6667, 11.8182 )
+extents = Vector2( 12, 12.0001 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 48.0476, 24.0909 )
@@ -733,8 +733,8 @@ position = Vector2( 12.3333, 12.1818 )
 shape = SubResource( 1 )
 
 [node name="Sprite53" type="Sprite" parent="."]
-position = Vector2( 128, 689 )
-scale = Vector2( 2.625, 2.75 )
+position = Vector2( 428, 909 )
+scale = Vector2( 2.5, 2.29167 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
@@ -746,8 +746,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite53"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite53/StaticBody2D"]
-visible = false
-position = Vector2( 12.3333, 12.1818 )
+position = Vector2( 12, 12 )
 shape = SubResource( 1 )
 
 [node name="Sprite54" type="Sprite" parent="."]
@@ -1057,7 +1056,7 @@ position = Vector2( 12.3333, 12.1818 )
 shape = SubResource( 1 )
 
 [node name="Sprite59" type="Sprite" parent="."]
-position = Vector2( 468, 670 )
+position = Vector2( 680, 946 )
 scale = Vector2( 2.625, 2.75 )
 texture = ExtResource( 1 )
 centered = false
@@ -1070,10 +1069,10 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite59"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite59/StaticBody2D"]
-polygon = PoolVector2Array( 21.7143, 23.2727, -1.52382, 12, -0.761917, 23.2727 )
+polygon = PoolVector2Array( 22.0952, 24, 0, 12.3636, 0, 24 )
 
 [node name="Sprite60" type="Sprite" parent="."]
-position = Vector2( 465, 762 )
+position = Vector2( 302, 898 )
 scale = Vector2( 2.625, 2.75 )
 texture = ExtResource( 1 )
 centered = false
@@ -1087,10 +1086,10 @@ __meta__ = {
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite60/StaticBody2D"]
 position = Vector2( 0, 0.363647 )
-polygon = PoolVector2Array( 24.381, 23.6364, 24, 13.0909, -0.761917, 23.2727 )
+polygon = PoolVector2Array( 24, 23.6364, 24, 12, 6.09524, 20.3636, 0, 23.6364, 0, 23.6364 )
 
 [node name="Sprite61" type="Sprite" parent="."]
-position = Vector2( 543, 759 )
+position = Vector2( 681, 840 )
 scale = Vector2( 2.625, 2.75 )
 texture = ExtResource( 1 )
 centered = false
@@ -1104,10 +1103,10 @@ __meta__ = {
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite61/StaticBody2D"]
 position = Vector2( 0, 0.363647 )
-polygon = PoolVector2Array( 24.381, 23.6364, -0.380951, 12.7273, -0.761917, 23.2727 )
+polygon = PoolVector2Array( 24, 23.6364, 0, 11.2727, 0, 23.6364 )
 
 [node name="Sprite62" type="Sprite" parent="."]
-position = Vector2( 618, 759 )
+position = Vector2( 859, 835 )
 scale = Vector2( 2.625, 2.75 )
 texture = ExtResource( 1 )
 centered = false
@@ -1121,7 +1120,7 @@ __meta__ = {
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite62/StaticBody2D"]
 position = Vector2( 0, 0.363647 )
-polygon = PoolVector2Array( 24.381, 23.6364, 22.8571, 11.2727, -0.761917, 23.2727 )
+polygon = PoolVector2Array( 24, 23.6364, 24, 11.2727, 0, 23.6364 )
 
 [node name="Sprite63" type="Sprite" parent="."]
 position = Vector2( 618, 840 )
@@ -1138,7 +1137,7 @@ __meta__ = {
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite63/StaticBody2D"]
 position = Vector2( 0, 0.363647 )
-polygon = PoolVector2Array( 24.381, 23.6364, 24, 11.6364, 0, -0.727295, -0.761917, 23.2727 )
+polygon = PoolVector2Array( 24, 23.6364, 24, 11.2727, 0, -0.363617, 0, 23.6364 )
 
 [node name="Sprite66" type="Sprite" parent="."]
 position = Vector2( 617, 946 )
@@ -1147,18 +1146,15 @@ texture = ExtResource( 1 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 48, 168, 24, 24 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite66"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite66/StaticBody2D"]
 position = Vector2( 0, 0.363647 )
-polygon = PoolVector2Array( 24.381, 23.6364, 24, 11.6364, 0, -0.727295, -0.761917, 23.2727 )
+polygon = PoolVector2Array( 24, 23.6364, 24, 12, 0, 0.727264, 0, 23.6364 )
 
 [node name="Sprite64" type="Sprite" parent="."]
-position = Vector2( 704, 840 )
+position = Vector2( 922, 835 )
 scale = Vector2( 2.625, 2.75 )
 texture = ExtResource( 1 )
 centered = false
@@ -1172,10 +1168,10 @@ __meta__ = {
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite64/StaticBody2D"]
 position = Vector2( 0, 0.363647 )
-polygon = PoolVector2Array( 24.381, 23.6364, 22.4762, -6.10352e-05, -0.380951, 11.6363, -0.761917, 23.2727 )
+polygon = PoolVector2Array( 24, 23.6364, 24, -0.363617, 0, 11.2727, 0, 23.6364 )
 
 [node name="Sprite65" type="Sprite" parent="."]
-position = Vector2( 782, 840 )
+position = Vector2( 365, 898 )
 scale = Vector2( 2.625, 2.75 )
 texture = ExtResource( 1 )
 centered = false
@@ -1189,4 +1185,4 @@ __meta__ = {
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite65/StaticBody2D"]
 position = Vector2( 0, 0.363647 )
-polygon = PoolVector2Array( 24.381, 23.6364, 22.4762, -6.10352e-05, -0.380951, 11.6363, -0.761917, 23.2727 )
+polygon = PoolVector2Array( 24, 23.6364, 24, -0.363617, 0, 12, 0, 23.6364 )

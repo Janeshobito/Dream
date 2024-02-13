@@ -4,7 +4,7 @@ extends KinematicBody2D
 const UP = Vector2(0, -1)
 const GRAVITY = 15
 const ACCELARATION = 60
-const JUMP_HEIGHT = 550
+const JUMP_HEIGHT = 400
 const MAX_SPEED = 200
 var double_jump = true
 var velocity = Vector2()
@@ -15,14 +15,16 @@ onready var hero = $AnimatedSprite
 func _physics_process(delta):
 	velocity.y += GRAVITY
 	if Input.is_action_pressed("ui_right"):
-		run_right()
 		if Input.is_action_pressed("jump"):
 			jump()
+		else:
+			run_right()
 	
 	elif Input.is_action_pressed("ui_left"):
-		run_left()
 		if Input.is_action_pressed("jump"):
 			jump()
+		else:
+			run_left()
 	
 	elif Input.is_action_pressed("jump"):
 		jump()
@@ -43,12 +45,18 @@ func _physics_process(delta):
 func run_right():
 	velocity.x = min(velocity.x + ACCELARATION, MAX_SPEED)
 	hero.flip_h = false
-	hero.play("Run")
+	if is_on_floor():
+		hero.play("Run")
+	else:
+		hero.play("Jump")
 	
 func run_left():
 	velocity.x = max(velocity.x-ACCELARATION, -MAX_SPEED)
 	hero.flip_h = true
-	hero.play("Run")
+	if is_on_floor():
+		hero.play("Run")
+	else:
+		hero.play("Jump")
 	
 func jump():
 	if is_on_floor():

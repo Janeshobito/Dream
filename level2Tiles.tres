@@ -3,7 +3,7 @@
 [ext_resource path="res://my game assests/oak_woods_v1.0/oak_woods_tileset.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 11.6667, 11.8182 )
+extents = Vector2( 12, 12.0001 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 48.0476, 24.0909 )
@@ -12,28 +12,28 @@ extents = Vector2( 48.0476, 24.0909 )
 extents = Vector2( 36.2381, 22.5454 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
-points = PoolVector2Array( -0.761917, 23.2727, -1.52382, 12, 21.7143, 23.2727 )
+points = PoolVector2Array( 0, 24, 0, 12.3636, 22.0952, 24 )
 
-[sub_resource type="ConvexPolygonShape2D" id=5]
-points = PoolVector2Array( -0.761917, 23.2727, 24, 13.0909, 24.381, 23.6364 )
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 0, 23.6364, 0, 23.6364, 6.09524, 20.3636, 24, 12, 24, 23.6364 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
-points = PoolVector2Array( -0.761917, 23.2727, -0.380951, 12.7273, 24.381, 23.6364 )
+points = PoolVector2Array( 0, 23.6364, 0, 11.2727, 24, 23.6364 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
-points = PoolVector2Array( -0.761917, 23.2727, 22.8571, 11.2727, 24.381, 23.6364 )
+points = PoolVector2Array( 0, 23.6364, 24, 11.2727, 24, 23.6364 )
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
-points = PoolVector2Array( -0.761917, 23.2727, 0, -0.727295, 24, 11.6364, 24.381, 23.6364 )
+points = PoolVector2Array( 0, 23.6364, 0, -0.363617, 24, 11.2727, 24, 23.6364 )
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
-points = PoolVector2Array( -0.761917, 23.2727, 0, -0.727295, 24, 11.6364, 24.381, 23.6364 )
+points = PoolVector2Array( 0, 23.6364, 0, 0.727264, 24, 12, 24, 23.6364 )
 
 [sub_resource type="ConvexPolygonShape2D" id=10]
-points = PoolVector2Array( -0.761917, 23.2727, -0.380951, 11.6363, 22.4762, -6.10352e-05, 24.381, 23.6364 )
+points = PoolVector2Array( 0, 23.6364, 0, 11.2727, 24, -0.363617, 24, 23.6364 )
 
 [sub_resource type="ConvexPolygonShape2D" id=11]
-points = PoolVector2Array( -0.761917, 23.2727, -0.380951, 11.6363, 22.4762, -6.10352e-05, 24.381, 23.6364 )
+points = PoolVector2Array( 0, 23.6364, 0, 12, 24, -0.363617, 24, 23.6364 )
 
 [resource]
 0/name = "Sprite"
@@ -884,8 +884,8 @@ points = PoolVector2Array( -0.761917, 23.2727, -0.380951, 11.6363, 22.4762, -6.1
 40/tile_mode = 0
 40/occluder_offset = Vector2( 0, 0 )
 40/navigation_offset = Vector2( 0, 0 )
-40/shape_offset = Vector2( 12.3333, 12.1818 )
-40/shape_transform = Transform2D( 1, 0, 0, 1, 12.3333, 12.1818 )
+40/shape_offset = Vector2( 12, 12 )
+40/shape_transform = Transform2D( 1, 0, 0, 1, 12, 12 )
 40/shape = SubResource( 1 )
 40/shape_one_way = false
 40/shape_one_way_margin = 1.0
@@ -894,7 +894,7 @@ points = PoolVector2Array( -0.761917, 23.2727, -0.380951, 11.6363, 22.4762, -6.1
 "one_way": false,
 "one_way_margin": 1.0,
 "shape": SubResource( 1 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 12.3333, 12.1818 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 12, 12 )
 } ]
 40/z_index = 0
 41/name = "Sprite54"
@@ -1285,14 +1285,14 @@ points = PoolVector2Array( -0.761917, 23.2727, -0.380951, 11.6363, 22.4762, -6.1
 59/navigation_offset = Vector2( 0, 0 )
 59/shape_offset = Vector2( 0, 0.363647 )
 59/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0.363647 )
-59/shape = SubResource( 5 )
+59/shape = SubResource( 12 )
 59/shape_one_way = false
 59/shape_one_way_margin = 1.0
 59/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 5 ),
+"shape": SubResource( 12 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0.363647 )
 } ]
 59/z_index = 0

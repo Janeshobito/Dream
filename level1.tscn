@@ -1,72 +1,72 @@
-[gd_scene load_steps=164 format=2]
+[gd_scene load_steps=165 format=2]
 
-[ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=1]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Vendor1.png" type="Texture" id=2]
-[ext_resource path="res://majhvhjjh.tres" type="TileSet" id=3]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/3.png" type="Texture" id=4]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/4.png" type="Texture" id=5]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/5.png" type="Texture" id=6]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/2.png" type="Texture" id=7]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/1.png" type="Texture" id=8]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Shop2.png" type="Texture" id=9]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Shop1.png" type="Texture" id=10]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Shop3.png" type="Texture" id=11]
-[ext_resource path="res://ParallaxLayer10.gd" type="Script" id=12]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Bat1.png" type="Texture" id=13]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Bat2.png" type="Texture" id=14]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Bat3.png" type="Texture" id=15]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Car_door.png" type="Texture" id=16]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pie4.png" type="Texture" id=17]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Vendor3.png" type="Texture" id=18]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Vendor4.png" type="Texture" id=19]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Vendor2.png" type="Texture" id=20]
-[ext_resource path="res://ParallaxLayer13.gd" type="Script" id=21]
-[ext_resource path="res://ParallaxLayer14.gd" type="Script" id=22]
-[ext_resource path="res://ParallaxLayer16.gd" type="Script" id=23]
-[ext_resource path="res://ParallaxLayer15.gd" type="Script" id=24]
-[ext_resource path="res://ParallaxLayer11.gd" type="Script" id=25]
-[ext_resource path="res://ParallaxLayer12.gd" type="Script" id=26]
-[ext_resource path="res://ParallaxLayer8.gd" type="Script" id=27]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pie5.png" type="Texture" id=28]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pumpkin5.png" type="Texture" id=29]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pumpkin3.png" type="Texture" id=30]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pie6.png" type="Texture" id=31]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pumpkin1.png" type="Texture" id=32]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pumpkin4.png" type="Texture" id=33]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pumpkin2.png" type="Texture" id=34]
-[ext_resource path="res://ParallaxLayer17.gd" type="Script" id=35]
-[ext_resource path="res://ParallaxLayer18.gd" type="Script" id=36]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Pumpkin3.png" type="Texture" id=37]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Ghost4.png" type="Texture" id=38]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Ghost5.png" type="Texture" id=39]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Ghost3.png" type="Texture" id=40]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Ghost1.png" type="Texture" id=41]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Ghost2.png" type="Texture" id=42]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Hologram1.png" type="Texture" id=43]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Signboard1.png" type="Texture" id=44]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Signboard2.png" type="Texture" id=45]
+[ext_resource path="res://ParallaxLayer8.gd" type="Script" id=1]
+[ext_resource path="res://ParallaxLayer12.gd" type="Script" id=2]
+[ext_resource path="res://ParallaxLayer16.gd" type="Script" id=3]
+[ext_resource path="res://ParallaxLayer14.gd" type="Script" id=4]
+[ext_resource path="res://Player.gd" type="Script" id=5]
+[ext_resource path="res://ParallaxLayer11.gd" type="Script" id=6]
+[ext_resource path="res://ParallaxLayer13.gd" type="Script" id=7]
+[ext_resource path="res://ParallaxLayer10.gd" type="Script" id=8]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Vendor1.png" type="Texture" id=9]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/1.png" type="Texture" id=10]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Shop2.png" type="Texture" id=11]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/2.png" type="Texture" id=12]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/4.png" type="Texture" id=13]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/3.png" type="Texture" id=14]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/2 Background/Night/5.png" type="Texture" id=15]
+[ext_resource path="res://level1Tiles.tres" type="TileSet" id=16]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Shop1.png" type="Texture" id=17]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Shop3.png" type="Texture" id=18]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Bat1.png" type="Texture" id=19]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Bat2.png" type="Texture" id=20]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Bat3.png" type="Texture" id=21]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Car_door.png" type="Texture" id=22]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pie4.png" type="Texture" id=23]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Vendor3.png" type="Texture" id=24]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Vendor4.png" type="Texture" id=25]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Vendor2.png" type="Texture" id=26]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pumpkin3.png" type="Texture" id=27]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pie6.png" type="Texture" id=28]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pumpkin1.png" type="Texture" id=29]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pumpkin2.png" type="Texture" id=30]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pumpkin4.png" type="Texture" id=31]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Pumpkin3.png" type="Texture" id=32]
+[ext_resource path="res://ParallaxLayer17.gd" type="Script" id=33]
+[ext_resource path="res://ParallaxLayer18.gd" type="Script" id=34]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Ghost3.png" type="Texture" id=35]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Ghost2.png" type="Texture" id=36]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Ghost1.png" type="Texture" id=37]
+[ext_resource path="res://ParallaxLayer15.gd" type="Script" id=38]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pie5.png" type="Texture" id=39]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Pumpkin5.png" type="Texture" id=40]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Hologram1.png" type="Texture" id=41]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Ghost5.png" type="Texture" id=42]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Ghost4.png" type="Texture" id=43]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Signboard2.png" type="Texture" id=44]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Signboard1.png" type="Texture" id=45]
 [ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Signboard4.png" type="Texture" id=46]
 [ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Signboard5.png" type="Texture" id=47]
 [ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Signboard3.png" type="Texture" id=48]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Signboard6.png" type="Texture" id=49]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/1 Tiles/Tile_61.png" type="Texture" id=50]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Pumpkin1.png" type="Texture" id=51]
-[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Pumpkin2.png" type="Texture" id=52]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Pumpkin2.png" type="Texture" id=49]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Signboard6.png" type="Texture" id=50]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/1 Tiles/Tile_61.png" type="Texture" id=51]
+[ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/2 Animated objects/Pumpkin1.png" type="Texture" id=52]
 [ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/1 Tiles/Tile_51.png" type="Texture" id=53]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/1 Tiles/Tile_52.png" type="Texture" id=54]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/1 Tiles/Tile_55.png" type="Texture" id=55]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/3 Power lines/3.png" type="Texture" id=56]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/1 Tiles/Tile_49.png" type="Texture" id=57]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/27.png" type="Texture" id=58]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/12.png" type="Texture" id=59]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/26.png" type="Texture" id=60]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/19.png" type="Texture" id=61]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/1 Tiles/Tile_49.png" type="Texture" id=54]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/1 Tiles/Tile_52.png" type="Texture" id=55]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/1 Tiles/Tile_55.png" type="Texture" id=56]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/3 Power lines/3.png" type="Texture" id=57]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/12.png" type="Texture" id=58]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/27.png" type="Texture" id=59]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/19.png" type="Texture" id=60]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/26.png" type="Texture" id=61]
 [ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/21.png" type="Texture" id=62]
 [ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/1 Tiles/Tile_56.png" type="Texture" id=63]
 [ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/23.png" type="Texture" id=64]
 [ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/1 Tiles/Tile_60.png" type="Texture" id=65]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/17.png" type="Texture" id=66]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/16.png" type="Texture" id=67]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/16.png" type="Texture" id=66]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/17.png" type="Texture" id=67]
 [ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/14.png" type="Texture" id=68]
 [ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/2 Decoration/8.png" type="Texture" id=69]
 [ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/3 Objects/1 Tube/4.png" type="Texture" id=70]
@@ -89,8 +89,8 @@
 [ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/1 Tiles/Tile_64.png" type="Texture" id=87]
 [ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/1 Tiles/Tile_50.png" type="Texture" id=88]
 [ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/1 Tiles/Tile_63.png" type="Texture" id=89]
-[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/4 Animated objects/Trap.png" type="Texture" id=90]
-[ext_resource path="res://ParallaxLayer9.gd" type="Script" id=91]
+[ext_resource path="res://ParallaxLayer9.gd" type="Script" id=90]
+[ext_resource path="res://my game assests/Power-Station-Free-Tileset-Pixel-Art/4 Animated objects/Trap.png" type="Texture" id=91]
 [ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Hologram2.png" type="Texture" id=92]
 [ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Spider2.png" type="Texture" id=93]
 [ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Web3.png" type="Texture" id=94]
@@ -98,10 +98,11 @@
 [ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Web2.png" type="Texture" id=96]
 [ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Spider1.png" type="Texture" id=97]
 [ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Web11.png" type="Texture" id=98]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=99]
 
 [sub_resource type="SpriteFrames" id=11]
 animations = [ {
-"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ) ],
+"frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ) ],
 "loop": true,
 "name": "bat",
 "speed": 5.0
@@ -109,7 +110,7 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=12]
 animations = [ {
-"frames": [ ExtResource( 17 ), ExtResource( 28 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 34 ), ExtResource( 30 ), ExtResource( 33 ), ExtResource( 29 ) ],
+"frames": [ ExtResource( 23 ), ExtResource( 39 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 27 ), ExtResource( 31 ), ExtResource( 40 ) ],
 "loop": true,
 "name": "pump",
 "speed": 7.0
@@ -124,19 +125,19 @@ animations = [ {
 } ]
 
 [sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 90 )
+atlas = ExtResource( 91 )
 region = Rect2( 0, 0, 32, 48 )
 
 [sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 90 )
+atlas = ExtResource( 91 )
 region = Rect2( 32, 0, 32, 48 )
 
 [sub_resource type="AtlasTexture" id=8]
-atlas = ExtResource( 90 )
+atlas = ExtResource( 91 )
 region = Rect2( 64, 0, 32, 48 )
 
 [sub_resource type="AtlasTexture" id=9]
-atlas = ExtResource( 90 )
+atlas = ExtResource( 91 )
 region = Rect2( 96, 0, 32, 48 )
 
 [sub_resource type="SpriteFrames" id=10]
@@ -157,7 +158,7 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=53]
 animations = [ {
-"frames": [ ExtResource( 43 ), ExtResource( 92 ) ],
+"frames": [ ExtResource( 41 ), ExtResource( 92 ) ],
 "loop": true,
 "name": "post",
 "speed": 5.0
@@ -165,58 +166,58 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=54]
 animations = [ {
-"frames": [ ExtResource( 44 ), ExtResource( 45 ), ExtResource( 48 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 49 ) ],
+"frames": [ ExtResource( 45 ), ExtResource( 44 ), ExtResource( 48 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 50 ) ],
 "loop": true,
 "name": "default",
 "speed": 2.0
 } ]
 
 [sub_resource type="AtlasTexture" id=55]
-atlas = ExtResource( 51 )
+atlas = ExtResource( 52 )
 region = Rect2( 0, 0, 24, 24 )
 
 [sub_resource type="AtlasTexture" id=56]
-atlas = ExtResource( 51 )
+atlas = ExtResource( 52 )
 region = Rect2( 24, 0, 24, 24 )
 
 [sub_resource type="AtlasTexture" id=57]
-atlas = ExtResource( 51 )
+atlas = ExtResource( 52 )
 region = Rect2( 48, 0, 24, 24 )
 
 [sub_resource type="AtlasTexture" id=58]
-atlas = ExtResource( 51 )
+atlas = ExtResource( 52 )
 region = Rect2( 72, 0, 24, 24 )
 
 [sub_resource type="AtlasTexture" id=59]
-atlas = ExtResource( 52 )
+atlas = ExtResource( 49 )
 region = Rect2( 0, 0, 24, 24 )
 
 [sub_resource type="AtlasTexture" id=60]
-atlas = ExtResource( 52 )
+atlas = ExtResource( 49 )
 region = Rect2( 24, 0, 24, 24 )
 
 [sub_resource type="AtlasTexture" id=61]
-atlas = ExtResource( 52 )
+atlas = ExtResource( 49 )
 region = Rect2( 48, 0, 24, 24 )
 
 [sub_resource type="AtlasTexture" id=62]
-atlas = ExtResource( 52 )
+atlas = ExtResource( 49 )
 region = Rect2( 72, 0, 24, 24 )
 
 [sub_resource type="AtlasTexture" id=63]
-atlas = ExtResource( 37 )
+atlas = ExtResource( 32 )
 region = Rect2( 0, 0, 24, 24 )
 
 [sub_resource type="AtlasTexture" id=64]
-atlas = ExtResource( 37 )
+atlas = ExtResource( 32 )
 region = Rect2( 24, 0, 24, 24 )
 
 [sub_resource type="AtlasTexture" id=65]
-atlas = ExtResource( 37 )
+atlas = ExtResource( 32 )
 region = Rect2( 48, 0, 24, 24 )
 
 [sub_resource type="AtlasTexture" id=66]
-atlas = ExtResource( 37 )
+atlas = ExtResource( 32 )
 region = Rect2( 72, 0, 24, 24 )
 
 [sub_resource type="SpriteFrames" id=67]
@@ -229,26 +230,26 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=68]
 animations = [ {
-"frames": [ ExtResource( 41 ), ExtResource( 42 ), ExtResource( 40 ), ExtResource( 38 ), ExtResource( 39 ) ],
+"frames": [ ExtResource( 37 ), ExtResource( 36 ), ExtResource( 35 ), ExtResource( 43 ), ExtResource( 42 ) ],
 "loop": true,
 "name": "ghost",
 "speed": 3.0
 } ]
 
 [sub_resource type="AtlasTexture" id=13]
-atlas = ExtResource( 2 )
+atlas = ExtResource( 9 )
 region = Rect2( 0, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=14]
-atlas = ExtResource( 2 )
+atlas = ExtResource( 9 )
 region = Rect2( 48, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=15]
-atlas = ExtResource( 2 )
+atlas = ExtResource( 9 )
 region = Rect2( 96, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=16]
-atlas = ExtResource( 2 )
+atlas = ExtResource( 9 )
 region = Rect2( 144, 0, 48, 48 )
 
 [sub_resource type="SpriteFrames" id=17]
@@ -260,19 +261,19 @@ animations = [ {
 } ]
 
 [sub_resource type="AtlasTexture" id=18]
-atlas = ExtResource( 20 )
+atlas = ExtResource( 26 )
 region = Rect2( 0, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=19]
-atlas = ExtResource( 20 )
+atlas = ExtResource( 26 )
 region = Rect2( 48, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=20]
-atlas = ExtResource( 20 )
+atlas = ExtResource( 26 )
 region = Rect2( 96, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=21]
-atlas = ExtResource( 20 )
+atlas = ExtResource( 26 )
 region = Rect2( 144, 0, 48, 48 )
 
 [sub_resource type="SpriteFrames" id=22]
@@ -284,19 +285,19 @@ animations = [ {
 } ]
 
 [sub_resource type="AtlasTexture" id=23]
-atlas = ExtResource( 16 )
+atlas = ExtResource( 22 )
 region = Rect2( 0, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=24]
-atlas = ExtResource( 16 )
+atlas = ExtResource( 22 )
 region = Rect2( 96, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=25]
-atlas = ExtResource( 16 )
+atlas = ExtResource( 22 )
 region = Rect2( 192, 0, 96, 96 )
 
 [sub_resource type="AtlasTexture" id=26]
-atlas = ExtResource( 16 )
+atlas = ExtResource( 22 )
 region = Rect2( 288, 0, 96, 96 )
 
 [sub_resource type="SpriteFrames" id=27]
@@ -308,19 +309,19 @@ animations = [ {
 } ]
 
 [sub_resource type="AtlasTexture" id=28]
-atlas = ExtResource( 19 )
+atlas = ExtResource( 25 )
 region = Rect2( 0, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=29]
-atlas = ExtResource( 19 )
+atlas = ExtResource( 25 )
 region = Rect2( 48, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=30]
-atlas = ExtResource( 19 )
+atlas = ExtResource( 25 )
 region = Rect2( 96, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=31]
-atlas = ExtResource( 19 )
+atlas = ExtResource( 25 )
 region = Rect2( 144, 0, 48, 48 )
 
 [sub_resource type="SpriteFrames" id=32]
@@ -332,19 +333,19 @@ animations = [ {
 } ]
 
 [sub_resource type="AtlasTexture" id=33]
-atlas = ExtResource( 18 )
+atlas = ExtResource( 24 )
 region = Rect2( 0, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=34]
-atlas = ExtResource( 18 )
+atlas = ExtResource( 24 )
 region = Rect2( 48, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=35]
-atlas = ExtResource( 18 )
+atlas = ExtResource( 24 )
 region = Rect2( 96, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=36]
-atlas = ExtResource( 18 )
+atlas = ExtResource( 24 )
 region = Rect2( 144, 0, 48, 48 )
 
 [sub_resource type="SpriteFrames" id=37]
@@ -356,19 +357,19 @@ animations = [ {
 } ]
 
 [sub_resource type="AtlasTexture" id=38]
-atlas = ExtResource( 10 )
+atlas = ExtResource( 17 )
 region = Rect2( 0, 0, 96, 64 )
 
 [sub_resource type="AtlasTexture" id=39]
-atlas = ExtResource( 10 )
+atlas = ExtResource( 17 )
 region = Rect2( 96, 0, 96, 64 )
 
 [sub_resource type="AtlasTexture" id=40]
-atlas = ExtResource( 10 )
+atlas = ExtResource( 17 )
 region = Rect2( 192, 0, 96, 64 )
 
 [sub_resource type="AtlasTexture" id=41]
-atlas = ExtResource( 10 )
+atlas = ExtResource( 17 )
 region = Rect2( 288, 0, 96, 64 )
 
 [sub_resource type="SpriteFrames" id=42]
@@ -380,19 +381,19 @@ animations = [ {
 } ]
 
 [sub_resource type="AtlasTexture" id=43]
-atlas = ExtResource( 9 )
+atlas = ExtResource( 11 )
 region = Rect2( 0, 0, 96, 64 )
 
 [sub_resource type="AtlasTexture" id=44]
-atlas = ExtResource( 9 )
+atlas = ExtResource( 11 )
 region = Rect2( 96, 0, 96, 64 )
 
 [sub_resource type="AtlasTexture" id=45]
-atlas = ExtResource( 9 )
+atlas = ExtResource( 11 )
 region = Rect2( 192, 0, 96, 64 )
 
 [sub_resource type="AtlasTexture" id=46]
-atlas = ExtResource( 9 )
+atlas = ExtResource( 11 )
 region = Rect2( 288, 0, 96, 64 )
 
 [sub_resource type="SpriteFrames" id=47]
@@ -404,19 +405,19 @@ animations = [ {
 } ]
 
 [sub_resource type="AtlasTexture" id=48]
-atlas = ExtResource( 11 )
+atlas = ExtResource( 18 )
 region = Rect2( 0, 0, 96, 64 )
 
 [sub_resource type="AtlasTexture" id=49]
-atlas = ExtResource( 11 )
+atlas = ExtResource( 18 )
 region = Rect2( 96, 0, 96, 64 )
 
 [sub_resource type="AtlasTexture" id=50]
-atlas = ExtResource( 11 )
+atlas = ExtResource( 18 )
 region = Rect2( 192, 0, 96, 64 )
 
 [sub_resource type="AtlasTexture" id=51]
-atlas = ExtResource( 11 )
+atlas = ExtResource( 18 )
 region = Rect2( 288, 0, 96, 64 )
 
 [sub_resource type="SpriteFrames" id=52]
@@ -430,12 +431,28 @@ animations = [ {
 [node name="Node2D" type="Node2D"]
 position = Vector2( -11, 0 )
 
-[node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
-position = Vector2( 256, 605 )
+[node name="hero" parent="." instance=ExtResource( 99 )]
+position = Vector2( 150, 610 )
+script = ExtResource( 5 )
+
+[node name="Camera2D" type="Camera2D" parent="hero"]
+position = Vector2( 2, 7 )
+current = true
+zoom = Vector2( 0.7, 0.7 )
+process_mode = 0
+limit_left = 3
+limit_top = -127
+limit_right = 3521
+limit_bottom = 1507
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+editor_draw_limits = true
 
 [node name="TileMap" type="TileMap" parent="."]
 rotation = 0.000145881
-tile_set = ExtResource( 3 )
+tile_set = ExtResource( 16 )
 cell_size = Vector2( 32, 32 )
 format = 1
 tile_data = PoolIntArray( -262146, 1, 0, -262145, 1, 0, -327680, 1, 0, -327679, 1, 0, -327678, 1, 0, -327677, 1, 0, -327676, 1, 0, -327675, 1, 0, -327674, 1, 0, -327673, 1, 0, -327672, 1, 0, -327671, 1, 0, -327670, 1, 0, -327669, 1, 0, -327668, 1, 0, -327667, 1, 0, -327666, 1, 0, -327665, 1, 0, -327664, 1, 0, -327663, 1, 0, -327662, 1, 0, -327661, 1, 0, -327660, 1, 0, -327659, 1, 0, -327658, 1, 0, -327657, 1, 0, -327656, 1, 0, -327655, 1, 0, -327654, 1, 0, -327653, 1, 0, -327652, 1, 0, -327651, 1, 0, -327650, 1, 0, -327649, 1, 0, -327648, 1, 0, -327647, 1, 0, -327646, 1, 0, -327645, 1, 0, -327644, 1, 0, -327643, 1, 0, -327642, 1, 0, -327641, 1, 0, -327640, 1, 0, -327639, 1, 0, -327638, 1, 0, -327637, 1, 0, -327636, 1, 0, -327635, 1, 0, -327634, 1, 0, -327633, 1, 0, -327632, 1, 0, -327631, 1, 0, -327630, 1, 0, -327629, 1, 0, -327628, 1, 0, -327627, 1, 0, -327626, 1, 0, -327625, 1, 0, -327624, 1, 0, -327623, 1, 0, -327622, 1, 0, -327621, 1, 0, -327620, 1, 0, -327619, 1, 0, -327618, 1, 0, -327617, 1, 0, -327616, 1, 0, -327615, 1, 0, -327614, 1, 0, -327613, 1, 0, -327612, 1, 0, -327611, 1, 0, -327610, 1, 0, -327609, 1, 0, -327608, 1, 0, -327607, 1, 0, -327606, 1, 0, -327605, 1, 0, -327604, 1, 0, -327603, 1, 0, -327602, 1, 0, -327601, 1, 0, -327600, 1, 0, -327599, 1, 0, -327598, 1, 0, -327597, 1, 0, -327596, 1, 0, -327595, 1, 0, -327594, 1, 0, -327593, 1, 0, -327592, 1, 0, -327591, 1, 0, -327590, 1, 0, -327589, 1, 0, -327588, 1, 0, -327587, 1, 0, -327586, 1, 0, -327585, 1, 0, -327584, 1, 0, -327583, 1, 0, -327582, 1, 0, -327581, 1, 0, -327580, 1, 0, -327579, 1, 0, -327578, 1, 0, -327577, 1, 0, -327576, 1, 0, -327575, 1, 0, -327574, 1, 0, -327573, 1, 0, -327572, 1, 0, -327571, 1, 0, -327570, 1, 0, -196609, 1, 0, -262034, 1, 0, -131073, 1, 0, -196498, 1, 0, -65537, 1, 0, -130962, 1, 0, -1, 1, 0, -65426, 1, 0, 65535, 1, 0, 110, 1, 0, 131071, 1, 0, 65646, 10, 0, 196607, 1, 0, 131182, 10, 0, 262143, 1, 0, 196718, 10, 0, 327679, 10, 0, 262254, 10, 0, 393215, 10, 0, 327790, 10, 0, 458751, 10, 0, 393326, 10, 0, 524287, 10, 0, 458862, 10, 0, 589823, 10, 0, 524398, 10, 0, 655359, 10, 0, 589934, 10, 0, 720895, 10, 0, 655470, 10, 0, 786431, 10, 0, 721006, 10, 0, 851967, 10, 0, 786542, 10, 0, 917503, 10, 0, 852078, 10, 0, 983039, 10, 0, 917614, 10, 0, 1048575, 10, 0, 983150, 10, 0, 1114111, 10, 0, 1048686, 10, 0, 1179647, 10, 0, 1114222, 10, 0, 1245183, 10, 0, 1179758, 10, 0, 1310719, 10, 0, 1245294, 10, 0, 1310720, 536870914, 0, 1310721, 536870913, 0, 1310722, 536870913, 0, 1310723, 536870913, 0, 1310724, 536870913, 0, 1310725, 536870913, 0, 1310726, 536870913, 0, 1310727, 536870913, 0, 1310728, 536870913, 0, 1310729, 536870913, 0, 1310730, 536870913, 0, 1310731, 536870913, 0, 1310732, 536870913, 0, 1310733, 536870913, 0, 1310734, 536870913, 0, 1310735, 536870913, 0, 1310736, 536870913, 0, 1310737, 536870913, 0, 1310738, 536870913, 0, 1310739, 536870913, 0, 1310740, 536870913, 0, 1310741, 536870913, 0, 1310742, 536870913, 0, 1310743, 536870913, 0, 1310744, 536870913, 0, 1310745, 536870913, 0, 1310746, 536870913, 0, 1310747, 536870913, 0, 1310748, 536870913, 0, 1310749, 536870913, 0, 1310750, 536870913, 0, 1310751, 536870913, 0, 1310752, 536870913, 0, 1310753, 536870913, 0, 1310754, 536870913, 0, 1310755, 536870913, 0, 1310756, 536870913, 0, 1310757, 536870913, 0, 1310758, 536870913, 0, 1310759, 536870913, 0, 1310760, 536870913, 0, 1310761, 536870913, 0, 1310762, 536870913, 0, 1310763, 536870913, 0, 1310764, 536870913, 0, 1310765, 536870913, 0, 1310766, 536870913, 0, 1310767, 536870913, 0, 1310768, 536870913, 0, 1310769, 536870913, 0, 1310770, 536870913, 0, 1310771, 536870913, 0, 1310772, 536870913, 0, 1310773, 536870913, 0, 1310774, 536870913, 0, 1310775, 536870913, 0, 1310776, 536870913, 0, 1310777, 536870913, 0, 1310778, 536870913, 0, 1310779, 536870913, 0, 1310780, 536870913, 0, 1310781, 536870913, 0, 1310782, 536870913, 0, 1310783, 536870913, 0, 1310784, 536870913, 0, 1310785, 536870913, 0, 1310786, 536870913, 0, 1310787, 536870913, 0, 1310788, 536870913, 0, 1310789, 536870913, 0, 1310790, 536870913, 0, 1310791, 536870913, 0, 1310792, 536870913, 0, 1310793, 536870913, 0, 1310794, 536870913, 0, 1310795, 536870913, 0, 1310796, 536870913, 0, 1310797, 536870913, 0, 1310798, 536870913, 0, 1310799, 536870913, 0, 1310800, 536870913, 0, 1310801, 536870913, 0, 1310802, 536870913, 0, 1310803, 536870913, 0, 1310804, 536870913, 0, 1310805, 536870913, 0, 1310806, 536870913, 0, 1310807, 536870913, 0, 1310808, 536870925, 0, 1310812, 536870924, 0, 1310813, 2, 0, 1310814, 1, 0, 1310815, 1, 0, 1310816, 1, 0, 1310817, 1, 0, 1310818, 1, 0, 1310819, 1, 0, 1310820, 1, 0, 1310821, 1, 0, 1310822, 1, 0, 1310823, 1, 0, 1310824, 1, 0, 1310825, 1, 0, 1310826, 1, 0, 1310827, 1, 0, 1310828, 1, 0, 1310829, 2, 0, 1376256, 536870917, 0, 1376257, 536870916, 0, 1376258, 536870916, 0, 1376259, 536870916, 0, 1376260, 536870916, 0, 1376261, 536870916, 0, 1376262, 536870916, 0, 1376263, 536870916, 0, 1376264, 536870916, 0, 1376265, 536870916, 0, 1376266, 536870916, 0, 1376267, 536870916, 0, 1376268, 536870916, 0, 1376269, 536870943, 0, 1376270, 536870916, 0, 1376271, 536870916, 0, 1376272, 536870916, 0, 1376273, 536870916, 0, 1376274, 536870916, 0, 1376275, 536870916, 0, 1376276, 536870916, 0, 1376277, 536870916, 0, 1376278, 536870916, 0, 1376279, 536870916, 0, 1376280, 536870916, 0, 1376281, 536870916, 0, 1376282, 536870916, 0, 1376283, 536870916, 0, 1376284, 536870916, 0, 1376285, 536870916, 0, 1376286, 536870916, 0, 1376287, 536870916, 0, 1376288, 536870916, 0, 1376289, 536870916, 0, 1376290, 536870916, 0, 1376291, 536870916, 0, 1376292, 536870916, 0, 1376293, 536870916, 0, 1376294, 536870916, 0, 1376295, 536870916, 0, 1376296, 536870916, 0, 1376297, 536870916, 0, 1376298, 536870916, 0, 1376299, 536870916, 0, 1376300, 536870916, 0, 1376301, 536870916, 0, 1376302, 536870916, 0, 1376303, 536870916, 0, 1376304, 536870916, 0, 1376305, 536870916, 0, 1376306, 536870944, 0, 1376307, 536870916, 0, 1376308, 536870916, 0, 1376309, 536870916, 0, 1376310, 536870916, 0, 1376311, 536870916, 0, 1376312, 536870916, 0, 1376313, 536870916, 0, 1376314, 536870916, 0, 1376315, 536870916, 0, 1376316, 536870916, 0, 1376317, 536870916, 0, 1376318, 536870916, 0, 1376319, 536870916, 0, 1376320, 536870916, 0, 1376321, 536870916, 0, 1376322, 536870916, 0, 1376323, 536870916, 0, 1376324, 536870916, 0, 1376325, 536870916, 0, 1376326, 536870916, 0, 1376327, 536870916, 0, 1376328, 536870916, 0, 1376329, 536870916, 0, 1376330, 536870916, 0, 1376331, 536870916, 0, 1376332, 536870916, 0, 1376333, 536870916, 0, 1376334, 536870916, 0, 1376335, 536870916, 0, 1376336, 536870916, 0, 1376337, 536870916, 0, 1376338, 536870916, 0, 1376339, 536870916, 0, 1376340, 536870916, 0, 1376341, 536870916, 0, 1376342, 536870916, 0, 1376343, 536870916, 0, 1376344, 536870915, 0, 1376348, 536870917, 0, 1376349, 536870915, 0, 1376350, 4, 0, 1376351, 4, 0, 1376352, 4, 0, 1376353, 4, 0, 1376354, 4, 0, 1376355, 4, 0, 1376356, 4, 0, 1376357, 4, 0, 1376358, 4, 0, 1376359, 4, 0, 1376360, 4, 0, 1376361, 4, 0, 1376362, 4, 0, 1376363, 4, 0, 1376364, 4, 0, 1376365, 5, 0, 1441792, 536870917, 0, 1441793, 536870916, 0, 1441794, 536870916, 0, 1441795, 536870916, 0, 1441796, 536870916, 0, 1441797, 536870916, 0, 1441798, 536870916, 0, 1441799, 536870916, 0, 1441800, 536870916, 0, 1441801, 536870916, 0, 1441802, 536870916, 0, 1441803, 536870916, 0, 1441804, 536870916, 0, 1441805, 536870916, 0, 1441806, 536870916, 0, 1441807, 536870916, 0, 1441808, 536870916, 0, 1441809, 536870916, 0, 1441810, 536870943, 0, 1441811, 536870916, 0, 1441812, 536870916, 0, 1441813, 536870916, 0, 1441814, 536870916, 0, 1441815, 536870916, 0, 1441816, 536870916, 0, 1441817, 536870916, 0, 1441818, 536870944, 0, 1441819, 536870916, 0, 1441820, 536870916, 0, 1441821, 536870916, 0, 1441822, 536870916, 0, 1441823, 536870916, 0, 1441824, 536870916, 0, 1441825, 536870916, 0, 1441826, 536870916, 0, 1441827, 536870916, 0, 1441828, 536870916, 0, 1441829, 536870916, 0, 1441830, 536870916, 0, 1441831, 536870916, 0, 1441832, 536870916, 0, 1441833, 536870916, 0, 1441834, 536870916, 0, 1441835, 536870916, 0, 1441836, 536870916, 0, 1441837, 536870916, 0, 1441838, 536870916, 0, 1441839, 536870916, 0, 1441840, 536870916, 0, 1441841, 536870916, 0, 1441842, 536870916, 0, 1441843, 536870916, 0, 1441844, 536870916, 0, 1441845, 536870916, 0, 1441846, 536870916, 0, 1441847, 536870916, 0, 1441848, 536870916, 0, 1441849, 536870916, 0, 1441850, 536870916, 0, 1441851, 536870916, 0, 1441852, 536870916, 0, 1441853, 536870916, 0, 1441854, 536870916, 0, 1441855, 536870916, 0, 1441856, 536870916, 0, 1441857, 536870916, 0, 1441858, 536870916, 0, 1441859, 536870916, 0, 1441860, 536870916, 0, 1441861, 536870916, 0, 1441862, 536870916, 0, 1441863, 536870916, 0, 1441864, 536870916, 0, 1441865, 536870916, 0, 1441866, 536870916, 0, 1441867, 536870916, 0, 1441868, 536870916, 0, 1441869, 536870916, 0, 1441870, 536870916, 0, 1441871, 536870916, 0, 1441872, 536870916, 0, 1441873, 536870916, 0, 1441874, 536870916, 0, 1441875, 536870916, 0, 1441876, 536870916, 0, 1441877, 536870916, 0, 1441878, 536870916, 0, 1441879, 536870916, 0, 1441880, 536870915, 0, 1441884, 536870917, 0, 1441885, 536870915, 0, 1441886, 4, 0, 1441887, 4, 0, 1441888, 4, 0, 1441889, 4, 0, 1441890, 4, 0, 1441891, 4, 0, 1441892, 4, 0, 1441893, 4, 0, 1441894, 4, 0, 1441895, 4, 0, 1441896, 4, 0, 1441897, 4, 0, 1441898, 4, 0, 1441899, 4, 0, 1441900, 4, 0, 1441901, 5, 0, 1507328, 536870917, 0, 1507329, 536870916, 0, 1507330, 536870916, 0, 1507331, 536870916, 0, 1507332, 536870916, 0, 1507333, 536870916, 0, 1507334, 536870916, 0, 1507335, 536870916, 0, 1507336, 536870916, 0, 1507337, 536870916, 0, 1507338, 536870916, 0, 1507339, 536870916, 0, 1507340, 536870916, 0, 1507341, 536870916, 0, 1507342, 536870916, 0, 1507343, 536870916, 0, 1507344, 536870916, 0, 1507345, 536870916, 0, 1507346, 536870916, 0, 1507347, 536870916, 0, 1507348, 536870916, 0, 1507349, 536870916, 0, 1507350, 536870916, 0, 1507351, 536870916, 0, 1507352, 536870916, 0, 1507353, 536870916, 0, 1507354, 536870916, 0, 1507355, 536870916, 0, 1507356, 536870916, 0, 1507357, 536870916, 0, 1507358, 536870916, 0, 1507359, 536870916, 0, 1507360, 536870916, 0, 1507361, 536870916, 0, 1507362, 536870916, 0, 1507363, 536870916, 0, 1507364, 536870916, 0, 1507365, 536870916, 0, 1507366, 536870916, 0, 1507367, 536870916, 0, 1507368, 536870916, 0, 1507369, 536870916, 0, 1507370, 536870916, 0, 1507371, 536870916, 0, 1507372, 536870916, 0, 1507373, 536870916, 0, 1507374, 536870916, 0, 1507375, 536870916, 0, 1507376, 536870916, 0, 1507377, 536870916, 0, 1507378, 536870916, 0, 1507379, 536870916, 0, 1507380, 536870916, 0, 1507381, 536870916, 0, 1507382, 536870916, 0, 1507383, 536870916, 0, 1507384, 536870916, 0, 1507385, 536870916, 0, 1507386, 536870916, 0, 1507387, 536870916, 0, 1507388, 536870916, 0, 1507389, 536870916, 0, 1507390, 536870916, 0, 1507391, 536870916, 0, 1507392, 536870916, 0, 1507393, 536870916, 0, 1507394, 536870916, 0, 1507395, 536870916, 0, 1507396, 536870916, 0, 1507397, 536870916, 0, 1507398, 536870916, 0, 1507399, 536870916, 0, 1507400, 536870916, 0, 1507401, 536870916, 0, 1507402, 536870916, 0, 1507403, 536870916, 0, 1507404, 536870916, 0, 1507405, 536870916, 0, 1507406, 536870916, 0, 1507407, 536870916, 0, 1507408, 536870916, 0, 1507409, 536870916, 0, 1507410, 536870916, 0, 1507411, 536870916, 0, 1507412, 536870916, 0, 1507413, 536870916, 0, 1507414, 536870944, 0, 1507415, 536870916, 0, 1507416, 536870915, 0, 1507420, 536870917, 0, 1507421, 536870915, 0, 1507422, 4, 0, 1507423, 4, 0, 1507424, 4, 0, 1507425, 4, 0, 1507426, 4, 0, 1507427, 4, 0, 1507428, 4, 0, 1507429, 4, 0, 1507430, 4, 0, 1507431, 4, 0, 1507432, 4, 0, 1507433, 4, 0, 1507434, 4, 0, 1507435, 4, 0, 1507436, 4, 0, 1507437, 5, 0, 1572864, 536870917, 0, 1572865, 536870916, 0, 1572866, 536870916, 0, 1572867, 536870916, 0, 1572868, 536870916, 0, 1572869, 536870916, 0, 1572870, 536870916, 0, 1572871, 536870916, 0, 1572872, 536870916, 0, 1572873, 536870916, 0, 1572874, 536870943, 0, 1572875, 536870916, 0, 1572876, 536870916, 0, 1572877, 536870916, 0, 1572878, 536870916, 0, 1572879, 536870937, 0, 1572880, 536870938, 0, 1572881, 536870916, 0, 1572882, 536870916, 0, 1572883, 536870916, 0, 1572884, 536870916, 0, 1572885, 536870916, 0, 1572886, 536870916, 0, 1572887, 536870916, 0, 1572888, 536870916, 0, 1572889, 536870916, 0, 1572890, 536870916, 0, 1572891, 536870916, 0, 1572892, 536870916, 0, 1572893, 536870916, 0, 1572894, 536870916, 0, 1572895, 536870916, 0, 1572896, 536870943, 0, 1572897, 536870916, 0, 1572898, 536870916, 0, 1572899, 536870916, 0, 1572900, 536870916, 0, 1572901, 536870916, 0, 1572902, 536870943, 0, 1572903, 536870916, 0, 1572904, 536870916, 0, 1572905, 536870916, 0, 1572906, 536870916, 0, 1572907, 536870916, 0, 1572908, 536870916, 0, 1572909, 536870916, 0, 1572910, 536870916, 0, 1572911, 536870916, 0, 1572912, 536870916, 0, 1572913, 536870916, 0, 1572914, 536870916, 0, 1572915, 536870916, 0, 1572916, 536870916, 0, 1572917, 536870916, 0, 1572918, 536870916, 0, 1572919, 536870916, 0, 1572920, 536870916, 0, 1572921, 536870916, 0, 1572922, 536870916, 0, 1572923, 536870916, 0, 1572924, 536870916, 0, 1572925, 536870916, 0, 1572926, 536870916, 0, 1572927, 536870916, 0, 1572928, 536870916, 0, 1572929, 536870916, 0, 1572930, 536870916, 0, 1572931, 536870916, 0, 1572932, 536870916, 0, 1572933, 536870916, 0, 1572934, 536870916, 0, 1572935, 536870916, 0, 1572936, 536870916, 0, 1572937, 536870916, 0, 1572938, 536870916, 0, 1572939, 536870916, 0, 1572940, 536870916, 0, 1572941, 536870916, 0, 1572942, 536870916, 0, 1572943, 536870916, 0, 1572944, 536870916, 0, 1572945, 536870916, 0, 1572946, 536870916, 0, 1572947, 536870916, 0, 1572948, 536870916, 0, 1572949, 536870916, 0, 1572950, 536870916, 0, 1572951, 536870916, 0, 1572952, 536870915, 0, 1572956, 536870917, 0, 1572957, 536870915, 0, 1572958, 4, 0, 1572959, 4, 0, 1572960, 4, 0, 1572961, 4, 0, 1572962, 4, 0, 1572963, 4, 0, 1572964, 4, 0, 1572965, 4, 0, 1572966, 4, 0, 1572967, 4, 0, 1572968, 4, 0, 1572969, 4, 0, 1572970, 4, 0, 1572971, 4, 0, 1572972, 4, 0, 1572973, 5, 0, 1638400, 536870917, 0, 1638401, 536870916, 0, 1638402, 536870916, 0, 1638403, 536870916, 0, 1638404, 536870929, 0, 1638405, 536870916, 0, 1638406, 536870916, 0, 1638407, 536870916, 0, 1638408, 536870916, 0, 1638409, 536870916, 0, 1638410, 536870943, 0, 1638411, 536870916, 0, 1638412, 536870916, 0, 1638413, 536870916, 0, 1638414, 536870916, 0, 1638415, 536870916, 0, 1638416, 536870916, 0, 1638417, 536870916, 0, 1638418, 536870916, 0, 1638419, 536870916, 0, 1638420, 536870916, 0, 1638421, 536870916, 0, 1638422, 536870916, 0, 1638423, 536870943, 0, 1638424, 536870916, 0, 1638425, 536870916, 0, 1638426, 536870916, 0, 1638427, 536870916, 0, 1638428, 536870916, 0, 1638429, 536870916, 0, 1638430, 536870916, 0, 1638431, 536870916, 0, 1638432, 536870916, 0, 1638433, 536870916, 0, 1638434, 536870916, 0, 1638435, 536870916, 0, 1638436, 536870916, 0, 1638437, 536870916, 0, 1638438, 536870916, 0, 1638439, 536870916, 0, 1638440, 536870916, 0, 1638441, 536870916, 0, 1638442, 536870916, 0, 1638443, 536870916, 0, 1638444, 536870916, 0, 1638445, 536870916, 0, 1638446, 536870916, 0, 1638447, 536870916, 0, 1638448, 536870916, 0, 1638449, 536870916, 0, 1638450, 536870916, 0, 1638451, 536870916, 0, 1638452, 536870916, 0, 1638453, 536870916, 0, 1638454, 536870916, 0, 1638455, 536870916, 0, 1638456, 536870916, 0, 1638457, 536870916, 0, 1638458, 536870916, 0, 1638459, 536870916, 0, 1638460, 536870916, 0, 1638461, 536870916, 0, 1638462, 536870916, 0, 1638463, 536870916, 0, 1638464, 536870916, 0, 1638465, 536870916, 0, 1638466, 536870916, 0, 1638467, 536870916, 0, 1638468, 536870916, 0, 1638469, 536870916, 0, 1638470, 536870916, 0, 1638471, 536870916, 0, 1638472, 536870916, 0, 1638473, 536870916, 0, 1638474, 536870916, 0, 1638475, 536870916, 0, 1638476, 536870916, 0, 1638477, 536870916, 0, 1638478, 536870916, 0, 1638479, 536870916, 0, 1638480, 536870916, 0, 1638481, 536870916, 0, 1638482, 536870916, 0, 1638483, 536870916, 0, 1638484, 536870916, 0, 1638485, 536870916, 0, 1638486, 536870916, 0, 1638487, 536870916, 0, 1638488, 536870915, 0, 1638492, 536870917, 0, 1638493, 536870915, 0, 1638494, 4, 0, 1638495, 4, 0, 1638496, 4, 0, 1638497, 4, 0, 1638498, 4, 0, 1638499, 4, 0, 1638500, 4, 0, 1638501, 4, 0, 1638502, 4, 0, 1638503, 4, 0, 1638504, 4, 0, 1638505, 4, 0, 1638506, 4, 0, 1638507, 4, 0, 1638508, 4, 0, 1638509, 5, 0, 1703936, 536870917, 0, 1703937, 536870916, 0, 1703938, 536870916, 0, 1703939, 536870916, 0, 1703940, 536870916, 0, 1703941, 536870916, 0, 1703942, 536870916, 0, 1703943, 536870916, 0, 1703944, 536870916, 0, 1703945, 536870916, 0, 1703946, 536870916, 0, 1703947, 536870916, 0, 1703948, 536870916, 0, 1703949, 536870916, 0, 1703950, 536870916, 0, 1703951, 536870916, 0, 1703952, 536870916, 0, 1703953, 536870916, 0, 1703954, 536870916, 0, 1703955, 536870916, 0, 1703956, 536870916, 0, 1703957, 536870916, 0, 1703958, 536870916, 0, 1703959, 536870916, 0, 1703960, 536870916, 0, 1703961, 536870916, 0, 1703962, 536870916, 0, 1703963, 536870916, 0, 1703964, 536870916, 0, 1703965, 536870916, 0, 1703966, 536870916, 0, 1703967, 536870916, 0, 1703968, 536870916, 0, 1703969, 536870916, 0, 1703970, 536870916, 0, 1703971, 536870916, 0, 1703972, 536870916, 0, 1703973, 536870916, 0, 1703974, 536870916, 0, 1703975, 536870916, 0, 1703976, 536870916, 0, 1703977, 536870916, 0, 1703978, 536870916, 0, 1703979, 536870916, 0, 1703980, 536870916, 0, 1703981, 536870916, 0, 1703982, 536870916, 0, 1703983, 536870916, 0, 1703984, 536870916, 0, 1703985, 536870916, 0, 1703986, 536870916, 0, 1703987, 536870916, 0, 1703988, 536870916, 0, 1703989, 536870916, 0, 1703990, 536870916, 0, 1703991, 536870916, 0, 1703992, 536870916, 0, 1703993, 536870916, 0, 1703994, 536870916, 0, 1703995, 536870916, 0, 1703996, 536870936, 0, 1703997, 536870916, 0, 1703998, 536870916, 0, 1703999, 536870916, 0, 1704000, 536870916, 0, 1704001, 536870916, 0, 1704002, 536870916, 0, 1704003, 536870916, 0, 1704004, 536870916, 0, 1704005, 536870916, 0, 1704006, 536870916, 0, 1704007, 536870934, 0, 1704008, 536870933, 0, 1704009, 536870916, 0, 1704010, 536870916, 0, 1704011, 536870916, 0, 1704012, 536870916, 0, 1704013, 536870916, 0, 1704014, 536870916, 0, 1704015, 536870944, 0, 1704016, 536870916, 0, 1704017, 536870916, 0, 1704018, 536870916, 0, 1704019, 536870916, 0, 1704020, 536870916, 0, 1704021, 536870916, 0, 1704022, 536870916, 0, 1704023, 536870916, 0, 1704024, 536870915, 0, 1704028, 536870917, 0, 1704029, 536870915, 0, 1704030, 4, 0, 1704031, 4, 0, 1704032, 4, 0, 1704033, 4, 0, 1704034, 4, 0, 1704035, 4, 0, 1704036, 4, 0, 1704037, 4, 0, 1704038, 4, 0, 1704039, 4, 0, 1704040, 4, 0, 1704041, 4, 0, 1704042, 4, 0, 1704043, 4, 0, 1704044, 4, 0, 1704045, 5, 0, 1769472, 536870917, 0, 1769473, 536870916, 0, 1769474, 536870916, 0, 1769475, 536870916, 0, 1769476, 536870916, 0, 1769477, 536870916, 0, 1769478, 536870916, 0, 1769479, 536870916, 0, 1769480, 536870916, 0, 1769481, 536870916, 0, 1769482, 536870916, 0, 1769483, 536870916, 0, 1769484, 536870916, 0, 1769485, 536870916, 0, 1769486, 536870943, 0, 1769487, 536870916, 0, 1769488, 536870916, 0, 1769489, 536870916, 0, 1769490, 536870916, 0, 1769491, 536870916, 0, 1769492, 536870916, 0, 1769493, 536870916, 0, 1769494, 536870916, 0, 1769495, 536870916, 0, 1769496, 536870916, 0, 1769497, 536870916, 0, 1769498, 536870916, 0, 1769499, 536870916, 0, 1769500, 536870916, 0, 1769501, 536870916, 0, 1769502, 536870916, 0, 1769503, 536870916, 0, 1769504, 536870916, 0, 1769505, 536870916, 0, 1769506, 536870916, 0, 1769507, 536870916, 0, 1769508, 536870916, 0, 1769509, 536870916, 0, 1769510, 536870916, 0, 1769511, 536870916, 0, 1769512, 536870916, 0, 1769513, 536870916, 0, 1769514, 536870936, 0, 1769515, 536870916, 0, 1769516, 536870916, 0, 1769517, 536870916, 0, 1769518, 536870916, 0, 1769519, 536870916, 0, 1769520, 536870916, 0, 1769521, 536870916, 0, 1769522, 536870916, 0, 1769523, 536870916, 0, 1769524, 536870916, 0, 1769525, 536870916, 0, 1769526, 536870916, 0, 1769527, 536870916, 0, 1769528, 536870916, 0, 1769529, 536870916, 0, 1769530, 536870916, 0, 1769531, 536870916, 0, 1769532, 536870916, 0, 1769533, 536870916, 0, 1769534, 536870916, 0, 1769535, 536870916, 0, 1769536, 536870916, 0, 1769537, 536870916, 0, 1769538, 536870916, 0, 1769539, 536870916, 0, 1769540, 536870916, 0, 1769541, 536870916, 0, 1769542, 536870916, 0, 1769543, 536870916, 0, 1769544, 536870916, 0, 1769545, 536870916, 0, 1769546, 536870916, 0, 1769547, 536870916, 0, 1769548, 536870916, 0, 1769549, 536870916, 0, 1769550, 536870916, 0, 1769551, 536870916, 0, 1769552, 536870916, 0, 1769553, 536870916, 0, 1769554, 536870916, 0, 1769555, 536870916, 0, 1769556, 536870916, 0, 1769557, 536870916, 0, 1769558, 536870916, 0, 1769559, 536870916, 0, 1769560, 536870915, 0, 1769564, 536870917, 0, 1769565, 536870915, 0, 1769566, 4, 0, 1769567, 4, 0, 1769568, 4, 0, 1769569, 4, 0, 1769570, 4, 0, 1769571, 4, 0, 1769572, 4, 0, 1769573, 4, 0, 1769574, 4, 0, 1769575, 4, 0, 1769576, 4, 0, 1769577, 4, 0, 1769578, 4, 0, 1769579, 4, 0, 1769580, 4, 0, 1769581, 5, 0, 1835008, 536870917, 0, 1835009, 536870916, 0, 1835010, 536870916, 0, 1835011, 536870916, 0, 1835012, 536870916, 0, 1835013, 536870944, 0, 1835014, 536870916, 0, 1835015, 536870916, 0, 1835016, 536870916, 0, 1835017, 536870916, 0, 1835018, 536870916, 0, 1835019, 536870916, 0, 1835020, 536870916, 0, 1835021, 536870916, 0, 1835022, 536870916, 0, 1835023, 536870916, 0, 1835024, 536870916, 0, 1835025, 536870916, 0, 1835026, 536870916, 0, 1835027, 536870916, 0, 1835028, 536870916, 0, 1835029, 536870916, 0, 1835030, 536870916, 0, 1835031, 536870916, 0, 1835032, 536870916, 0, 1835033, 536870916, 0, 1835034, 536870916, 0, 1835035, 536870916, 0, 1835036, 536870916, 0, 1835037, 536870916, 0, 1835038, 536870916, 0, 1835039, 536870916, 0, 1835040, 536870916, 0, 1835041, 536870916, 0, 1835042, 536870916, 0, 1835043, 536870916, 0, 1835044, 536870916, 0, 1835045, 536870916, 0, 1835046, 536870916, 0, 1835047, 536870916, 0, 1835048, 536870916, 0, 1835049, 536870916, 0, 1835050, 536870916, 0, 1835051, 536870916, 0, 1835052, 536870916, 0, 1835053, 536870916, 0, 1835054, 536870916, 0, 1835055, 536870916, 0, 1835056, 536870916, 0, 1835057, 536870916, 0, 1835058, 536870916, 0, 1835059, 536870916, 0, 1835060, 536870916, 0, 1835061, 536870916, 0, 1835062, 536870916, 0, 1835063, 536870916, 0, 1835064, 536870916, 0, 1835065, 536870916, 0, 1835066, 536870916, 0, 1835067, 536870916, 0, 1835068, 536870916, 0, 1835069, 536870916, 0, 1835070, 536870916, 0, 1835071, 536870916, 0, 1835072, 536870916, 0, 1835073, 536870916, 0, 1835074, 536870916, 0, 1835075, 536870916, 0, 1835076, 536870916, 0, 1835077, 536870916, 0, 1835078, 536870916, 0, 1835079, 536870916, 0, 1835080, 536870916, 0, 1835081, 536870916, 0, 1835082, 536870916, 0, 1835083, 536870916, 0, 1835084, 536870916, 0, 1835085, 536870916, 0, 1835086, 536870916, 0, 1835087, 536870916, 0, 1835088, 536870916, 0, 1835089, 536870916, 0, 1835090, 536870916, 0, 1835091, 536870916, 0, 1835092, 536870916, 0, 1835093, 536870916, 0, 1835094, 536870916, 0, 1835095, 536870916, 0, 1835096, 536870915, 0, 1835100, 536870917, 0, 1835101, 536870915, 0, 1835102, 4, 0, 1835103, 4, 0, 1835104, 4, 0, 1835105, 4, 0, 1835106, 4, 0, 1835107, 4, 0, 1835108, 4, 0, 1835109, 4, 0, 1835110, 4, 0, 1835111, 4, 0, 1835112, 4, 0, 1835113, 4, 0, 1835114, 4, 0, 1835115, 4, 0, 1835116, 4, 0, 1835117, 5, 0, 1900544, 3, 0, 1900545, 4, 0, 1900546, 4, 0, 1900547, 4, 0, 1900548, 4, 0, 1900549, 4, 0, 1900550, 4, 0, 1900551, 536870943, 0, 1900552, 4, 0, 1900553, 4, 0, 1900554, 4, 0, 1900555, 4, 0, 1900556, 4, 0, 1900557, 4, 0, 1900558, 4, 0, 1900559, 4, 0, 1900560, 4, 0, 1900561, 4, 0, 1900562, 4, 0, 1900563, 4, 0, 1900564, 4, 0, 1900565, 4, 0, 1900566, 4, 0, 1900567, 4, 0, 1900568, 4, 0, 1900569, 4, 0, 1900570, 4, 0, 1900571, 4, 0, 1900572, 4, 0, 1900573, 4, 0, 1900574, 4, 0, 1900575, 4, 0, 1900576, 4, 0, 1900577, 4, 0, 1900578, 4, 0, 1900579, 4, 0, 1900580, 4, 0, 1900581, 4, 0, 1900582, 536870916, 0, 1900583, 536870916, 0, 1900584, 536870916, 0, 1900585, 536870916, 0, 1900586, 536870916, 0, 1900587, 536870916, 0, 1900588, 536870916, 0, 1900589, 536870916, 0, 1900590, 536870916, 0, 1900591, 536870916, 0, 1900592, 536870916, 0, 1900593, 536870916, 0, 1900594, 536870916, 0, 1900595, 536870916, 0, 1900596, 536870916, 0, 1900597, 536870916, 0, 1900598, 536870916, 0, 1900599, 536870944, 0, 1900600, 536870916, 0, 1900601, 536870916, 0, 1900602, 536870916, 0, 1900603, 536870916, 0, 1900604, 536870916, 0, 1900605, 536870916, 0, 1900606, 536870916, 0, 1900607, 536870916, 0, 1900608, 536870916, 0, 1900609, 536870916, 0, 1900610, 536870916, 0, 1900611, 536870916, 0, 1900612, 536870916, 0, 1900613, 536870916, 0, 1900614, 536870916, 0, 1900615, 536870916, 0, 1900616, 536870916, 0, 1900617, 536870916, 0, 1900618, 536870916, 0, 1900619, 536870916, 0, 1900620, 536870916, 0, 1900621, 536870916, 0, 1900622, 536870916, 0, 1900623, 536870916, 0, 1900624, 536870916, 0, 1900625, 536870916, 0, 1900626, 536870916, 0, 1900627, 536870916, 0, 1900628, 536870916, 0, 1900629, 536870916, 0, 1900630, 536870916, 0, 1900631, 536870916, 0, 1900632, 536870915, 0, 1900636, 536870917, 0, 1900637, 536870915, 0, 1900638, 4, 0, 1900639, 4, 0, 1900640, 4, 0, 1900641, 4, 0, 1900642, 4, 0, 1900643, 4, 0, 1900644, 4, 0, 1900645, 4, 0, 1900646, 4, 0, 1900647, 4, 0, 1900648, 4, 0, 1900649, 4, 0, 1900650, 4, 0, 1900651, 4, 0, 1900652, 4, 0, 1900653, 5, 0, 1966080, 3, 0, 1966081, 7, 0, 1966082, 7, 0, 1966083, 7, 0, 1966084, 7, 0, 1966085, 7, 0, 1966086, 7, 0, 1966087, 7, 0, 1966088, 7, 0, 1966089, 7, 0, 1966090, 7, 0, 1966091, 7, 0, 1966092, 7, 0, 1966093, 7, 0, 1966094, 7, 0, 1966095, 7, 0, 1966096, 7, 0, 1966097, 7, 0, 1966098, 7, 0, 1966099, 7, 0, 1966100, 7, 0, 1966101, 7, 0, 1966102, 7, 0, 1966103, 7, 0, 1966104, 7, 0, 1966105, 7, 0, 1966106, 7, 0, 1966107, 7, 0, 1966108, 7, 0, 1966109, 7, 0, 1966110, 7, 0, 1966111, 7, 0, 1966112, 7, 0, 1966113, 7, 0, 1966114, 7, 0, 1966115, 7, 0, 1966116, 7, 0, 1966117, 7, 0, 1966118, 7, 0, 1966119, 7, 0, 1966120, 536870919, 0, 1966121, 536870919, 0, 1966122, 536870919, 0, 1966123, 536870919, 0, 1966124, 536870919, 0, 1966125, 536870919, 0, 1966126, 536870919, 0, 1966127, 536870919, 0, 1966128, 536870919, 0, 1966129, 536870919, 0, 1966130, 536870919, 0, 1966131, 536870919, 0, 1966132, 536870919, 0, 1966133, 536870919, 0, 1966134, 536870919, 0, 1966135, 536870919, 0, 1966136, 536870919, 0, 1966137, 536870919, 0, 1966138, 536870919, 0, 1966139, 536870919, 0, 1966140, 536870919, 0, 1966141, 536870919, 0, 1966142, 536870919, 0, 1966143, 536870919, 0, 1966144, 536870919, 0, 1966145, 536870919, 0, 1966146, 536870919, 0, 1966147, 536870919, 0, 1966148, 536870919, 0, 1966149, 536870919, 0, 1966150, 536870919, 0, 1966151, 536870919, 0, 1966152, 536870919, 0, 1966153, 536870919, 0, 1966154, 536870919, 0, 1966155, 536870919, 0, 1966156, 536870919, 0, 1966157, 536870919, 0, 1966158, 536870919, 0, 1966159, 536870919, 0, 1966160, 536870919, 0, 1966161, 536870916, 0, 1966162, 536870916, 0, 1966163, 536870916, 0, 1966164, 536870916, 0, 1966165, 536870916, 0, 1966166, 536870916, 0, 1966167, 536870916, 0, 1966168, 536870915, 0, 1966172, 536870917, 0, 1966173, 536870915, 0, 1966174, 4, 0, 1966175, 4, 0, 1966176, 4, 0, 1966177, 4, 0, 1966178, 4, 0, 1966179, 4, 0, 1966180, 4, 0, 1966181, 4, 0, 1966182, 4, 0, 1966183, 4, 0, 1966184, 4, 0, 1966185, 4, 0, 1966186, 4, 0, 1966187, 4, 0, 1966188, 4, 0, 1966189, 5, 0, 2031616, 10, 0, 2031697, 536870928, 0, 2031698, 536870916, 0, 2031699, 536870916, 0, 2031700, 536870916, 0, 2031701, 536870916, 0, 2031702, 536870916, 0, 2031703, 536870916, 0, 2031704, 536870915, 0, 2031708, 536870917, 0, 2031709, 536870915, 0, 2031710, 4, 0, 2031711, 4, 0, 2031712, 4, 0, 2031713, 4, 0, 2031714, 4, 0, 2031715, 4, 0, 2031716, 4, 0, 2031717, 4, 0, 2031718, 4, 0, 2031719, 4, 0, 2031720, 4, 0, 2031721, 4, 0, 2031722, 4, 0, 2031723, 4, 0, 2031724, 4, 0, 2031725, 5, 0, 2097152, 10, 0, 2097234, 536870928, 0, 2097235, 536870916, 0, 2097236, 536870916, 0, 2097237, 536870916, 0, 2097238, 536870916, 0, 2097239, 536870936, 0, 2097240, 536870915, 0, 2097244, 536870917, 0, 2097245, 536870915, 0, 2097246, 4, 0, 2097247, 4, 0, 2097248, 4, 0, 2097249, 4, 0, 2097250, 4, 0, 2097251, 4, 0, 2097252, 4, 0, 2097253, 4, 0, 2097254, 4, 0, 2097255, 4, 0, 2097256, 4, 0, 2097257, 4, 0, 2097258, 4, 0, 2097259, 4, 0, 2097260, 4, 0, 2097261, 5, 0, 2162688, 10, 0, 2162771, 536870928, 0, 2162772, 536870916, 0, 2162773, 536870916, 0, 2162774, 536870916, 0, 2162775, 536870916, 0, 2162776, 536870915, 0, 2162780, 536870917, 0, 2162781, 536870915, 0, 2162782, 4, 0, 2162783, 4, 0, 2162784, 4, 0, 2162785, 4, 0, 2162786, 4, 0, 2162787, 4, 0, 2162788, 4, 0, 2162789, 4, 0, 2162790, 4, 0, 2162791, 4, 0, 2162792, 4, 0, 2162793, 4, 0, 2162794, 4, 0, 2162795, 4, 0, 2162796, 4, 0, 2162797, 5, 0, 2228224, 10, 0, 2228308, 536870928, 0, 2228309, 536870916, 0, 2228310, 536870916, 0, 2228311, 536870916, 0, 2228312, 536870915, 0, 2228316, 536870917, 0, 2228317, 536870915, 0, 2228318, 4, 0, 2228319, 4, 0, 2228320, 4, 0, 2228321, 4, 0, 2228322, 4, 0, 2228323, 4, 0, 2228324, 4, 0, 2228325, 4, 0, 2228326, 4, 0, 2228327, 4, 0, 2228328, 4, 0, 2228329, 4, 0, 2228330, 4, 0, 2228331, 4, 0, 2228332, 4, 0, 2228333, 5, 0, 2293760, 10, 0, 2293845, 536870928, 0, 2293846, 536870916, 0, 2293847, 536870916, 0, 2293848, 536870915, 0, 2293852, 536870917, 0, 2293853, 536870915, 0, 2293854, 4, 0, 2293855, 4, 0, 2293856, 4, 0, 2293857, 4, 0, 2293858, 4, 0, 2293859, 4, 0, 2293860, 4, 0, 2293861, 4, 0, 2293862, 4, 0, 2293863, 4, 0, 2293864, 4, 0, 2293865, 4, 0, 2293866, 4, 0, 2293867, 4, 0, 2293868, 4, 0, 2293869, 5, 0, 2359296, 10, 0, 2359382, 536870928, 0, 2359383, 536870916, 0, 2359384, 536870915, 0, 2359388, 536870917, 0, 2359389, 536870915, 0, 2359390, 4, 0, 2359391, 4, 0, 2359392, 4, 0, 2359393, 4, 0, 2359394, 4, 0, 2359395, 4, 0, 2359396, 4, 0, 2359397, 4, 0, 2359398, 4, 0, 2359399, 4, 0, 2359400, 4, 0, 2359401, 4, 0, 2359402, 4, 0, 2359403, 4, 0, 2359404, 4, 0, 2359405, 5, 0, 2424832, 10, 0, 2424919, 536870928, 0, 2424920, 536870927, 0, 2424924, 536870928, 0, 2424925, 536870915, 0, 2424926, 4, 0, 2424927, 4, 0, 2424928, 4, 0, 2424929, 4, 0, 2424930, 4, 0, 2424931, 4, 0, 2424932, 4, 0, 2424933, 4, 0, 2424934, 4, 0, 2424935, 4, 0, 2424936, 4, 0, 2424937, 4, 0, 2424938, 4, 0, 2424939, 4, 0, 2424940, 4, 0, 2424941, 5, 0, 2490368, 10, 0, 2490461, 536870922, 0, 2490462, 4, 0, 2490463, 4, 0, 2490464, 4, 0, 2490465, 4, 0, 2490466, 4, 0, 2490467, 4, 0, 2490468, 4, 0, 2490469, 4, 0, 2490470, 4, 0, 2490471, 4, 0, 2490472, 4, 0, 2490473, 4, 0, 2490474, 4, 0, 2490475, 4, 0, 2490476, 4, 0, 2490477, 5, 0, 2555904, 10, 0, 2555997, 536870922, 0, 2555998, 4, 0, 2555999, 4, 0, 2556000, 4, 0, 2556001, 4, 0, 2556002, 4, 0, 2556003, 4, 0, 2556004, 4, 0, 2556005, 4, 0, 2556006, 4, 0, 2556007, 4, 0, 2556008, 4, 0, 2556009, 4, 0, 2556010, 4, 0, 2556011, 4, 0, 2556012, 4, 0, 2556013, 5, 0, 2621440, 10, 0, 2621533, 536870922, 0, 2621534, 4, 0, 2621535, 4, 0, 2621536, 4, 0, 2621537, 4, 0, 2621538, 4, 0, 2621539, 4, 0, 2621540, 4, 0, 2621541, 4, 0, 2621542, 4, 0, 2621543, 4, 0, 2621544, 4, 0, 2621545, 4, 0, 2621546, 4, 0, 2621547, 4, 0, 2621548, 4, 0, 2621549, 5, 0, 2686976, 10, 0, 2687069, 536870922, 0, 2687070, 4, 0, 2687071, 4, 0, 2687072, 4, 0, 2687073, 4, 0, 2687074, 4, 0, 2687075, 4, 0, 2687076, 4, 0, 2687077, 4, 0, 2687078, 4, 0, 2687079, 4, 0, 2687080, 4, 0, 2687081, 4, 0, 2687082, 4, 0, 2687083, 4, 0, 2687084, 4, 0, 2687085, 5, 0, 2752512, 10, 0, 2752605, 536870923, 0, 2752606, 4, 0, 2752607, 4, 0, 2752608, 4, 0, 2752609, 4, 0, 2752610, 4, 0, 2752611, 4, 0, 2752612, 4, 0, 2752613, 4, 0, 2752614, 4, 0, 2752615, 4, 0, 2752616, 4, 0, 2752617, 4, 0, 2752618, 4, 0, 2752619, 4, 0, 2752620, 4, 0, 2752621, 5, 0, 2818048, 11, 0, 2818134, 536870924, 0, 2818135, 536870913, 0, 2818136, 536870913, 0, 2818137, 536870913, 0, 2818138, 536870913, 0, 2818139, 536870913, 0, 2818140, 536870913, 0, 2818141, 536870912, 0, 2818142, 4, 0, 2818143, 4, 0, 2818144, 4, 0, 2818145, 4, 0, 2818146, 4, 0, 2818147, 4, 0, 2818148, 4, 0, 2818149, 4, 0, 2818150, 4, 0, 2818151, 4, 0, 2818152, 4, 0, 2818153, 4, 0, 2818154, 4, 0, 2818155, 4, 0, 2818156, 4, 0, 2818157, 5, 0, 2883584, 0, 0, 2883585, 536870913, 0, 2883586, 536870913, 0, 2883587, 536870913, 0, 2883588, 536870913, 0, 2883589, 536870913, 0, 2883590, 536870913, 0, 2883591, 536870913, 0, 2883592, 536870913, 0, 2883593, 536870913, 0, 2883594, 536870913, 0, 2883595, 536870913, 0, 2883596, 536870913, 0, 2883597, 536870913, 0, 2883598, 536870913, 0, 2883599, 536870913, 0, 2883600, 536870913, 0, 2883601, 536870913, 0, 2883602, 536870913, 0, 2883603, 536870913, 0, 2883604, 536870913, 0, 2883605, 536870913, 0, 2883606, 536870913, 0, 2883607, 536870913, 0, 2883608, 536870913, 0, 2883609, 536870913, 0, 2883610, 536870913, 0, 2883611, 536870913, 0, 2883612, 536870913, 0, 2883613, 536870913, 0, 2883614, 536870913, 0, 2883615, 536870913, 0, 2883616, 536870913, 0, 2883617, 536870913, 0, 2883618, 536870913, 0, 2883619, 536870913, 0, 2883620, 536870913, 0, 2883621, 536870913, 0, 2883622, 536870913, 0, 2883623, 536870913, 0, 2883624, 536870913, 0, 2883625, 536870913, 0, 2883626, 536870913, 0, 2883627, 536870913, 0, 2883628, 536870913, 0, 2883629, 536870913, 0, 2883630, 536870913, 0, 2883631, 536870913, 0, 2883632, 536870913, 0, 2883633, 536870913, 0, 2883634, 536870913, 0, 2883635, 536870913, 0, 2883636, 536870913, 0, 2883637, 536870913, 0, 2883638, 536870913, 0, 2883639, 536870913, 0, 2883640, 536870913, 0, 2883641, 536870913, 0, 2883642, 536870913, 0, 2883643, 536870913, 0, 2883644, 536870913, 0, 2883645, 536870913, 0, 2883646, 536870913, 0, 2883647, 536870913, 0, 2883648, 536870913, 0, 2883649, 536870913, 0, 2883650, 536870913, 0, 2883651, 536870913, 0, 2883652, 536870913, 0, 2883653, 536870913, 0, 2883654, 536870913, 0, 2883655, 536870913, 0, 2883656, 536870913, 0, 2883657, 536870913, 0, 2883658, 536870913, 0, 2883659, 536870913, 0, 2883660, 536870913, 0, 2883661, 536870913, 0, 2883662, 536870913, 0, 2883663, 536870913, 0, 2883664, 536870913, 0, 2883665, 536870913, 0, 2883666, 536870913, 0, 2883667, 536870913, 0, 2883668, 536870913, 0, 2883669, 536870913, 0, 2883670, 536870916, 0, 2883671, 536870916, 0, 2883672, 536870916, 0, 2883673, 536870916, 0, 2883674, 536870916, 0, 2883675, 536870916, 0, 2883676, 536870916, 0, 2883677, 536870915, 0, 2883678, 4, 0, 2883679, 4, 0, 2883680, 4, 0, 2883681, 4, 0, 2883682, 4, 0, 2883683, 4, 0, 2883684, 4, 0, 2883685, 4, 0, 2883686, 4, 0, 2883687, 4, 0, 2883688, 4, 0, 2883689, 4, 0, 2883690, 4, 0, 2883691, 4, 0, 2883692, 4, 0, 2883693, 5, 0, 2949120, 536870917, 0, 2949121, 536870916, 0, 2949122, 536870916, 0, 2949123, 536870916, 0, 2949124, 536870916, 0, 2949125, 536870916, 0, 2949126, 536870936, 0, 2949127, 536870916, 0, 2949128, 536870916, 0, 2949129, 536870916, 0, 2949130, 536870916, 0, 2949131, 536870916, 0, 2949132, 536870916, 0, 2949133, 536870916, 0, 2949134, 536870916, 0, 2949135, 536870916, 0, 2949136, 536870936, 0, 2949137, 536870916, 0, 2949138, 536870916, 0, 2949139, 536870916, 0, 2949140, 536870916, 0, 2949141, 536870916, 0, 2949142, 536870916, 0, 2949143, 536870916, 0, 2949144, 536870916, 0, 2949145, 536870916, 0, 2949146, 536870916, 0, 2949147, 536870916, 0, 2949148, 536870916, 0, 2949149, 536870916, 0, 2949150, 536870916, 0, 2949151, 536870916, 0, 2949152, 536870936, 0, 2949153, 536870916, 0, 2949154, 536870916, 0, 2949155, 536870916, 0, 2949156, 536870916, 0, 2949157, 536870916, 0, 2949158, 536870916, 0, 2949159, 536870916, 0, 2949160, 536870916, 0, 2949161, 536870916, 0, 2949162, 536870916, 0, 2949163, 536870916, 0, 2949164, 536870916, 0, 2949165, 536870916, 0, 2949166, 536870936, 0, 2949167, 536870916, 0, 2949168, 536870916, 0, 2949169, 536870916, 0, 2949170, 536870916, 0, 2949171, 536870916, 0, 2949172, 536870916, 0, 2949173, 536870916, 0, 2949174, 536870916, 0, 2949175, 536870916, 0, 2949176, 536870916, 0, 2949177, 536870916, 0, 2949178, 536870916, 0, 2949179, 536870916, 0, 2949180, 536870936, 0, 2949181, 536870916, 0, 2949182, 536870916, 0, 2949183, 536870916, 0, 2949184, 536870916, 0, 2949185, 536870916, 0, 2949186, 536870916, 0, 2949187, 536870916, 0, 2949188, 536870916, 0, 2949189, 536870916, 0, 2949190, 536870936, 0, 2949191, 536870916, 0, 2949192, 536870916, 0, 2949193, 536870916, 0, 2949194, 536870916, 0, 2949195, 536870916, 0, 2949196, 536870916, 0, 2949197, 536870916, 0, 2949198, 536870916, 0, 2949199, 536870916, 0, 2949200, 536870936, 0, 2949201, 536870916, 0, 2949202, 536870916, 0, 2949203, 536870916, 0, 2949204, 536870916, 0, 2949205, 536870916, 0, 2949206, 536870916, 0, 2949207, 536870916, 0, 2949208, 536870916, 0, 2949209, 536870916, 0, 2949210, 536870936, 0, 2949211, 536870916, 0, 2949212, 536870916, 0, 2949213, 536870915, 0, 2949214, 4, 0, 2949215, 4, 0, 2949216, 4, 0, 2949217, 4, 0, 2949218, 4, 0, 2949219, 4, 0, 2949220, 4, 0, 2949221, 4, 0, 2949222, 4, 0, 2949223, 4, 0, 2949224, 4, 0, 2949225, 4, 0, 2949226, 4, 0, 2949227, 4, 0, 2949228, 4, 0, 2949229, 5, 0, 3014656, 536870920, 0, 3014657, 536870919, 0, 3014658, 536870919, 0, 3014659, 536870919, 0, 3014660, 536870919, 0, 3014661, 536870919, 0, 3014662, 536870919, 0, 3014663, 536870919, 0, 3014664, 536870919, 0, 3014665, 536870919, 0, 3014666, 536870919, 0, 3014667, 536870919, 0, 3014668, 536870919, 0, 3014669, 536870919, 0, 3014670, 536870919, 0, 3014671, 536870919, 0, 3014672, 536870919, 0, 3014673, 536870919, 0, 3014674, 536870919, 0, 3014675, 536870919, 0, 3014676, 536870919, 0, 3014677, 536870919, 0, 3014678, 536870919, 0, 3014679, 536870919, 0, 3014680, 536870919, 0, 3014681, 536870919, 0, 3014682, 536870919, 0, 3014683, 536870919, 0, 3014684, 536870919, 0, 3014685, 536870919, 0, 3014686, 536870919, 0, 3014687, 536870919, 0, 3014688, 536870919, 0, 3014689, 536870919, 0, 3014690, 536870919, 0, 3014691, 536870919, 0, 3014692, 536870919, 0, 3014693, 536870919, 0, 3014694, 536870919, 0, 3014695, 536870919, 0, 3014696, 536870919, 0, 3014697, 536870919, 0, 3014698, 536870919, 0, 3014699, 536870919, 0, 3014700, 536870919, 0, 3014701, 536870919, 0, 3014702, 536870919, 0, 3014703, 536870919, 0, 3014704, 536870919, 0, 3014705, 536870919, 0, 3014706, 536870919, 0, 3014707, 536870919, 0, 3014708, 536870919, 0, 3014709, 536870919, 0, 3014710, 536870919, 0, 3014711, 536870919, 0, 3014712, 536870919, 0, 3014713, 536870919, 0, 3014714, 536870919, 0, 3014715, 536870919, 0, 3014716, 536870919, 0, 3014717, 536870919, 0, 3014718, 536870919, 0, 3014719, 536870919, 0, 3014720, 536870919, 0, 3014721, 536870919, 0, 3014722, 536870919, 0, 3014723, 536870919, 0, 3014724, 536870919, 0, 3014725, 536870919, 0, 3014726, 536870919, 0, 3014727, 536870919, 0, 3014728, 536870919, 0, 3014729, 536870919, 0, 3014730, 536870919, 0, 3014731, 536870919, 0, 3014732, 536870919, 0, 3014733, 536870919, 0, 3014734, 536870919, 0, 3014735, 536870919, 0, 3014736, 536870919, 0, 3014737, 536870919, 0, 3014738, 536870919, 0, 3014739, 536870919, 0, 3014740, 536870919, 0, 3014741, 536870919, 0, 3014742, 536870919, 0, 3014743, 536870919, 0, 3014744, 536870919, 0, 3014745, 536870919, 0, 3014746, 536870919, 0, 3014747, 536870919, 0, 3014748, 536870919, 0, 3014749, 8, 0, 3014750, 7, 0, 3014751, 7, 0, 3014752, 7, 0, 3014753, 7, 0, 3014754, 7, 0, 3014755, 7, 0, 3014756, 7, 0, 3014757, 7, 0, 3014758, 7, 0, 3014759, 7, 0, 3014760, 7, 0, 3014761, 7, 0, 3014762, 7, 0, 3014763, 7, 0, 3014764, 7, 0, 3014765, 8, 0 )
@@ -450,7 +467,7 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2( -6, -2726 )
 scale = Vector2( 6.12153, 11.0093 )
-texture = ExtResource( 8 )
+texture = ExtResource( 10 )
 centered = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -458,7 +475,7 @@ centered = false
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
 position = Vector2( -27, -636 )
 scale = Vector2( 6.12153, 4.64815 )
-texture = ExtResource( 7 )
+texture = ExtResource( 12 )
 centered = false
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -466,7 +483,7 @@ centered = false
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
 position = Vector2( -27, -618 )
 scale = Vector2( 6.12153, 4.64815 )
-texture = ExtResource( 4 )
+texture = ExtResource( 14 )
 centered = false
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -474,7 +491,7 @@ centered = false
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer4"]
 position = Vector2( -27, -618 )
 scale = Vector2( 6.12153, 4.64815 )
-texture = ExtResource( 5 )
+texture = ExtResource( 13 )
 centered = false
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -482,7 +499,7 @@ centered = false
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
 position = Vector2( -1, -862 )
 scale = Vector2( 6.12153, 4.64815 )
-texture = ExtResource( 6 )
+texture = ExtResource( 15 )
 centered = false
 
 [node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -505,92 +522,92 @@ texture = ExtResource( 53 )
 [node name="Sprite4" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2857, 728 )
 scale = Vector2( 1.42187, 1.53125 )
-texture = ExtResource( 54 )
+texture = ExtResource( 55 )
 
 [node name="Sprite5" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2902, 728 )
 scale = Vector2( 1.42187, 1.53125 )
-texture = ExtResource( 54 )
+texture = ExtResource( 55 )
 
 [node name="Sprite6" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2947, 728 )
 scale = Vector2( 1.42187, 1.53125 )
-texture = ExtResource( 54 )
+texture = ExtResource( 55 )
 
 [node name="Sprite7" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2866, 775 )
 scale = Vector2( 1.42187, 1.53125 )
-texture = ExtResource( 55 )
+texture = ExtResource( 56 )
 
 [node name="Sprite8" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2910, 775 )
 scale = Vector2( 1.42187, 1.53125 )
-texture = ExtResource( 55 )
+texture = ExtResource( 56 )
 
 [node name="Sprite9" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2910, 775 )
 scale = Vector2( 1.42187, 1.53125 )
-texture = ExtResource( 55 )
+texture = ExtResource( 56 )
 
 [node name="Sprite10" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2935, 775 )
 scale = Vector2( 1.42187, 1.53125 )
-texture = ExtResource( 55 )
+texture = ExtResource( 56 )
 
 [node name="Sprite11" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2895.63, 993.75 )
 scale = Vector2( 3.27342, 12.2031 )
-texture = ExtResource( 55 )
+texture = ExtResource( 56 )
 
 [node name="Sprite12" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2870, 847 )
 scale = Vector2( 1.42187, 1.53125 )
-texture = ExtResource( 50 )
+texture = ExtResource( 51 )
 
 [node name="Sprite13" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2922, 895 )
 scale = Vector2( 1.42187, 1.53125 )
-texture = ExtResource( 50 )
+texture = ExtResource( 51 )
 
 [node name="Sprite14" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2870, 946 )
 scale = Vector2( 1.42187, 1.53125 )
-texture = ExtResource( 50 )
+texture = ExtResource( 51 )
 
 [node name="Sprite15" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2921, 995 )
 scale = Vector2( 1.42187, 1.53125 )
-texture = ExtResource( 50 )
+texture = ExtResource( 51 )
 
 [node name="Sprite16" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2921, 791 )
 scale = Vector2( 1.42187, 1.53125 )
-texture = ExtResource( 50 )
+texture = ExtResource( 51 )
 
 [node name="Sprite17" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2871, 1051 )
 scale = Vector2( 1.42187, 1.53125 )
-texture = ExtResource( 57 )
+texture = ExtResource( 54 )
 
 [node name="Sprite18" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2919.13, 1047.75 )
 scale = Vector2( 1.7422, 1.73438 )
-texture = ExtResource( 57 )
+texture = ExtResource( 54 )
 
 [node name="Sprite19" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2870.06, 1099 )
 scale = Vector2( 1.4336, 1.53125 )
-texture = ExtResource( 57 )
+texture = ExtResource( 54 )
 
 [node name="Sprite23" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2920.03, 1156.75 )
 scale = Vector2( 1.74809, 2.07812 )
-texture = ExtResource( 57 )
+texture = ExtResource( 54 )
 
 [node name="Sprite24" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2912.27, 1283.38 )
 scale = Vector2( 5.1084, 5.85156 )
-texture = ExtResource( 57 )
+texture = ExtResource( 54 )
 
 [node name="Sprite25" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2678, 1042 )
@@ -600,7 +617,7 @@ texture = ExtResource( 53 )
 [node name="Sprite73" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2678, 1115 )
 scale = Vector2( 3.69896, 3.35938 )
-texture = ExtResource( 57 )
+texture = ExtResource( 54 )
 
 [node name="Sprite67" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2747, 1153 )
@@ -708,7 +725,7 @@ texture = ExtResource( 87 )
 [node name="Tile70" type="Sprite" parent="ParallaxBackground/ParallaxLayer6/Sprite70"]
 position = Vector2( -241.689, -12.8 )
 scale = Vector2( 1.01535, 0.966279 )
-texture = ExtResource( 54 )
+texture = ExtResource( 55 )
 
 [node name="Tile71" type="Sprite" parent="ParallaxBackground/ParallaxLayer6/Sprite70"]
 position = Vector2( -211.41, -12.8 )
@@ -904,7 +921,7 @@ texture = ExtResource( 87 )
 [node name="Sprite76" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 1261.09, 1139 )
 scale = Vector2( 3.81823, 3.35938 )
-texture = ExtResource( 54 )
+texture = ExtResource( 55 )
 
 [node name="Sprite40" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 1025, 1041 )
@@ -1024,7 +1041,7 @@ texture = ExtResource( 53 )
 [node name="Sprite74" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 308, 1250 )
 scale = Vector2( 12.537, 10.8984 )
-texture = ExtResource( 57 )
+texture = ExtResource( 54 )
 
 [node name="Sprite48" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 89, 1043 )
@@ -1049,12 +1066,12 @@ texture = ExtResource( 82 )
 [node name="Sprite20" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2871.03, 998.75 )
 scale = Vector2( 1.56056, 1.73438 )
-texture = ExtResource( 57 )
+texture = ExtResource( 54 )
 
 [node name="Sprite21" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2918.53, 1100 )
 scale = Vector2( 1.6543, 1.53125 )
-texture = ExtResource( 50 )
+texture = ExtResource( 51 )
 
 [node name="Sprite22" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
 position = Vector2( 2868.4, 1154.81 )
@@ -1067,37 +1084,37 @@ texture = ExtResource( 53 )
 [node name="Sprite2" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2( 198, 382.743 )
 scale = Vector2( 2.54487, 2.74732 )
-texture = ExtResource( 56 )
+texture = ExtResource( 57 )
 
 [node name="Sprite15" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2( 3268, 395 )
 scale = Vector2( 2.54487, 2.74732 )
-texture = ExtResource( 56 )
+texture = ExtResource( 57 )
 
 [node name="Sprite16" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2( 1448, 376 )
 scale = Vector2( 2.54487, 2.74732 )
-texture = ExtResource( 56 )
+texture = ExtResource( 57 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2( 101.75, 580.625 )
 scale = Vector2( 2.54487, 3.80714 )
-texture = ExtResource( 58 )
+texture = ExtResource( 59 )
 
 [node name="Sprite3" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2( 101.75, 580.625 )
 scale = Vector2( 2.54487, 3.80714 )
-texture = ExtResource( 58 )
+texture = ExtResource( 59 )
 
 [node name="Sprite4" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2( 3158, 549 )
 scale = Vector2( 2.54487, 3.80714 )
-texture = ExtResource( 60 )
+texture = ExtResource( 61 )
 
 [node name="Sprite11" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2( 3461.5, 573.368 )
 scale = Vector2( 5.26923, 7.95913 )
-texture = ExtResource( 59 )
+texture = ExtResource( 58 )
 
 [node name="Sprite5" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2( 3348.64, 601.457 )
@@ -1112,7 +1129,7 @@ texture = ExtResource( 63 )
 [node name="Sprite12" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2( 3408, 624 )
 scale = Vector2( 2.492, 2.781 )
-texture = ExtResource( 61 )
+texture = ExtResource( 60 )
 
 [node name="Sprite14" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2( 3448, 500 )
@@ -1127,25 +1144,25 @@ texture = ExtResource( 62 )
 [node name="Sprite7" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2( 3353, 444 )
 scale = Vector2( 2.39743, 2.34107 )
-texture = ExtResource( 55 )
+texture = ExtResource( 56 )
 
 [node name="Sprite8" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2( 3353, 370 )
 scale = Vector2( 2.39743, 2.34107 )
-texture = ExtResource( 55 )
+texture = ExtResource( 56 )
 
 [node name="Sprite9" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2( 3431, 371 )
 scale = Vector2( 2.39743, 2.34107 )
-texture = ExtResource( 55 )
+texture = ExtResource( 56 )
 
 [node name="Sprite10" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2( 3481, 370 )
 scale = Vector2( 2.39743, 2.34107 )
-texture = ExtResource( 55 )
+texture = ExtResource( 56 )
 
 [node name="ParallaxLayer8" type="ParallaxLayer" parent="ParallaxBackground"]
-script = ExtResource( 27 )
+script = ExtResource( 1 )
 
 [node name="Sprite2" type="Sprite" parent="ParallaxBackground/ParallaxLayer8"]
 position = Vector2( 2453.75, 1298.23 )
@@ -1160,12 +1177,12 @@ texture = ExtResource( 71 )
 [node name="Sprite12" type="Sprite" parent="ParallaxBackground/ParallaxLayer8"]
 position = Vector2( 1266, 1392 )
 scale = Vector2( 1.753, 1.75 )
-texture = ExtResource( 66 )
+texture = ExtResource( 67 )
 
 [node name="Sprite13" type="Sprite" parent="ParallaxBackground/ParallaxLayer8"]
 position = Vector2( 1272.77, 1349 )
 scale = Vector2( 2.043, 1.75 )
-texture = ExtResource( 67 )
+texture = ExtResource( 66 )
 
 [node name="Sprite15" type="Sprite" parent="ParallaxBackground/ParallaxLayer8"]
 position = Vector2( 1251, 1388 )
@@ -1289,7 +1306,7 @@ frames = SubResource( 12 )
 animation = "pump"
 
 [node name="ParallaxLayer9" type="ParallaxLayer" parent="ParallaxBackground"]
-script = ExtResource( 91 )
+script = ExtResource( 90 )
 
 [node name="spider" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer9"]
 position = Vector2( 735, 1212 )
@@ -1310,10 +1327,11 @@ position = Vector2( 720, 1159 )
 scale = Vector2( 1.86111, 1.9 )
 frames = SubResource( 70 )
 animation = "animal"
+frame = 1
 playing = true
 
 [node name="ParallaxLayer18" type="ParallaxLayer" parent="ParallaxBackground"]
-script = ExtResource( 36 )
+script = ExtResource( 34 )
 
 [node name="post" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer18"]
 position = Vector2( 873.625, 472.875 )
@@ -1353,7 +1371,7 @@ animation = "ghost"
 frame = 3
 
 [node name="ParallaxLayer13" type="ParallaxLayer" parent="ParallaxBackground"]
-script = ExtResource( 21 )
+script = ExtResource( 7 )
 
 [node name="man" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer13"]
 position = Vector2( 780, 597 )
@@ -1362,7 +1380,7 @@ frames = SubResource( 17 )
 animation = "man"
 
 [node name="ParallaxLayer14" type="ParallaxLayer" parent="ParallaxBackground"]
-script = ExtResource( 22 )
+script = ExtResource( 4 )
 
 [node name="man2" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer14"]
 position = Vector2( 1015, 595.5 )
@@ -1371,7 +1389,7 @@ frames = SubResource( 22 )
 animation = "man2"
 
 [node name="ParallaxLayer16" type="ParallaxLayer" parent="ParallaxBackground"]
-script = ExtResource( 23 )
+script = ExtResource( 3 )
 
 [node name="car" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer16"]
 position = Vector2( 1896, 567 )
@@ -1381,7 +1399,7 @@ animation = "car"
 frame = 2
 
 [node name="ParallaxLayer17" type="ParallaxLayer" parent="ParallaxBackground"]
-script = ExtResource( 35 )
+script = ExtResource( 33 )
 
 [node name="ass" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer17"]
 position = Vector2( 2012, 597 )
@@ -1390,7 +1408,7 @@ frames = SubResource( 32 )
 animation = "man4"
 
 [node name="ParallaxLayer15" type="ParallaxLayer" parent="ParallaxBackground"]
-script = ExtResource( 24 )
+script = ExtResource( 38 )
 
 [node name="man3" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer15"]
 position = Vector2( 1286.5, 601 )
@@ -1399,7 +1417,7 @@ frames = SubResource( 37 )
 animation = "man3"
 
 [node name="ParallaxLayer10" type="ParallaxLayer" parent="ParallaxBackground"]
-script = ExtResource( 12 )
+script = ExtResource( 8 )
 
 [node name="shop" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer10"]
 position = Vector2( 662, 580 )
@@ -1410,23 +1428,23 @@ frame = 2
 playing = true
 
 [node name="ParallaxLayer11" type="ParallaxLayer" parent="ParallaxBackground"]
-script = ExtResource( 25 )
+script = ExtResource( 6 )
 
 [node name="shop2" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer11"]
 position = Vector2( 1173, 579 )
 scale = Vector2( 2.0625, 2.03125 )
 frames = SubResource( 47 )
 animation = "shop2"
-frame = 3
+frame = 1
 playing = true
 
 [node name="ParallaxLayer12" type="ParallaxLayer" parent="ParallaxBackground"]
-script = ExtResource( 26 )
+script = ExtResource( 2 )
 
 [node name="shop3" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer12"]
 position = Vector2( 931, 592 )
 scale = Vector2( 1.4375, 1.5 )
 frames = SubResource( 52 )
 animation = "shop3"
-frame = 3
+frame = 2
 playing = true
