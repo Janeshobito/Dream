@@ -5,10 +5,10 @@
 [node name="Node2D" instance=ExtResource( 1 )]
 
 [node name="spider" parent="ParallaxBackground/ParallaxLayer9" index="0"]
-frame = 2
+frame = 0
 
-[node name="animal" parent="ParallaxBackground/ParallaxLayer9" index="2"]
-frame = 1
+[node name="shop" parent="ParallaxBackground/ParallaxLayer10" index="0"]
+frame = 0
 
 [node name="shop3" parent="ParallaxBackground/ParallaxLayer12" index="0"]
-frame = 1
+frame = 3
