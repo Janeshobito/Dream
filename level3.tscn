@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=2]
+[gd_scene load_steps=83 format=2]
 
 [ext_resource path="res://lake.gd" type="Script" id=1]
 [ext_resource path="res://my game assests/free-fishing-game-assets-pixel-art-pack/2 Character animation/SteamMan_row.png" type="Texture" id=2]
@@ -33,6 +33,9 @@
 [ext_resource path="res://my game assests/free-fishing-game-assets-pixel-art-pack/GothicVania-town-files/GothicVania-town-files/PNG/spritesheets/bearded-idle.png" type="Texture" id=31]
 [ext_resource path="res://my game assests/free-fishing-game-assets-pixel-art-pack/GothicVania-town-files/GothicVania-town-files/PNG/spritesheets/hat-man-idle.png" type="Texture" id=32]
 [ext_resource path="res://Player.gd" type="Script" id=33]
+[ext_resource path="res://npcvillage.gd" type="Script" id=34]
+[ext_resource path="res://my game assests/free-fishing-game-assets-pixel-art-pack/Foreground and Background/Village Set_Background - Layer 01.png" type="Texture" id=35]
+[ext_resource path="res://my game assests/free-fishing-game-assets-pixel-art-pack/Foreground and Background/Village Set_Background  Sky- Layer 00.png" type="Texture" id=36]
 
 [sub_resource type="AtlasTexture" id=36]
 atlas = ExtResource( 28 )
@@ -272,6 +275,20 @@ editor_draw_limits = true
 
 [node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
 
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground2"]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer2"]
+position = Vector2( 4166, 200 )
+scale = Vector2( 4.35625, 1 )
+texture = ExtResource( 36 )
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground2"]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer3"]
+position = Vector2( 4152, 220 )
+scale = Vector2( 4.35, 1 )
+texture = ExtResource( 35 )
+
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
 script = ExtResource( 27 )
 
@@ -295,7 +312,7 @@ position = Vector2( 2105, 542.807 )
 scale = Vector2( 14.4167, 4.20602 )
 frames = SubResource( 14 )
 animation = "water"
-frame = 2
+frame = 3
 playing = true
 
 [node name="lake2" type="AnimatedSprite" parent="ParallaxBackground2/lake"]
@@ -304,7 +321,7 @@ position = Vector2( 2451, 542.653 )
 scale = Vector2( 14.4167, 4.21591 )
 frames = SubResource( 14 )
 animation = "water"
-frame = 1
+frame = 2
 playing = true
 
 [node name="lake3" type="AnimatedSprite" parent="ParallaxBackground2/lake"]
@@ -313,7 +330,7 @@ position = Vector2( 2794, 542.153 )
 scale = Vector2( 14.4167, 4.18366 )
 frames = SubResource( 14 )
 animation = "water"
-frame = 1
+frame = 2
 playing = true
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -344,6 +361,7 @@ position = Vector2( 2682, 441 )
 scale = Vector2( 1.95833, 1.75 )
 frames = SubResource( 30 )
 animation = "fishing"
+frame = 3
 
 [node name="Sprite3" type="Sprite" parent="."]
 position = Vector2( 2638, 462 )
@@ -386,7 +404,7 @@ position = Vector2( 2286, 445.25 )
 scale = Vector2( 1.85417, 1.98958 )
 frames = SubResource( 25 )
 animation = "padle"
-frame = 3
+frame = 1
 
 [node name="man2" type="AnimatedSprite" parent="."]
 position = Vector2( 2606, 444 )
@@ -600,6 +618,7 @@ scale = Vector2( 0.408594, 0.380469 )
 texture = ExtResource( 18 )
 
 [node name="ParallaxLayer9" type="ParallaxLayer" parent="ParallaxBackground"]
+script = ExtResource( 34 )
 
 [node name="npc1" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer9"]
 position = Vector2( 715, 450.75 )

@@ -1,0 +1,13 @@
+res://World/world.tscn
+res://World/world-tileset.tres
+res://Player/player.tscn
+res://Player/player.gd
+res://World/parallax_background.tscn
+res://Vehicles/Vehicle.gd
+res://Vehicles/vehicle_police.tscn
+res://Vehicles/vehicle_red.tscn
+res://Vehicles/vehicle_truck.tscn
+res://Vehicles/vehicle_yellow.tscn
+res://Enemies/Drone/drone.tscn
+res://Enemies/Drone/drone.gd
+res://Enemies/Turret/turret.tscn

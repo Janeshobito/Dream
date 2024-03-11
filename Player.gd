@@ -55,6 +55,7 @@ func run_left():
 	hero.flip_h = true
 	if is_on_floor():
 		hero.play("Run")
+		
 	else:
 		hero.play("Jump")
 	

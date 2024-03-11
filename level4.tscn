@@ -1,0 +1,512 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://my game assests/Magic-Cliffs-Gamekit/Magic-Cliffs-Gamekit/Environment/PNG/tileset.png" type="Texture" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player.gd" type="Script" id=3]
+[ext_resource path="res://my game assests/Magic-Cliffs-Gamekit/Magic-Cliffs-Gamekit/Environment/PNG/clouds.png" type="Texture" id=4]
+[ext_resource path="res://my game assests/Magic-Cliffs-Gamekit/Magic-Cliffs-Gamekit/Environment/PNG/sea.png" type="Texture" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 46.7755, 6.5914 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 5871, 915 )
+scale = Vector2( 105.839, 20.0625 )
+texture = ExtResource( 5 )
+
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 5880, 896 )
+scale = Vector2( 21.8529, 8.59322 )
+texture = ExtResource( 4 )
+
+[node name="hero" parent="." instance=ExtResource( 2 )]
+position = Vector2( 380, 1015 )
+script = ExtResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="hero"]
+position = Vector2( 4, 7 )
+current = true
+zoom = Vector2( 0.7, 0.7 )
+process_mode = 0
+limit_left = 7
+limit_top = -128
+limit_right = 11658
+limit_bottom = 1694
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+editor_draw_limits = true
+
+[node name="Sprite20" type="Sprite" parent="."]
+position = Vector2( -78.998, -28 )
+
+[node name="Sprite" type="Sprite" parent="Sprite20"]
+position = Vector2( 578, 1262 )
+scale = Vector2( 5.3, 5.24699 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite2" type="Sprite" parent="Sprite20"]
+position = Vector2( 1196, 1196 )
+scale = Vector2( 6.36667, 5.20331 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite2/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite3" type="Sprite" parent="Sprite20"]
+position = Vector2( 1858, 1130 )
+scale = Vector2( 6.36667, 5.20331 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite3/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite4" type="Sprite" parent="Sprite20"]
+position = Vector2( 2520, 1188 )
+scale = Vector2( 6.36667, 5.20331 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite4/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite5" type="Sprite" parent="Sprite20"]
+position = Vector2( 3166, 1094 )
+scale = Vector2( 6.36667, 5.20331 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite5/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite6" type="Sprite" parent="Sprite20"]
+position = Vector2( 3802, 1212 )
+scale = Vector2( 6.36667, 5.20331 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite6/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite7" type="Sprite" parent="Sprite20"]
+position = Vector2( 4462, 1144 )
+scale = Vector2( 6.36667, 5.20331 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite7/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite8" type="Sprite" parent="Sprite20"]
+position = Vector2( 5100, 1202 )
+scale = Vector2( 6.36667, 5.20331 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite8/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite9" type="Sprite" parent="Sprite20"]
+position = Vector2( 5746, 1162 )
+scale = Vector2( 6.36667, 5.20331 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite9"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite9/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite10" type="Sprite" parent="Sprite20"]
+position = Vector2( 6374, 1266 )
+scale = Vector2( 6.36667, 5.20331 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite10"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite10/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite11" type="Sprite" parent="Sprite20"]
+position = Vector2( 7026, 1159 )
+scale = Vector2( 6.36667, 5.20331 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite11/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite12" type="Sprite" parent="Sprite20"]
+position = Vector2( 7654, 1282 )
+scale = Vector2( 6.36667, 5.20331 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite12"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite12/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite13" type="Sprite" parent="Sprite20"]
+position = Vector2( 8330, 1384 )
+scale = Vector2( 6.36667, 5.20331 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite13"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite13/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite14" type="Sprite" parent="Sprite20"]
+position = Vector2( 8982, 1308 )
+scale = Vector2( 6.36667, 5.20331 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite14"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite14/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite16" type="Sprite" parent="Sprite20"]
+position = Vector2( 10094, 1223 )
+scale = Vector2( 6.36667, 5.20331 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite16"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite16/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite15" type="Sprite" parent="Sprite20"]
+position = Vector2( 9664, 1223 )
+scale = Vector2( 6.36667, 5.20331 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite15"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite15/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite17" type="Sprite" parent="Sprite20"]
+position = Vector2( 10540, 1223 )
+scale = Vector2( 6.367, 5.203 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite17"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite17/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite18" type="Sprite" parent="Sprite20"]
+position = Vector2( 10981, 1223 )
+scale = Vector2( 6.367, 5.203 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite18"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite18/StaticBody2D"]
+position = Vector2( -2.32653, -27.9654 )
+shape = SubResource( 1 )
+
+[node name="Sprite19" type="Sprite" parent="Sprite20"]
+position = Vector2( 11431, 1223 )
+scale = Vector2( 6.367, 5.203 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 20, 120, 83 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20/Sprite19"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/Sprite19/StaticBody2D"]
+position = Vector2( -2.32715, -27.7728 )
+shape = SubResource( 1 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 434, 892 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 1117, 850 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -9.69495, -9.94495 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite3" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 1803, 848 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -36.5424, -28.806 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite4" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 2390, 884 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -7.08481, -20.9187 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite5" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 5651.68, 3499.03 )
+scale = Vector2( 7.19215, 8.5034 )
+texture = ExtResource( 1 )
+offset = Vector2( -36.5424, -28.806 )
+region_enabled = true
+region_rect = Rect2( 621, 253, 0, 0 )
+
+[node name="Sprite6" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 3121, 810 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -36.5424, -28.806 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite7" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 3752, 929 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -36.5424, -28.806 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite8" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 4351, 848 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -14.1693, -24.6909 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite9" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 4987, 908 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -14.1693, -24.6909 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite10" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 5637, 869 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -14.1693, -24.6909 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite11" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 6268, 970 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -14.1693, -24.6909 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite12" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 6915, 865 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -14.1693, -24.6909 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite13" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 7548, 988 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -14.1693, -24.6909 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite14" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 8222, 1091 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -14.1693, -24.6909 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite15" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 8869, 1014 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -14.1693, -24.6909 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite16" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 9552, 930 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -14.1693, -24.6909 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite17" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 9983, 929 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -14.1693, -24.6909 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite18" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 10429, 928 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -14.1693, -24.6909 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite19" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 10875, 933 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -14.1693, -24.6909 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )
+
+[node name="Sprite20" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 11322, 930 )
+scale = Vector2( 2.68182, 2.91606 )
+texture = ExtResource( 1 )
+offset = Vector2( -14.1693, -24.6909 )
+region_enabled = true
+region_rect = Rect2( 185, 33, 132, 137 )

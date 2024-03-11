@@ -429,7 +429,7 @@ animations = [ {
 } ]
 
 [node name="Node2D" type="Node2D"]
-position = Vector2( -11, 0 )
+position = Vector2( -4, 0 )
 
 [node name="hero" parent="." instance=ExtResource( 99 )]
 position = Vector2( 150, 610 )
@@ -1327,7 +1327,6 @@ position = Vector2( 720, 1159 )
 scale = Vector2( 1.86111, 1.9 )
 frames = SubResource( 70 )
 animation = "animal"
-frame = 1
 playing = true
 
 [node name="ParallaxLayer18" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1424,7 +1423,7 @@ position = Vector2( 662, 580 )
 scale = Vector2( 1.89583, 2 )
 frames = SubResource( 42 )
 animation = "shop1"
-frame = 2
+frame = 1
 playing = true
 
 [node name="ParallaxLayer11" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1446,5 +1445,4 @@ position = Vector2( 931, 592 )
 scale = Vector2( 1.4375, 1.5 )
 frames = SubResource( 52 )
 animation = "shop3"
-frame = 2
 playing = true
