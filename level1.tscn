@@ -1,10 +1,10 @@
-[gd_scene load_steps=165 format=2]
+[gd_scene load_steps=167 format=2]
 
 [ext_resource path="res://ParallaxLayer8.gd" type="Script" id=1]
 [ext_resource path="res://ParallaxLayer12.gd" type="Script" id=2]
 [ext_resource path="res://ParallaxLayer16.gd" type="Script" id=3]
 [ext_resource path="res://ParallaxLayer14.gd" type="Script" id=4]
-[ext_resource path="res://Player.gd" type="Script" id=5]
+[ext_resource path="res://enemy_city.tscn" type="PackedScene" id=5]
 [ext_resource path="res://ParallaxLayer11.gd" type="Script" id=6]
 [ext_resource path="res://ParallaxLayer13.gd" type="Script" id=7]
 [ext_resource path="res://ParallaxLayer10.gd" type="Script" id=8]
@@ -99,6 +99,7 @@
 [ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Spider1.png" type="Texture" id=97]
 [ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Web11.png" type="Texture" id=98]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=99]
+[ext_resource path="res://G1_L1.gd" type="Script" id=100]
 
 [sub_resource type="SpriteFrames" id=11]
 animations = [ {
@@ -428,27 +429,11 @@ animations = [ {
 "speed": 7.0
 } ]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="RectangleShape2D" id=71]
+extents = Vector2( 771.5, 35 )
+
+[node name="level1" type="Node2D"]
 position = Vector2( -4, 0 )
-
-[node name="hero" parent="." instance=ExtResource( 99 )]
-position = Vector2( 150, 610 )
-script = ExtResource( 5 )
-
-[node name="Camera2D" type="Camera2D" parent="hero"]
-position = Vector2( 2, 7 )
-current = true
-zoom = Vector2( 0.7, 0.7 )
-process_mode = 0
-limit_left = 3
-limit_top = -127
-limit_right = 3521
-limit_bottom = 1507
-limit_smoothed = true
-drag_margin_h_enabled = true
-drag_margin_v_enabled = true
-smoothing_enabled = true
-editor_draw_limits = true
 
 [node name="TileMap" type="TileMap" parent="."]
 rotation = 0.000145881
@@ -465,40 +450,40 @@ __meta__ = {
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( -6, -2726 )
-scale = Vector2( 6.12153, 11.0093 )
+position = Vector2( -6, -2582 )
+scale = Vector2( 6.12153, 10.5649 )
 texture = ExtResource( 10 )
 centered = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
-position = Vector2( -27, -636 )
-scale = Vector2( 6.12153, 4.64815 )
+position = Vector2( -27, -432 )
+scale = Vector2( 6.12153, 4.01852 )
 texture = ExtResource( 12 )
 centered = false
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
-position = Vector2( -27, -618 )
-scale = Vector2( 6.12153, 4.64815 )
+position = Vector2( -27, -258 )
+scale = Vector2( 6.12153, 3.53704 )
 texture = ExtResource( 14 )
 centered = false
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer4"]
-position = Vector2( -27, -618 )
-scale = Vector2( 6.12153, 4.64815 )
+position = Vector2( -27, -342 )
+scale = Vector2( 6.12153, 3.7963 )
 texture = ExtResource( 13 )
 centered = false
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2( -1, -862 )
-scale = Vector2( 6.12153, 4.64815 )
+position = Vector2( -1, -274 )
+scale = Vector2( 6.12153, 2.83333 )
 texture = ExtResource( 15 )
 centered = false
 
@@ -1096,11 +1081,6 @@ position = Vector2( 1448, 376 )
 scale = Vector2( 2.54487, 2.74732 )
 texture = ExtResource( 57 )
 
-[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
-position = Vector2( 101.75, 580.625 )
-scale = Vector2( 2.54487, 3.80714 )
-texture = ExtResource( 59 )
-
 [node name="Sprite3" type="Sprite" parent="ParallaxBackground/ParallaxLayer7"]
 position = Vector2( 101.75, 580.625 )
 scale = Vector2( 2.54487, 3.80714 )
@@ -1446,3 +1426,77 @@ scale = Vector2( 1.4375, 1.5 )
 frames = SubResource( 52 )
 animation = "shop3"
 playing = true
+
+[node name="hero" parent="." instance=ExtResource( 99 )]
+position = Vector2( 220, 614 )
+
+[node name="Camera2D" type="Camera2D" parent="hero"]
+position = Vector2( 2, 7 )
+current = true
+zoom = Vector2( 0.7, 0.7 )
+process_mode = 0
+limit_left = 3
+limit_top = -127
+limit_right = 3521
+limit_bottom = 1507
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+editor_draw_limits = true
+
+[node name="Enemies" type="Node" parent="." groups=["Detector"]]
+
+[node name="G1" type="Node" parent="Enemies" groups=["G1"]]
+script = ExtResource( 100 )
+
+[node name="enemy_city" parent="Enemies/G1" groups=["G1"] instance=ExtResource( 5 )]
+position = Vector2( 1687, 611 )
+PatrolPoints = NodePath("PatrolPoints")
+Hero = NodePath("../../../hero")
+
+[node name="PatrolPoints" type="Node2D" parent="Enemies/G1/enemy_city"]
+
+[node name="Point1" type="Position2D" parent="Enemies/G1/enemy_city/PatrolPoints"]
+position = Vector2( -262, 26 )
+
+[node name="Point2" type="Position2D" parent="Enemies/G1/enemy_city/PatrolPoints"]
+position = Vector2( 130, 26 )
+
+[node name="enemy_city2" parent="Enemies/G1" groups=["G1"] instance=ExtResource( 5 )]
+position = Vector2( 1981, 612 )
+PatrolPoints = NodePath("PatrolPoints")
+Hero = NodePath("../../../hero")
+speed = 80
+
+[node name="PatrolPoints" type="Node2D" parent="Enemies/G1/enemy_city2"]
+
+[node name="Point1" type="Position2D" parent="Enemies/G1/enemy_city2/PatrolPoints"]
+position = Vector2( -262, 26 )
+
+[node name="Point2" type="Position2D" parent="Enemies/G1/enemy_city2/PatrolPoints"]
+position = Vector2( 130, 26 )
+
+[node name="enemy_city3" parent="Enemies/G1" groups=["G1"] instance=ExtResource( 5 )]
+position = Vector2( 2450, 611 )
+PatrolPoints = NodePath("PatrolPoints")
+Hero = NodePath("../../../hero")
+
+[node name="PatrolPoints" type="Node2D" parent="Enemies/G1/enemy_city3"]
+
+[node name="Point1" type="Position2D" parent="Enemies/G1/enemy_city3/PatrolPoints"]
+position = Vector2( -262, 26 )
+
+[node name="Point2" type="Position2D" parent="Enemies/G1/enemy_city3/PatrolPoints"]
+position = Vector2( 130, 26 )
+
+[node name="DetectorG1" type="Area2D" parent="Enemies/G1" groups=["Detector"]]
+collision_layer = 32
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/G1/DetectorG1"]
+position = Vector2( 2040.5, 607 )
+shape = SubResource( 71 )
+
+[connection signal="area_entered" from="Enemies/G1/DetectorG1" to="Enemies/G1" method="_on_DetectorG1_area_entered"]
+[connection signal="area_exited" from="Enemies/G1/DetectorG1" to="Enemies/G1" method="_on_DetectorG1_area_exited"]

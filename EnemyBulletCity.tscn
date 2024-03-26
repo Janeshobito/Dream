@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://EnemyBulletCity.gd" type="Script" id=1]
+[ext_resource path="res://my game assests/enemy/Raider_2/All_Fire_Bullet_Pixel_16x16_00.png" type="Texture" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 352, 63, 16, 21 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 368, 63, 16, 21 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 384, 63, 16, 21 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ) ],
+"loop": true,
+"name": "shot",
+"speed": 7.0
+} ]
+
+[sub_resource type="SegmentShape2D" id=5]
+b = Vector2( 8, 0 )
+
+[node name="EnemyBulletCity" type="AnimatedSprite"]
+frames = SubResource( 4 )
+animation = "shot"
+frame = 1
+playing = true
+script = ExtResource( 1 )
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2( -4, -1 )
+scale = Vector2( 1, 1.7 )
+shape = SubResource( 5 )
+
+[connection signal="area_entered" from="Hitbox" to="." method="_on_Hitbox_area_entered"]
+[connection signal="body_entered" from="Hitbox" to="." method="_on_Hitbox_body_entered"]

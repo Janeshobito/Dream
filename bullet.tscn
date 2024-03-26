@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/misc/shot/shot-3.png" type="Texture" id=1]
 [ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/misc/shot/shot-1.png" type="Texture" id=2]
@@ -13,15 +13,27 @@ animations = [ {
 "speed": 7.0
 } ]
 
-[node name="bullet" type="AnimatedSprite"]
+[sub_resource type="CircleShape2D" id=2]
+radius = 5.09902
+
+[node name="bullet" type="AnimatedSprite" groups=["bullet"]]
 frames = SubResource( 1 )
 animation = "shot"
-frame = 2
+frame = 1
 script = ExtResource( 4 )
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 5.0
 one_shot = true
 autostart = true
 
+[node name="Hitbox" type="Area2D" parent="." groups=["bullet"]]
+collision_layer = 4
+collision_mask = 25
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" groups=["bullet"]]
+shape = SubResource( 2 )
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="area_entered" from="Hitbox" to="." method="_on_Hitbox_area_entered"]
+[connection signal="area_shape_exited" from="Hitbox" to="." method="_on_Hitbox_area_shape_exited"]
+[connection signal="body_entered" from="Hitbox" to="." method="_on_Hitbox_body_entered"]
