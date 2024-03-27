@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=2]
+[gd_scene load_steps=86 format=2]
 
 [ext_resource path="res://lake.gd" type="Script" id=1]
 [ext_resource path="res://my game assests/free-fishing-game-assets-pixel-art-pack/2 Character animation/SteamMan_row.png" type="Texture" id=2]
@@ -32,10 +32,13 @@
 [ext_resource path="res://my game assests/free-fishing-game-assets-pixel-art-pack/GothicVania-town-files/GothicVania-town-files/PNG/spritesheets/woman-idle.png" type="Texture" id=30]
 [ext_resource path="res://my game assests/free-fishing-game-assets-pixel-art-pack/GothicVania-town-files/GothicVania-town-files/PNG/spritesheets/bearded-idle.png" type="Texture" id=31]
 [ext_resource path="res://my game assests/free-fishing-game-assets-pixel-art-pack/GothicVania-town-files/GothicVania-town-files/PNG/spritesheets/hat-man-idle.png" type="Texture" id=32]
-[ext_resource path="res://Player.gd" type="Script" id=33]
+[ext_resource path="res://fireknight.tscn" type="PackedScene" id=33]
 [ext_resource path="res://npcvillage.gd" type="Script" id=34]
 [ext_resource path="res://my game assests/free-fishing-game-assets-pixel-art-pack/Foreground and Background/Village Set_Background - Layer 01.png" type="Texture" id=35]
 [ext_resource path="res://my game assests/free-fishing-game-assets-pixel-art-pack/Foreground and Background/Village Set_Background  Sky- Layer 00.png" type="Texture" id=36]
+[ext_resource path="res://electricknight.tscn" type="PackedScene" id=37]
+[ext_resource path="res://metalknight.tscn" type="PackedScene" id=38]
+[ext_resource path="res://windknight.tscn" type="PackedScene" id=39]
 
 [sub_resource type="AtlasTexture" id=36]
 atlas = ExtResource( 28 )
@@ -256,7 +259,6 @@ script = ExtResource( 3 )
 
 [node name="hero" parent="." instance=ExtResource( 10 )]
 position = Vector2( 29, 447 )
-script = ExtResource( 33 )
 
 [node name="Camera2D" type="Camera2D" parent="hero"]
 position = Vector2( 2, 7 )
@@ -312,7 +314,7 @@ position = Vector2( 2105, 542.807 )
 scale = Vector2( 14.4167, 4.20602 )
 frames = SubResource( 14 )
 animation = "water"
-frame = 3
+frame = 2
 playing = true
 
 [node name="lake2" type="AnimatedSprite" parent="ParallaxBackground2/lake"]
@@ -321,7 +323,7 @@ position = Vector2( 2451, 542.653 )
 scale = Vector2( 14.4167, 4.21591 )
 frames = SubResource( 14 )
 animation = "water"
-frame = 2
+frame = 1
 playing = true
 
 [node name="lake3" type="AnimatedSprite" parent="ParallaxBackground2/lake"]
@@ -330,7 +332,7 @@ position = Vector2( 2794, 542.153 )
 scale = Vector2( 14.4167, 4.18366 )
 frames = SubResource( 14 )
 animation = "water"
-frame = 2
+frame = 1
 playing = true
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -1315,3 +1317,29 @@ scale = Vector2( 0.996446, 0.948251 )
 texture = ExtResource( 26 )
 region_enabled = true
 region_rect = Rect2( 3, 141, 88, 99 )
+
+[node name="enemy" type="Node" parent="."]
+
+[node name="fireknight" parent="enemy" instance=ExtResource( 33 )]
+position = Vector2( 7366, 447 )
+Hero = NodePath("../../hero")
+HEALTH = 50
+damage_amount = 6
+
+[node name="electricknight" parent="enemy" instance=ExtResource( 37 )]
+position = Vector2( 6471, 449 )
+Hero = NodePath("../../hero")
+HEALTH = 30
+damage_amount = 5
+
+[node name="metalknight" parent="enemy" instance=ExtResource( 38 )]
+position = Vector2( 5597, 448 )
+Hero = NodePath("../../hero")
+HEALTH = 30
+damage_amount = 5
+
+[node name="windknight" parent="enemy" instance=ExtResource( 39 )]
+position = Vector2( 3974, 443 )
+Hero = NodePath("../../hero")
+HEALTH = 30
+damage_amount = 5

@@ -1,0 +1,184 @@
+[gd_scene load_steps=63 format=2]
+
+[ext_resource path="res://fireknight.gd" type="Script" id=1]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_8.png" type="Texture" id=2]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/02_run/run_4.png" type="Texture" id=3]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/02_run/run_1.png" type="Texture" id=4]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/02_run/run_3.png" type="Texture" id=5]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/02_run/run_8.png" type="Texture" id=6]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/02_run/run_6.png" type="Texture" id=7]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_7.png" type="Texture" id=8]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/02_run/run_5.png" type="Texture" id=9]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/02_run/run_2.png" type="Texture" id=10]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/02_run/run_7.png" type="Texture" id=11]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/10_take_hit/take_hit_4.png" type="Texture" id=12]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_13.png" type="Texture" id=13]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/11_death/death_1.png" type="Texture" id=14]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/11_death/death_3.png" type="Texture" id=15]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/11_death/death_5.png" type="Texture" id=16]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/11_death/death_6.png" type="Texture" id=17]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/11_death/death_11.png" type="Texture" id=18]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/10_take_hit/take_hit_5.png" type="Texture" id=19]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_7.png" type="Texture" id=20]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_16.png" type="Texture" id=21]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/11_death/death_9.png" type="Texture" id=22]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/10_take_hit/take_hit_1.png" type="Texture" id=23]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_2.png" type="Texture" id=24]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_14.png" type="Texture" id=25]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_3.png" type="Texture" id=26]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/11_death/death_12.png" type="Texture" id=27]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_2.png" type="Texture" id=28]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_15.png" type="Texture" id=29]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/11_death/death_13.png" type="Texture" id=30]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/10_take_hit/take_hit_6.png" type="Texture" id=31]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_4.png" type="Texture" id=32]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_9.png" type="Texture" id=33]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_5.png" type="Texture" id=34]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/10_take_hit/take_hit_3.png" type="Texture" id=35]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_1.png" type="Texture" id=36]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/01_idle/idle_6.png" type="Texture" id=37]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_1.png" type="Texture" id=38]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_5.png" type="Texture" id=39]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_10.png" type="Texture" id=40]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_8.png" type="Texture" id=41]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_11.png" type="Texture" id=42]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_17.png" type="Texture" id=43]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_3.png" type="Texture" id=44]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_6.png" type="Texture" id=45]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_12.png" type="Texture" id=46]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_18.png" type="Texture" id=47]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/11_death/death_2.png" type="Texture" id=48]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/11_death/death_4.png" type="Texture" id=49]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/11_death/death_7.png" type="Texture" id=50]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/08_sp_atk/sp_atk_4.png" type="Texture" id=51]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/11_death/death_8.png" type="Texture" id=52]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/11_death/death_10.png" type="Texture" id=53]
+[ext_resource path="res://my game assests/enemy/bosses/Elementals_fire_knight_FREE_v1.1/png/fire_knight/10_take_hit/take_hit_2.png" type="Texture" id=54]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 38 ), ExtResource( 24 ), ExtResource( 44 ), ExtResource( 51 ), ExtResource( 39 ), ExtResource( 45 ), ExtResource( 20 ), ExtResource( 41 ), ExtResource( 33 ), ExtResource( 40 ), ExtResource( 42 ), ExtResource( 46 ), ExtResource( 13 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 21 ), ExtResource( 43 ), ExtResource( 47 ) ],
+"loop": true,
+"name": "Attack",
+"speed": 9.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 48 ), ExtResource( 15 ), ExtResource( 49 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 50 ), ExtResource( 52 ), ExtResource( 22 ), ExtResource( 53 ), ExtResource( 18 ), ExtResource( 27 ), ExtResource( 30 ) ],
+"loop": false,
+"name": "Death",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 54 ), ExtResource( 35 ), ExtResource( 12 ), ExtResource( 19 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "Hurt",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 28 ), ExtResource( 26 ), ExtResource( 32 ), ExtResource( 34 ), ExtResource( 37 ), ExtResource( 8 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 10 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 11 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "Run",
+"speed": 7.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 18.0
+height = 24.0
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 19.0
+height = 24.0
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 234.214
+
+[sub_resource type="CircleShape2D" id=5]
+radius = 62.0
+
+[sub_resource type="BitmapFont" id=6]
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.247059, 0.980392, 0.0117647, 1 )
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id=8]
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="fireknight" type="KinematicBody2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -4, -46.5 )
+scale = Vector2( 1, 1.15333 )
+frames = SubResource( 1 )
+animation = "Idle"
+frame = 3
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="Hurtbox" type="Area2D" parent="."]
+modulate = Color( 0.00784314, 0.00784314, 0.00784314, 1 )
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+modulate = Color( 0.0392157, 0.0392157, 0.0431373, 1 )
+shape = SubResource( 3 )
+
+[node name="Detector" type="Area2D" parent="." groups=["Detector"]]
+modulate = Color( 0.972549, 0.627451, 0.0313726, 1 )
+collision_layer = 32
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detector"]
+shape = SubResource( 4 )
+
+[node name="AttackDetector" type="Area2D" parent="." groups=["Detector"]]
+modulate = Color( 0.0235294, 0.0588235, 0.92549, 1 )
+position = Vector2( 12, 0 )
+collision_layer = 16
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackDetector"]
+shape = SubResource( 5 )
+
+[node name="AttackTimer" type="Timer" parent="AttackDetector"]
+
+[node name="DeathTimer" type="Timer" parent="."]
+wait_time = 0.7
+one_shot = true
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+margin_left = -11.0
+margin_top = -39.0
+margin_right = 18.0
+margin_bottom = -36.0
+custom_fonts/font = SubResource( 6 )
+custom_styles/fg = SubResource( 7 )
+custom_styles/bg = SubResource( 8 )
+max_value = 10.0
+step = 1.0
+value = 10.0
+rounded = true
+percent_visible = false
+
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
+[connection signal="area_entered" from="Detector" to="." method="_on_Detector_area_entered"]
+[connection signal="area_exited" from="Detector" to="." method="_on_Detector_area_exited"]
+[connection signal="area_entered" from="AttackDetector" to="." method="_on_AttackDetector_area_entered"]
+[connection signal="area_exited" from="AttackDetector" to="." method="_on_AttackDetector_area_exited"]
+[connection signal="timeout" from="AttackDetector/AttackTimer" to="." method="_on_AttackTimer_timeout"]
+[connection signal="timeout" from="DeathTimer" to="." method="_on_DeathTimer_timeout"]

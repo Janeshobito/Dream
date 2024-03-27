@@ -4,19 +4,21 @@ export(NodePath) var Hero
 onready var hero = get_node(Hero)
 
 export(int) var speed = 100
-export(int) var HEALTH : int = 5
+export(int) var HEALTH = 10
+export(int) var damage_amount = 1
 
 onready var goblin = $AnimatedSprite
 enum state {Idle, Attack, Run, Death}
 # Declare member variables here.
 const GRAVITY : int = 20 
-var health_amount : int = HEALTH
+var health_amount : int
 var motion : Vector2 = Vector2()
 var current_state : int
 var hero_position : int
 var death : bool
 var hero_entered : bool
-var hero_health = 5
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	current_state = state.Idle
@@ -24,6 +26,9 @@ func _ready():
 		print("No hero assigned")
 	death = false
 	hero_entered = false
+	health_amount = HEALTH
+	$HealthBar.max_value = HEALTH
+	$HealthBar.value = health_amount
 
 func _physics_process(delta):
 	motion.y += GRAVITY + delta
@@ -67,6 +72,9 @@ func death():
 
 func set_health_bar():
 	$HealthBar.value = health_amount
+	
+func get_damage_amount():
+	return damage_amount
 
 func _on_Detector_area_entered(area):
 	if !death:
@@ -89,7 +97,7 @@ func _on_Hurtbox_area_entered(area : Area2D):
 	if area.get_parent().has_method("get_damage_amount"):
 		var node = area.get_parent() as Node
 		health_amount -= node.damage_amount
-		#print("Health ", health_amount)
+		print("Health ", health_amount)
 		set_health_bar()
 		
 		if health_amount == 0:
@@ -105,12 +113,11 @@ func _on_DeathTimer_timeout():
 
 func _on_AttackDetector_area_entered(area):
 	print("Attacker area entered")
-	print("Player Health ", hero_health)
 	if !death:
 		if area.is_in_group("hero"):
 			hero_entered = true
 			current_state = state.Attack
-			hero_health -= 1#reduce player health
+			#reduce player health
 		if hero_entered:
 				$AttackDetector/AttackTimer.start()
 
@@ -130,5 +137,6 @@ func _on_AttackDetector_area_exited(area):
 
 
 func _on_AttackTimer_timeout():
-	print('Timer hero health', hero_health)
-	hero_health -= 1 #reduce player health
+	print("hero health ", hero.health_amount)
+	hero.health_amount -= damage_amount
+	hero.set_health_bar()
