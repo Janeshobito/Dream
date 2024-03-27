@@ -2,14 +2,17 @@ extends KinematicBody2D
 
 const bullet = preload("res://bullet.tscn")
 export(float)  var bullet_wait_time 
+export(int) var Health = 100
 # Declare member variables here
 const UP = Vector2(0, -1)
 const GRAVITY = 15
 const ACCELARATION = 60
 const JUMP_HEIGHT = 400
 const MAX_SPEED = 200
+var health_amount : int
 var double_jump = true
 var can_shoot : bool = true
+var death : bool
 var velocity = Vector2()
 onready var hero = $AnimatedSprite
 onready var muzzle : Position2D = $Muzzle
@@ -21,44 +24,48 @@ var hero_direction = 1
 func _ready():
 	muzzle_position = muzzle.position
 	$Timer.wait_time = bullet_wait_time
+	death = false
+	health_amount = Health
+	$HealthBar.max_value = Health
+	$HealthBar.value = health_amount
 	
 func _physics_process(delta):
 	
 	velocity.y += GRAVITY + delta
+	if !death:
+		if Input.is_action_pressed("ui_right"):
+			if Input.is_action_pressed("jump"):
+				jump()
+			elif Input.is_action_pressed("shoot"):
+				run_shoot(delta)
+			else:
+				run_right(delta)
 	
-	if Input.is_action_pressed("ui_right"):
-		if Input.is_action_pressed("jump"):
+		elif Input.is_action_pressed("ui_left"):
+			if Input.is_action_pressed("jump"):
+				jump()
+			elif Input.is_action_pressed("shoot"):
+				run_shoot(delta)
+			else:
+				run_left(delta)
+	
+		elif Input.is_action_pressed("jump"):
 			jump()
+	
 		elif Input.is_action_pressed("shoot"):
-			run_shoot(delta)
-		else:
-			run_right(delta)
+			if is_on_floor():
+				shoot()
 	
-	elif Input.is_action_pressed("ui_left"):
-		if Input.is_action_pressed("jump"):
-			jump()
-		elif Input.is_action_pressed("shoot"):
-			run_shoot(delta)
-		else:
-			run_left(delta)
+		elif Input.is_action_pressed("ui_down"):
+			if is_on_floor():
+				crouch()
 	
-	elif Input.is_action_pressed("jump"):
-		jump()
-	
-	elif Input.is_action_pressed("shoot"):
-		if is_on_floor():
-			shoot()
-	
-	elif Input.is_action_pressed("ui_down"):
-		if is_on_floor():
-			crouch()
-	
-	elif !is_on_floor():
-		hero.play("Jump")
+		elif !is_on_floor():
+			hero.play("Jump")
 		
-	else:
-		velocity.x = 0
-		hero.play("Idle")
+		else:
+			velocity.x = 0
+			hero.play("Idle")
 	
 		
 	
@@ -155,8 +162,32 @@ func crouch():
 		get_parent().add_child(bullet_instance)
 		can_shoot = false
 
+func death():
+	velocity.x = 0
+	velocity.y = 0
+	hero.play("Hurt")
+
+func set_health_bar():
+	$HealthBar.value = health_amount
+
 func _on_Timer_timeout():
 	can_shoot = true
 	$Timer.start()
 
 	
+
+
+func _on_Hurtbox_area_entered(area):
+	if area.get_parent().has_method("get_damage_amount"):
+		var node = area.get_parent() as Node
+		health_amount -= node.damage_amount
+		print("Player Health ", health_amount)
+		set_health_bar()
+		
+		if health_amount < 0:
+			death = true
+			$DeathTimer.start()
+			death()
+
+func _on_DeathTimer_timeout():
+	queue_free()

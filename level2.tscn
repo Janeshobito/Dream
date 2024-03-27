@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://level2Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Goblin.tscn" type="PackedScene" id=2]
@@ -15,6 +15,9 @@
 [ext_resource path="res://Player.tscn" type="PackedScene" id=13]
 [ext_resource path="res://my game assests/oak_woods_v1.0/background/background_layer_2.png" type="Texture" id=14]
 [ext_resource path="res://onewattileb.tres" type="TileSet" id=15]
+[ext_resource path="res://Skeleton.tscn" type="PackedScene" id=16]
+[ext_resource path="res://OldGuardian.tscn" type="PackedScene" id=17]
+[ext_resource path="res://werewolf.tscn" type="PackedScene" id=18]
 
 [sub_resource type="RectangleShape2D" id=26]
 extents = Vector2( 5.47667, 1.95385 )
@@ -456,7 +459,8 @@ texture = ExtResource( 8 )
 
 [node name="hero" parent="." instance=ExtResource( 13 )]
 position = Vector2( 119, 1401 )
-bullet_wait_time = 3.0
+bullet_wait_time = 0.7
+Health = 150
 
 [node name="Camera2D" type="Camera2D" parent="hero"]
 position = Vector2( 2, 7 )
@@ -478,10 +482,40 @@ editor_draw_limits = true
 [node name="Goblin" parent="Enemies" instance=ExtResource( 2 )]
 position = Vector2( 682, 1409 )
 Hero = NodePath("../../hero")
-HEALTH = 10
 
 [node name="Goblin2" parent="Enemies" instance=ExtResource( 2 )]
 position = Vector2( 1087, 1340 )
 Hero = NodePath("../../hero")
 speed = 120
-HEALTH = 10
+
+[node name="Skeleton" parent="Enemies" instance=ExtResource( 16 )]
+position = Vector2( 1609, 1087 )
+Hero = NodePath("../../hero")
+
+[node name="Skeleton2" parent="Enemies" instance=ExtResource( 16 )]
+position = Vector2( 2071, 958 )
+Hero = NodePath("../../hero")
+
+[node name="OldGuardian" parent="Enemies" instance=ExtResource( 17 )]
+position = Vector2( 3368, 1390 )
+Hero = NodePath("../../hero")
+HEALTH = 50
+damage_amount = 5
+
+[node name="werewolf" parent="Enemies" instance=ExtResource( 18 )]
+position = Vector2( 2246, 332 )
+Hero = NodePath("../../hero")
+HEALTH = 20
+
+[node name="werewolf2" parent="Enemies" instance=ExtResource( 18 )]
+position = Vector2( 3384, 1100 )
+Hero = NodePath("../../hero")
+HEALTH = 20
+
+[node name="Skeleton3" parent="Enemies" instance=ExtResource( 16 )]
+position = Vector2( 2811, 1100 )
+Hero = NodePath("../../hero")
+
+[node name="Goblin3" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 2202, 1203 )
+Hero = NodePath("../../hero")

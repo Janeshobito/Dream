@@ -32,7 +32,7 @@ b = Vector2( 8, 0 )
 [node name="EnemyBulletCity" type="AnimatedSprite"]
 frames = SubResource( 4 )
 animation = "shot"
-frame = 1
+frame = 2
 playing = true
 script = ExtResource( 1 )
 

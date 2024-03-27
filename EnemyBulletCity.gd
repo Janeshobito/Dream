@@ -1,6 +1,6 @@
 extends AnimatedSprite
 
-
+export(int) var damage_amount = 1
 # Declare member variables here. Examples:
 var speed : int = 600
 var direction : int
@@ -21,6 +21,8 @@ func bullet_impact():
 	queue_free()
 	
 
+func get_damage_amount():
+	return damage_amount
 
 func _on_Hitbox_area_entered(area):
 	#print("Enemy Bullet area entered")

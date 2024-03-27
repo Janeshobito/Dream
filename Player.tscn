@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run-shoot/run-shoot-8.png" type="Texture" id=1]
 [ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run/run-7.png" type="Texture" id=2]
@@ -94,6 +94,21 @@ height = 32.0
 radius = 12.0
 height = 32.0
 
+[sub_resource type="BitmapFont" id=4]
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.247059, 0.980392, 0.0117647, 1 )
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id=6]
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
 [node name="hero" type="KinematicBody2D" groups=["hero"]]
 collision_layer = 2
 collision_mask = 9
@@ -127,4 +142,23 @@ collision_mask = 24
 modulate = Color( 0.992157, 0.0313726, 0.0313726, 1 )
 shape = SubResource( 3 )
 
+[node name="DeathTimer" type="Timer" parent="."]
+wait_time = 1.7
+one_shot = true
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+margin_left = -14.0
+margin_top = -33.0
+margin_right = 15.0
+margin_bottom = -30.0
+custom_fonts/font = SubResource( 4 )
+custom_styles/fg = SubResource( 5 )
+custom_styles/bg = SubResource( 6 )
+step = 1.0
+value = 100.0
+rounded = true
+percent_visible = false
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
+[connection signal="timeout" from="DeathTimer" to="." method="_on_DeathTimer_timeout"]

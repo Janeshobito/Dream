@@ -140,7 +140,7 @@ animations = [ {
 "frames": [ SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ) ],
 "loop": true,
 "name": "Run",
-"speed": 5.0
+"speed": 7.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=20]
@@ -179,7 +179,8 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
 }
-HEALTH = 10
+speed = 200
+HEALTH = 20
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -11.5 )
@@ -201,7 +202,6 @@ modulate = Color( 0.0392157, 0.0392157, 0.0431373, 1 )
 shape = SubResource( 29 )
 
 [node name="Detector" type="Area2D" parent="." groups=["Detector"]]
-visible = false
 modulate = Color( 0.972549, 0.627451, 0.0313726, 1 )
 collision_layer = 32
 collision_mask = 6
@@ -231,9 +231,9 @@ margin_bottom = -23.0
 custom_fonts/font = SubResource( 32 )
 custom_styles/fg = SubResource( 33 )
 custom_styles/bg = SubResource( 34 )
-max_value = 5.0
+max_value = 10.0
 step = 1.0
-value = 5.0
+value = 10.0
 rounded = true
 percent_visible = false
 
