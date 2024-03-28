@@ -564,3 +564,4 @@ damage_amount = 5
 
 [node name="Portal" parent="." instance=ExtResource( 12 )]
 position = Vector2( 11569, 985 )
+level_count = 4

@@ -523,3 +523,4 @@ Hero = NodePath("../../hero")
 
 [node name="Portal" parent="." instance=ExtResource( 19 )]
 position = Vector2( 3487, 1414 )
+level_count = 2

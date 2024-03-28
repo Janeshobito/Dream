@@ -5,7 +5,7 @@ extends Area2D
 # var a = 2
 # var b = "text"
 onready var portal = $AnimatedSprite
-var level_count = 1
+export(int) var level_count : int = 1
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	portal.play("Idle")
