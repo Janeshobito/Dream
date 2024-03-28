@@ -11,17 +11,19 @@ config_version=4
 [application]
 
 config/name="my dream (game)"
-run/main_scene="res://level6.tscn"
+run/main_scene="res://level1.tscn"
 run/frame_delay_msec=1
 run/low_processor_mode=true
 config/icon="res://icon.png"
 
+[autoload]
+
+GameManager="*res://scripts/GameManager.gd"
+
 [display]
 
-window/size/width=3000
-window/size/height=1500
-window/size/test_width=1178
-window/size/test_height=680
+window/size/test_width=1500
+window/size/test_height=700
 
 [global]
 

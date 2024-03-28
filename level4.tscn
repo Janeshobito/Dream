@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://my game assests/Magic-Cliffs-Gamekit/Magic-Cliffs-Gamekit/Environment/PNG/tileset.png" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -11,11 +11,12 @@
 [ext_resource path="res://deathbrindger.tscn" type="PackedScene" id=9]
 [ext_resource path="res://deathripper.tscn" type="PackedScene" id=10]
 [ext_resource path="res://evilwizard.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Portal.tscn" type="PackedScene" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 46.7755, 6.5914 )
 
-[node name="Node2D" type="Node2D"]
+[node name="level4" type="Node2D"]
 
 [node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
 
@@ -30,25 +31,6 @@ texture = ExtResource( 5 )
 position = Vector2( 5880, 896 )
 scale = Vector2( 21.8529, 8.59322 )
 texture = ExtResource( 4 )
-
-[node name="hero" parent="." instance=ExtResource( 2 )]
-position = Vector2( 380, 1015 )
-Health = 150
-
-[node name="Camera2D" type="Camera2D" parent="hero"]
-position = Vector2( 4, 7 )
-current = true
-zoom = Vector2( 0.7, 0.7 )
-process_mode = 0
-limit_left = 7
-limit_top = -128
-limit_right = 11658
-limit_bottom = 1694
-limit_smoothed = true
-drag_margin_h_enabled = true
-drag_margin_v_enabled = true
-smoothing_enabled = true
-editor_draw_limits = true
 
 [node name="Sprite20" type="Sprite" parent="."]
 position = Vector2( -78.998, -28 )
@@ -517,6 +499,25 @@ offset = Vector2( -14.1693, -24.6909 )
 region_enabled = true
 region_rect = Rect2( 185, 33, 132, 137 )
 
+[node name="hero" parent="." instance=ExtResource( 2 )]
+position = Vector2( 380, 1015 )
+Health = 150
+
+[node name="Camera2D" type="Camera2D" parent="hero"]
+position = Vector2( 4, 7 )
+current = true
+zoom = Vector2( 0.7, 0.7 )
+process_mode = 0
+limit_left = 7
+limit_top = -128
+limit_right = 11658
+limit_bottom = 1694
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+editor_draw_limits = true
+
 [node name="enemy" type="Node" parent="."]
 
 [node name="woodgolem" parent="enemy" instance=ExtResource( 7 )]
@@ -560,3 +561,6 @@ position = Vector2( 7706, 1004 )
 Hero = NodePath("../../hero")
 HEALTH = 30
 damage_amount = 5
+
+[node name="Portal" parent="." instance=ExtResource( 12 )]
+position = Vector2( 11569, 985 )

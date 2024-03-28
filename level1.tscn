@@ -1,4 +1,4 @@
-[gd_scene load_steps=167 format=2]
+[gd_scene load_steps=169 format=2]
 
 [ext_resource path="res://ParallaxLayer8.gd" type="Script" id=1]
 [ext_resource path="res://ParallaxLayer12.gd" type="Script" id=2]
@@ -100,6 +100,8 @@
 [ext_resource path="res://my game assests/halloween-decorations-characters-and-items-pixel-art/1 Objects/Web11.png" type="Texture" id=98]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=99]
 [ext_resource path="res://G1_L1.gd" type="Script" id=100]
+[ext_resource path="res://G2.gd" type="Script" id=101]
+[ext_resource path="res://Portal.tscn" type="PackedScene" id=102]
 
 [sub_resource type="SpriteFrames" id=11]
 animations = [ {
@@ -1293,7 +1295,7 @@ position = Vector2( 735, 1212 )
 scale = Vector2( 4.51041, 6.875 )
 frames = SubResource( 69 )
 animation = "spider"
-frame = 1
+frame = 2
 playing = true
 
 [node name="light" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer9"]
@@ -1414,7 +1416,7 @@ position = Vector2( 1173, 579 )
 scale = Vector2( 2.0625, 2.03125 )
 frames = SubResource( 47 )
 animation = "shop2"
-frame = 1
+frame = 3
 playing = true
 
 [node name="ParallaxLayer12" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1498,5 +1500,62 @@ collision_mask = 6
 position = Vector2( 2040.5, 607 )
 shape = SubResource( 71 )
 
+[node name="G2" type="Node" parent="Enemies" groups=["G2"]]
+script = ExtResource( 101 )
+
+[node name="enemy_city" parent="Enemies/G2" groups=["G2"] instance=ExtResource( 5 )]
+position = Vector2( 925, 1375 )
+PatrolPoints = NodePath("PatrolPoints")
+Hero = NodePath("../../../hero")
+
+[node name="PatrolPoints" type="Node2D" parent="Enemies/G2/enemy_city"]
+
+[node name="Point1" type="Position2D" parent="Enemies/G2/enemy_city/PatrolPoints"]
+position = Vector2( -262, 26 )
+
+[node name="Point2" type="Position2D" parent="Enemies/G2/enemy_city/PatrolPoints"]
+position = Vector2( 130, 26 )
+
+[node name="enemy_city2" parent="Enemies/G2" groups=["G2"] instance=ExtResource( 5 )]
+position = Vector2( 1386, 1379 )
+PatrolPoints = NodePath("PatrolPoints")
+Hero = NodePath("../../../hero")
+speed = 80
+
+[node name="PatrolPoints" type="Node2D" parent="Enemies/G2/enemy_city2"]
+
+[node name="Point1" type="Position2D" parent="Enemies/G2/enemy_city2/PatrolPoints"]
+position = Vector2( -262, 26 )
+
+[node name="Point2" type="Position2D" parent="Enemies/G2/enemy_city2/PatrolPoints"]
+position = Vector2( 130, 26 )
+
+[node name="enemy_city3" parent="Enemies/G2" groups=["G2"] instance=ExtResource( 5 )]
+position = Vector2( 1841, 1375 )
+PatrolPoints = NodePath("PatrolPoints")
+Hero = NodePath("../../../hero")
+
+[node name="PatrolPoints" type="Node2D" parent="Enemies/G2/enemy_city3"]
+
+[node name="Point1" type="Position2D" parent="Enemies/G2/enemy_city3/PatrolPoints"]
+position = Vector2( -262, 26 )
+
+[node name="Point2" type="Position2D" parent="Enemies/G2/enemy_city3/PatrolPoints"]
+position = Vector2( 130, 26 )
+
+[node name="DetectorG2" type="Area2D" parent="Enemies/G2" groups=["Detector"]]
+position = Vector2( 0, 172 )
+collision_layer = 32
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemies/G2/DetectorG2"]
+position = Vector2( 1388, 1198 )
+shape = SubResource( 71 )
+
+[node name="Portal" parent="." instance=ExtResource( 102 )]
+position = Vector2( 58, 1380 )
+
 [connection signal="area_entered" from="Enemies/G1/DetectorG1" to="Enemies/G1" method="_on_DetectorG1_area_entered"]
 [connection signal="area_exited" from="Enemies/G1/DetectorG1" to="Enemies/G1" method="_on_DetectorG1_area_exited"]
+[connection signal="area_entered" from="Enemies/G2/DetectorG2" to="Enemies/G2" method="_on_DetectorG1_area_entered"]
+[connection signal="area_exited" from="Enemies/G2/DetectorG2" to="Enemies/G2" method="_on_DetectorG1_area_exited"]

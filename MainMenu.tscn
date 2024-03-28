@@ -1,0 +1,113 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Fonts/pansyhand.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run-shoot/run-shoot-6.png" type="Texture" id=2]
+[ext_resource path="res://my game assests/background/Screenshot from 2024-03-28 00-19-50.png" type="Texture" id=3]
+[ext_resource path="res://MainMenu.gd" type="Script" id=4]
+
+[sub_resource type="Theme" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 300
+outline_size = 6
+outline_color = Color( 0.0901961, 0.815686, 0.913725, 1 )
+extra_spacing_top = -104
+extra_spacing_bottom = 307
+extra_spacing_char = 8
+extra_spacing_space = -75
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 56
+outline_size = 1
+outline_color = Color( 0.0431373, 0.647059, 0.690196, 1 )
+extra_spacing_space = 2
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.0627451, 0.827451, 0.690196, 1 )
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+shadow_color = Color( 0.0196078, 0.0196078, 0.0196078, 0.6 )
+shadow_size = 9
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.243137, 0.223529, 0.223529, 1 )
+shadow_color = Color( 0.0352941, 0.0352941, 0.0352941, 0.6 )
+shadow_size = 9
+
+[node name="MainMenu" type="CanvasLayer"]
+script = ExtResource( 4 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="CenterContainer" type="CenterContainer" parent="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+size_flags_stretch_ratio = 23.0
+theme = SubResource( 2 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Control/CenterContainer"]
+scroll_base_scale = Vector2( 12, 12 )
+
+[node name="Sprite" type="Sprite" parent="Control/CenterContainer/ParallaxBackground"]
+modulate = Color( 0.027451, 0.698039, 0.729412, 1 )
+self_modulate = Color( 0.0431373, 0.92549, 0.886275, 1 )
+position = Vector2( 705.5, 353.5 )
+scale = Vector2( 2.66095, 1.94795 )
+texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="Control/CenterContainer/ParallaxBackground"]
+modulate = Color( 0.027451, 0.698039, 0.729412, 1 )
+self_modulate = Color( 0.0431373, 0.92549, 0.886275, 1 )
+position = Vector2( 612.864, 598.105 )
+scale = Vector2( 3.06659, 3.55538 )
+texture = ExtResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/CenterContainer"]
+margin_left = 150.0
+margin_top = 70.0
+margin_right = 873.0
+margin_bottom = 530.0
+
+[node name="Label" type="Label" parent="Control/CenterContainer/VBoxContainer"]
+margin_right = 723.0
+margin_bottom = 460.0
+custom_fonts/font = SubResource( 1 )
+text = "      DREAM    "
+uppercase = true
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control/CenterContainer"]
+margin_left = 415.0
+margin_top = 235.0
+margin_right = 608.0
+margin_bottom = 364.0
+custom_constants/separation = 31
+
+[node name="StartButton" type="Button" parent="Control/CenterContainer/VBoxContainer2"]
+margin_right = 193.0
+margin_bottom = 49.0
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/normal = SubResource( 6 )
+text = " Start Game "
+
+[node name="ExitButton" type="Button" parent="Control/CenterContainer/VBoxContainer2"]
+margin_top = 80.0
+margin_right = 193.0
+margin_bottom = 129.0
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/normal = SubResource( 6 )
+text = " Exit Game "
+
+[connection signal="pressed" from="Control/CenterContainer/VBoxContainer2/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Control/CenterContainer/VBoxContainer2/ExitButton" to="." method="_on_ExitButton_pressed"]

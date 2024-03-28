@@ -260,8 +260,8 @@ __meta__ = {
 position = Vector2( 0.291665, -12.4167 )
 scale = Vector2( 2.49417, 2.44833 )
 frames = SubResource( 49 )
-animation = "Attack"
-frame = 3
+animation = "Idle"
+frame = 7
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
