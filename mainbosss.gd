@@ -63,7 +63,7 @@ func run(delta):
 	if hero.position.y < (position.y - 11):
 		idle()
 	else:
-		main_boss.flip_h = direction < 0
+		main_boss.flip_h = direction > 0
 
 
 func death():

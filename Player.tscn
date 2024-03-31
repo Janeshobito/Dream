@@ -118,10 +118,9 @@ __meta__ = {
 }
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="." groups=["hero"]]
-position = Vector2( -1, -9 )
+position = Vector2( -1, -8 )
 frames = SubResource( 1 )
 animation = "Idle"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["hero"]]
@@ -136,14 +135,13 @@ autostart = true
 
 [node name="Hurtbox" type="Area2D" parent="." groups=["hero"]]
 collision_layer = 2
-collision_mask = 24
+collision_mask = 88
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" groups=["hero"]]
 modulate = Color( 0.992157, 0.0313726, 0.0313726, 1 )
 shape = SubResource( 3 )
 
 [node name="DeathTimer" type="Timer" parent="."]
-wait_time = 1.7
 one_shot = true
 
 [node name="HealthBar" type="ProgressBar" parent="."]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/NUEKI, TOLCHONOV, Ravens Rock - SO TIRED ROCK (128 kbps) (dl.saveservall.xyz).mp3-faa29ffdbf02e4715806ed45783c873d.mp3str"
+
+[deps]
+
+source_file="res://my game assests/bgm/NUEKI, TOLCHONOV, Ravens Rock - SO TIRED ROCK (128 kbps) (dl.saveservall.xyz).mp3"
+dest_files=[ "res://.import/NUEKI, TOLCHONOV, Ravens Rock - SO TIRED ROCK (128 kbps) (dl.saveservall.xyz).mp3-faa29ffdbf02e4715806ed45783c873d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -87,17 +87,17 @@ animations = [ {
 "frames": [ ExtResource( 31 ), ExtResource( 35 ), ExtResource( 58 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 53 ), ExtResource( 56 ), ExtResource( 60 ), ExtResource( 59 ), ExtResource( 52 ), ExtResource( 61 ), ExtResource( 57 ) ],
 "loop": true,
 "name": "Run",
-"speed": 7.0
+"speed": 10.0
 } ]
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 72.0278
+radius = 69.029
 
 [sub_resource type="CircleShape2D" id=3]
-radius = 52.469
+radius = 75.06
 
 [sub_resource type="CircleShape2D" id=4]
-radius = 234.214
+radius = 373.034
 
 [sub_resource type="CircleShape2D" id=5]
 radius = 179.025
@@ -127,7 +127,7 @@ __meta__ = {
 position = Vector2( -11.5, -51 )
 scale = Vector2( 1.55833, 1.51667 )
 frames = SubResource( 1 )
-animation = "Idle"
+animation = "Run"
 frame = 2
 playing = true
 
@@ -166,10 +166,10 @@ wait_time = 0.7
 one_shot = true
 
 [node name="HealthBar" type="ProgressBar" parent="."]
-margin_left = -22.0
-margin_top = -62.0
-margin_right = 31.0
-margin_bottom = -57.0
+margin_left = -45.0
+margin_top = -98.0
+margin_right = 8.0
+margin_bottom = -93.0
 custom_fonts/font = SubResource( 6 )
 custom_styles/fg = SubResource( 7 )
 custom_styles/bg = SubResource( 8 )

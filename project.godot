@@ -11,17 +11,18 @@ config_version=4
 [application]
 
 config/name="my dream (game)"
-run/main_scene="res://level4.tscn"
+<<<<<<< HEAD
+
+=======
+run/main_scene="res://MainMenu.tscn"
+>>>>>>> d56a54dfa9363f7e7006a9679418d40e5bff6a35
 run/frame_delay_msec=1
 run/low_processor_mode=true
 config/icon="res://icon.png"
 
-[display]
+[autoload]
 
-window/size/width=3000
-window/size/height=1500
-window/size/test_width=1178
-window/size/test_height=680
+GameManager="*res://scripts/GameManager.gd"
 
 [global]
 
@@ -111,6 +112,7 @@ shoot={
 2d_physics/layer_4="Enemies"
 2d_physics/layer_5="Enemy_bullet"
 2d_physics/layer_6="Detector"
+2d_physics/layer_7="Portal"
 
 [physics]
 
