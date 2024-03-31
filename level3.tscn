@@ -314,7 +314,6 @@ position = Vector2( 2105, 542.807 )
 scale = Vector2( 14.4167, 4.20602 )
 frames = SubResource( 14 )
 animation = "water"
-frame = 2
 playing = true
 
 [node name="lake2" type="AnimatedSprite" parent="ParallaxBackground2/lake"]
@@ -323,7 +322,7 @@ position = Vector2( 2451, 542.653 )
 scale = Vector2( 14.4167, 4.21591 )
 frames = SubResource( 14 )
 animation = "water"
-frame = 1
+frame = 3
 playing = true
 
 [node name="lake3" type="AnimatedSprite" parent="ParallaxBackground2/lake"]
@@ -332,7 +331,7 @@ position = Vector2( 2794, 542.153 )
 scale = Vector2( 14.4167, 4.18366 )
 frames = SubResource( 14 )
 animation = "water"
-frame = 1
+frame = 3
 playing = true
 
 [node name="TileMap" type="TileMap" parent="."]
