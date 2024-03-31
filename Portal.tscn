@@ -4,7 +4,7 @@
 [ext_resource path="res://Portal.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 14.0
+radius = 22.0
 height = 34.0
 
 [sub_resource type="AtlasTexture" id=2]
@@ -85,8 +85,9 @@ animations = [ {
 } ]
 
 [node name="Portal" type="Area2D"]
+modulate = Color( 0.14902, 0.117647, 0.117647, 1 )
 collision_layer = 64
-collision_mask = 3
+collision_mask = 2
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
@@ -96,11 +97,14 @@ __meta__ = {
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0.499998, -5 )
-scale = Vector2( 1.98437, 1 )
+position = Vector2( 2, -7.5 )
+scale = Vector2( 3.15625, 1.45312 )
 frames = SubResource( 18 )
 animation = "Idle"
-frame = 5
 playing = true
 
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
 [connection signal="area_entered" from="." to="." method="_on_Portal_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

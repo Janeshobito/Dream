@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Fonts/pansyhand.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/player/run-shoot/run-shoot-6.png" type="Texture" id=2]
 [ext_resource path="res://my game assests/background/Screenshot from 2024-03-28 00-19-50.png" type="Texture" id=3]
 [ext_resource path="res://MainMenu.gd" type="Script" id=4]
+[ext_resource path="res://my game assests/Warped City Phaser/warped city files/SPRITES/misc/shot/shot-2.png" type="Texture" id=5]
 
 [sub_resource type="Theme" id=2]
 
@@ -45,30 +46,44 @@ script = ExtResource( 4 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 
+[node name="Background" type="TextureRect" parent="Control"]
+modulate = Color( 0.0666667, 0.878431, 0.843137, 1 )
+self_modulate = Color( 0.6, 0.811765, 0.74902, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+expand = true
+
+[node name="Player" type="TextureRect" parent="Control"]
+modulate = Color( 0.0470588, 0.780392, 0.698039, 1 )
+anchor_left = 0.246094
+anchor_top = 0.663333
+anchor_right = 0.453125
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Bullet" type="TextureRect" parent="Control"]
+modulate = Color( 0.0392157, 0.819608, 0.678431, 1 )
+self_modulate = Color( 0.141176, 0.854902, 0.792157, 1 )
+anchor_left = 0.459961
+anchor_top = 0.786667
+anchor_right = 0.499023
+anchor_bottom = 0.838333
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
 [node name="CenterContainer" type="CenterContainer" parent="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-size_flags_horizontal = 2
-size_flags_vertical = 2
 size_flags_stretch_ratio = 23.0
 theme = SubResource( 2 )
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="Control/CenterContainer"]
-scroll_base_scale = Vector2( 12, 12 )
-
-[node name="Sprite" type="Sprite" parent="Control/CenterContainer/ParallaxBackground"]
-modulate = Color( 0.027451, 0.698039, 0.729412, 1 )
-self_modulate = Color( 0.0431373, 0.92549, 0.886275, 1 )
-position = Vector2( 705.5, 353.5 )
-scale = Vector2( 2.66095, 1.94795 )
-texture = ExtResource( 3 )
-
-[node name="Sprite2" type="Sprite" parent="Control/CenterContainer/ParallaxBackground"]
-modulate = Color( 0.027451, 0.698039, 0.729412, 1 )
-self_modulate = Color( 0.0431373, 0.92549, 0.886275, 1 )
-position = Vector2( 612.864, 598.105 )
-scale = Vector2( 3.06659, 3.55538 )
-texture = ExtResource( 2 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/CenterContainer"]
 margin_left = 150.0
@@ -76,7 +91,7 @@ margin_top = 70.0
 margin_right = 873.0
 margin_bottom = 530.0
 
-[node name="Label" type="Label" parent="Control/CenterContainer/VBoxContainer"]
+[node name="TitleLabel" type="Label" parent="Control/CenterContainer/VBoxContainer"]
 margin_right = 723.0
 margin_bottom = 460.0
 custom_fonts/font = SubResource( 1 )

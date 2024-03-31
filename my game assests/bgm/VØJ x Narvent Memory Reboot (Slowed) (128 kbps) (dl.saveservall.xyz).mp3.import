@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/VØJ x Narvent Memory Reboot (Slowed) (128 kbps) (dl.saveservall.xyz).mp3-22b668bd280edd4bd0c0a0f4a8e93c89.mp3str"
+
+[deps]
+
+source_file="res://my game assests/bgm/VØJ x Narvent Memory Reboot (Slowed) (128 kbps) (dl.saveservall.xyz).mp3"
+dest_files=[ "res://.import/VØJ x Narvent Memory Reboot (Slowed) (128 kbps) (dl.saveservall.xyz).mp3-22b668bd280edd4bd0c0a0f4a8e93c89.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

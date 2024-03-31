@@ -1,4 +1,4 @@
-[gd_scene load_steps=169 format=2]
+[gd_scene load_steps=171 format=2]
 
 [ext_resource path="res://ParallaxLayer8.gd" type="Script" id=1]
 [ext_resource path="res://ParallaxLayer12.gd" type="Script" id=2]
@@ -102,6 +102,8 @@
 [ext_resource path="res://G1_L1.gd" type="Script" id=100]
 [ext_resource path="res://G2.gd" type="Script" id=101]
 [ext_resource path="res://Portal.tscn" type="PackedScene" id=102]
+[ext_resource path="res://StartPortal.tscn" type="PackedScene" id=103]
+[ext_resource path="res://my game assests/bgm/VØJ x Narvent Memory Reboot (Slowed) (128 kbps) (dl.saveservall.xyz).mp3" type="AudioStream" id=104]
 
 [sub_resource type="SpriteFrames" id=11]
 animations = [ {
@@ -1295,7 +1297,7 @@ position = Vector2( 735, 1212 )
 scale = Vector2( 4.51041, 6.875 )
 frames = SubResource( 69 )
 animation = "spider"
-frame = 1
+frame = 2
 playing = true
 
 [node name="light" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer9"]
@@ -1309,7 +1311,6 @@ position = Vector2( 720, 1159 )
 scale = Vector2( 1.86111, 1.9 )
 frames = SubResource( 70 )
 animation = "animal"
-frame = 1
 playing = true
 
 [node name="ParallaxLayer18" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1406,7 +1407,7 @@ position = Vector2( 662, 580 )
 scale = Vector2( 1.89583, 2 )
 frames = SubResource( 42 )
 animation = "shop1"
-frame = 1
+frame = 3
 playing = true
 
 [node name="ParallaxLayer11" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1417,7 +1418,7 @@ position = Vector2( 1173, 579 )
 scale = Vector2( 2.0625, 2.03125 )
 frames = SubResource( 47 )
 animation = "shop2"
-frame = 3
+frame = 1
 playing = true
 
 [node name="ParallaxLayer12" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1428,11 +1429,10 @@ position = Vector2( 931, 592 )
 scale = Vector2( 1.4375, 1.5 )
 frames = SubResource( 52 )
 animation = "shop3"
-frame = 1
 playing = true
 
 [node name="hero" parent="." instance=ExtResource( 99 )]
-position = Vector2( 220, 614 )
+position = Vector2( 179, 613 )
 
 [node name="Camera2D" type="Camera2D" parent="hero"]
 position = Vector2( 2, 7 )
@@ -1556,6 +1556,17 @@ shape = SubResource( 71 )
 
 [node name="Portal" parent="." instance=ExtResource( 102 )]
 position = Vector2( 58, 1380 )
+Enemies = NodePath("../Enemies")
+
+[node name="StartPortal" parent="." instance=ExtResource( 103 )]
+position = Vector2( 153, 600.75 )
+scale = Vector2( 2.28125, 1.64843 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 104 )
+volume_db = 15.0
+autoplay = true
+max_distance = 3500.0
 
 [connection signal="area_entered" from="Enemies/G1/DetectorG1" to="Enemies/G1" method="_on_DetectorG1_area_entered"]
 [connection signal="area_exited" from="Enemies/G1/DetectorG1" to="Enemies/G1" method="_on_DetectorG1_area_exited"]

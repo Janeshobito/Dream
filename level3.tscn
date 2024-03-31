@@ -1,4 +1,4 @@
-[gd_scene load_steps=87 format=2]
+[gd_scene load_steps=89 format=2]
 
 [ext_resource path="res://lake.gd" type="Script" id=1]
 [ext_resource path="res://my game assests/free-fishing-game-assets-pixel-art-pack/2 Character animation/SteamMan_row.png" type="Texture" id=2]
@@ -40,6 +40,8 @@
 [ext_resource path="res://metalknight.tscn" type="PackedScene" id=38]
 [ext_resource path="res://windknight.tscn" type="PackedScene" id=39]
 [ext_resource path="res://Portal.tscn" type="PackedScene" id=40]
+[ext_resource path="res://StartPortal.tscn" type="PackedScene" id=41]
+[ext_resource path="res://my game assests/bgm/The Neighbourhood - Softcore (Lyrics) I'm too consumed with my own life (128 kbps) (dl.saveservall.xyz).mp3" type="AudioStream" id=42]
 
 [sub_resource type="AtlasTexture" id=36]
 atlas = ExtResource( 28 )
@@ -258,24 +260,6 @@ animations = [ {
 [node name="level3" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="hero" parent="." instance=ExtResource( 10 )]
-position = Vector2( 29, 447 )
-
-[node name="Camera2D" type="Camera2D" parent="hero"]
-position = Vector2( 2, 7 )
-current = true
-zoom = Vector2( 0.7, 0.7 )
-process_mode = 0
-limit_left = 3
-limit_top = -127
-limit_right = 8288
-limit_bottom = 777
-limit_smoothed = true
-drag_margin_h_enabled = true
-drag_margin_v_enabled = true
-smoothing_enabled = true
-editor_draw_limits = true
-
 [node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground2"]
@@ -315,7 +299,7 @@ position = Vector2( 2105, 542.807 )
 scale = Vector2( 14.4167, 4.20602 )
 frames = SubResource( 14 )
 animation = "water"
-frame = 2
+frame = 3
 playing = true
 
 [node name="lake2" type="AnimatedSprite" parent="ParallaxBackground2/lake"]
@@ -324,7 +308,7 @@ position = Vector2( 2451, 542.653 )
 scale = Vector2( 14.4167, 4.21591 )
 frames = SubResource( 14 )
 animation = "water"
-frame = 1
+frame = 2
 playing = true
 
 [node name="lake3" type="AnimatedSprite" parent="ParallaxBackground2/lake"]
@@ -333,7 +317,7 @@ position = Vector2( 2794, 542.153 )
 scale = Vector2( 14.4167, 4.18366 )
 frames = SubResource( 14 )
 animation = "water"
-frame = 1
+frame = 2
 playing = true
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -1319,27 +1303,45 @@ texture = ExtResource( 26 )
 region_enabled = true
 region_rect = Rect2( 3, 141, 88, 99 )
 
-[node name="enemy" type="Node" parent="."]
+[node name="hero" parent="." instance=ExtResource( 10 )]
+position = Vector2( 74, 454 )
 
-[node name="fireknight" parent="enemy" instance=ExtResource( 33 )]
+[node name="Camera2D" type="Camera2D" parent="hero"]
+position = Vector2( 2, 7 )
+current = true
+zoom = Vector2( 0.7, 0.7 )
+process_mode = 0
+limit_left = 3
+limit_top = -127
+limit_right = 8288
+limit_bottom = 777
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+editor_draw_limits = true
+
+[node name="enemies" type="Node" parent="."]
+
+[node name="fireknight" parent="enemies" instance=ExtResource( 33 )]
 position = Vector2( 7366, 447 )
 Hero = NodePath("../../hero")
 HEALTH = 50
 damage_amount = 6
 
-[node name="electricknight" parent="enemy" instance=ExtResource( 37 )]
+[node name="electricknight" parent="enemies" instance=ExtResource( 37 )]
 position = Vector2( 6471, 449 )
 Hero = NodePath("../../hero")
 HEALTH = 30
 damage_amount = 5
 
-[node name="metalknight" parent="enemy" instance=ExtResource( 38 )]
+[node name="metalknight" parent="enemies" instance=ExtResource( 38 )]
 position = Vector2( 5597, 448 )
 Hero = NodePath("../../hero")
 HEALTH = 30
 damage_amount = 5
 
-[node name="windknight" parent="enemy" instance=ExtResource( 39 )]
+[node name="windknight" parent="enemies" instance=ExtResource( 39 )]
 position = Vector2( 3974, 443 )
 Hero = NodePath("../../hero")
 HEALTH = 30
@@ -1347,4 +1349,15 @@ damage_amount = 5
 
 [node name="Portal" parent="." instance=ExtResource( 40 )]
 position = Vector2( 8233, 449 )
+Enemies = NodePath("../enemies")
 level_count = 3
+
+[node name="StartPortal" parent="." instance=ExtResource( 41 )]
+position = Vector2( 50.2499, 436.75 )
+scale = Vector2( 2.08594, 1.55468 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 42 )
+volume_db = 14.0
+autoplay = true
+max_distance = 8500.0

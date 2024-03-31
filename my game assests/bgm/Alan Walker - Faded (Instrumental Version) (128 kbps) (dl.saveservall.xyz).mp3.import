@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Alan Walker - Faded (Instrumental Version) (128 kbps) (dl.saveservall.xyz).mp3-bca815f92103c38000799df0f1ac8900.mp3str"
+
+[deps]
+
+source_file="res://my game assests/bgm/Alan Walker - Faded (Instrumental Version) (128 kbps) (dl.saveservall.xyz).mp3"
+dest_files=[ "res://.import/Alan Walker - Faded (Instrumental Version) (128 kbps) (dl.saveservall.xyz).mp3-bca815f92103c38000799df0f1ac8900.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

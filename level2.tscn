@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://level2Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Goblin.tscn" type="PackedScene" id=2]
@@ -19,6 +19,8 @@
 [ext_resource path="res://OldGuardian.tscn" type="PackedScene" id=17]
 [ext_resource path="res://werewolf.tscn" type="PackedScene" id=18]
 [ext_resource path="res://Portal.tscn" type="PackedScene" id=19]
+[ext_resource path="res://StartPortal.tscn" type="PackedScene" id=20]
+[ext_resource path="res://my game assests/bgm/videoplayback (2) (online-audio-converter.com).mp3" type="AudioStream" id=21]
 
 [sub_resource type="RectangleShape2D" id=26]
 extents = Vector2( 5.47667, 1.95385 )
@@ -109,6 +111,7 @@ position = Vector2( 1, 2 )
 [node name="RockBody" type="StaticBody2D" parent="."]
 position = Vector2( 1072, 1309 )
 scale = Vector2( 5.47778, 7.22222 )
+collision_mask = 3
 __meta__ = {
 "_edit_group_": true
 }
@@ -459,7 +462,7 @@ texture = ExtResource( 8 )
 [node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="hero" parent="." instance=ExtResource( 13 )]
-position = Vector2( 119, 1401 )
+position = Vector2( 98, 1400 )
 bullet_wait_time = 0.7
 Health = 150
 
@@ -523,4 +526,15 @@ Hero = NodePath("../../hero")
 
 [node name="Portal" parent="." instance=ExtResource( 19 )]
 position = Vector2( 3487, 1414 )
+Enemies = NodePath("../Enemies")
 level_count = 2
+
+[node name="StartPortal" parent="." instance=ExtResource( 20 )]
+position = Vector2( 72.7499, 1384.25 )
+scale = Vector2( 2.25781, 1.60156 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 21 )
+volume_db = 15.0
+autoplay = true
+max_distance = 3700.0
