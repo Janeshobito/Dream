@@ -1,4 +1,4 @@
-[gd_scene load_steps=89 format=2]
+[gd_scene load_steps=91 format=2]
 
 [ext_resource path="res://lake.gd" type="Script" id=1]
 [ext_resource path="res://my game assests/free-fishing-game-assets-pixel-art-pack/2 Character animation/SteamMan_row.png" type="Texture" id=2]
@@ -42,6 +42,7 @@
 [ext_resource path="res://Portal.tscn" type="PackedScene" id=40]
 [ext_resource path="res://StartPortal.tscn" type="PackedScene" id=41]
 [ext_resource path="res://my game assests/bgm/The Neighbourhood - Softcore (Lyrics) I'm too consumed with my own life (128 kbps) (dl.saveservall.xyz).mp3" type="AudioStream" id=42]
+[ext_resource path="res://Fonts/pansyhand.ttf" type="DynamicFontData" id=43]
 
 [sub_resource type="AtlasTexture" id=36]
 atlas = ExtResource( 28 )
@@ -256,6 +257,10 @@ animations = [ {
 "name": "npc",
 "speed": 5.0
 } ]
+
+[sub_resource type="DynamicFont" id=60]
+size = 28
+font_data = ExtResource( 43 )
 
 [node name="level3" type="Node2D"]
 script = ExtResource( 3 )
@@ -1361,3 +1366,15 @@ stream = ExtResource( 42 )
 volume_db = 14.0
 autoplay = true
 max_distance = 8500.0
+
+[node name="Label" type="Label" parent="."]
+margin_left = 249.0
+margin_top = 295.0
+margin_right = 307.0
+margin_bottom = 348.0
+custom_fonts/font = SubResource( 60 )
+text = "LEVEL 3
+"
+align = 1
+valign = 1
+uppercase = true

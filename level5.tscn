@@ -1,4 +1,4 @@
-[gd_scene load_steps=168 format=2]
+[gd_scene load_steps=170 format=2]
 
 [ext_resource path="res://ParallaxLayer8.gd" type="Script" id=1]
 [ext_resource path="res://ParallaxLayer16.gd" type="Script" id=2]
@@ -102,6 +102,7 @@
 [ext_resource path="res://mainbosss.tscn" type="PackedScene" id=100]
 [ext_resource path="res://StartPortal.tscn" type="PackedScene" id=101]
 [ext_resource path="res://my game assests/bgm/NUEKI, TOLCHONOV, Ravens Rock - SO TIRED ROCK (128 kbps) (dl.saveservall.xyz).mp3" type="AudioStream" id=102]
+[ext_resource path="res://Fonts/pansyhand.ttf" type="DynamicFontData" id=103]
 
 [sub_resource type="SpriteFrames" id=67]
 animations = [ {
@@ -430,6 +431,10 @@ animations = [ {
 "name": "shop3",
 "speed": 7.0
 } ]
+
+[sub_resource type="DynamicFont" id=84]
+size = 28
+font_data = ExtResource( 103 )
 
 [node name="level5" type="Node2D"]
 
@@ -1291,6 +1296,7 @@ position = Vector2( 735, 1212 )
 scale = Vector2( 4.51041, 6.875 )
 frames = SubResource( 69 )
 animation = "spider"
+frame = 2
 playing = true
 
 [node name="light" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer9"]
@@ -1304,7 +1310,6 @@ position = Vector2( 720, 1159 )
 scale = Vector2( 1.86111, 1.9 )
 frames = SubResource( 71 )
 animation = "animal"
-frame = 1
 playing = true
 
 [node name="ParallaxLayer18" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1412,7 +1417,6 @@ position = Vector2( 1173, 579 )
 scale = Vector2( 2.0625, 2.03125 )
 frames = SubResource( 82 )
 animation = "shop2"
-frame = 2
 playing = true
 
 [node name="ParallaxLayer12" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1467,3 +1471,15 @@ stream = ExtResource( 102 )
 volume_db = 13.0
 autoplay = true
 max_distance = 3700.0
+
+[node name="Label" type="Label" parent="."]
+margin_left = 81.0
+margin_top = 484.0
+margin_right = 139.0
+margin_bottom = 514.0
+custom_fonts/font = SubResource( 84 )
+text = "LEVEL 5
+"
+align = 1
+valign = 1
+uppercase = true
