@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bringer-of-Death_Attack_2.png-2e47fa998832d5205efa0acfd23d69da.stex"
+path="res://.import/Item 3-1.png.png-311ef52a06485a019f0f1687f2f3ff7c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://my game assests/enemy/bosses/Bringer-Of-Death/Individual Sprite/Attack/Bringer-of-Death_Attack_2.png"
-dest_files=[ "res://.import/Bringer-of-Death_Attack_2.png-2e47fa998832d5205efa0acfd23d69da.stex" ]
+source_file="res://my game assests/heart/Item 3-1.png.png"
+dest_files=[ "res://.import/Item 3-1.png.png-311ef52a06485a019f0f1687f2f3ff7c.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=false
+detect_3d=true
 svg/scale=1.0

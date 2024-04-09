@@ -12,9 +12,9 @@ config_version=4
 
 config/name="my dream (game)"
 run/main_scene="res://MainMenu.tscn"
-run/frame_delay_msec=1
 run/low_processor_mode=true
 config/icon="res://icon.png"
+>>>>>>>d56a54dfa9363f7e7006a9679418d40e5bff6a35run/frame_delay_msec=1
 
 [autoload]
 

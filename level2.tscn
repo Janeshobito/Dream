@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 [gd_scene load_steps=48 format=2]
+=======
+<<<<<<< HEAD
+=======
+[gd_scene load_steps=46 format=2]
+>>>>>>> d56a54dfa9363f7e7006a9679418d40e5bff6a35
+>>>>>>> cfae7480992a3b0b05e1c7116e1c694571fa471b
 
 [ext_resource path="res://level2Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Goblin.tscn" type="PackedScene" id=2]
@@ -18,10 +25,16 @@
 [ext_resource path="res://Skeleton.tscn" type="PackedScene" id=16]
 [ext_resource path="res://OldGuardian.tscn" type="PackedScene" id=17]
 [ext_resource path="res://werewolf.tscn" type="PackedScene" id=18]
+<<<<<<< HEAD
+=======
 [ext_resource path="res://Portal.tscn" type="PackedScene" id=19]
 [ext_resource path="res://StartPortal.tscn" type="PackedScene" id=20]
 [ext_resource path="res://my game assests/bgm/videoplayback (2) (online-audio-converter.com).mp3" type="AudioStream" id=21]
+<<<<<<< HEAD
 [ext_resource path="res://Fonts/pansyhand.ttf" type="DynamicFontData" id=22]
+=======
+>>>>>>> d56a54dfa9363f7e7006a9679418d40e5bff6a35
+>>>>>>> cfae7480992a3b0b05e1c7116e1c694571fa471b
 
 [sub_resource type="RectangleShape2D" id=26]
 extents = Vector2( 5.47667, 1.95385 )
@@ -529,6 +542,13 @@ Hero = NodePath("../../hero")
 position = Vector2( 2202, 1203 )
 Hero = NodePath("../../hero")
 
+<<<<<<< HEAD
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 19 )
+volume_db = 16.111
+autoplay = true
+max_distance = 3584.0
+=======
 [node name="Portal" parent="." instance=ExtResource( 19 )]
 position = Vector2( 3487, 1414 )
 Enemies = NodePath("../Enemies")
@@ -543,6 +563,7 @@ stream = ExtResource( 21 )
 volume_db = 15.0
 autoplay = true
 max_distance = 3700.0
+<<<<<<< HEAD
 
 [node name="Label" type="Label" parent="."]
 margin_left = 43.0
@@ -555,3 +576,6 @@ text = "LEVEL 2
 align = 1
 valign = 1
 uppercase = true
+=======
+>>>>>>> d56a54dfa9363f7e7006a9679418d40e5bff6a35
+>>>>>>> cfae7480992a3b0b05e1c7116e1c694571fa471b
