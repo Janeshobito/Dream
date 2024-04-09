@@ -1,4 +1,4 @@
-[gd_scene load_steps=170 format=2]
+[gd_scene load_steps=169 format=2]
 
 [ext_resource path="res://ParallaxLayer8.gd" type="Script" id=1]
 [ext_resource path="res://ParallaxLayer16.gd" type="Script" id=2]
@@ -102,7 +102,7 @@
 [ext_resource path="res://mainbosss.tscn" type="PackedScene" id=100]
 [ext_resource path="res://StartPortal.tscn" type="PackedScene" id=101]
 [ext_resource path="res://my game assests/bgm/NUEKI, TOLCHONOV, Ravens Rock - SO TIRED ROCK (128 kbps) (dl.saveservall.xyz).mp3" type="AudioStream" id=102]
-[ext_resource path="res://Fonts/pansyhand.ttf" type="DynamicFontData" id=103]
+[ext_resource path="res://ui.tscn" type="PackedScene" id=103]
 
 [sub_resource type="SpriteFrames" id=67]
 animations = [ {
@@ -431,10 +431,6 @@ animations = [ {
 "name": "shop3",
 "speed": 7.0
 } ]
-
-[sub_resource type="DynamicFont" id=84]
-size = 28
-font_data = ExtResource( 103 )
 
 [node name="level5" type="Node2D"]
 
@@ -1296,7 +1292,7 @@ position = Vector2( 735, 1212 )
 scale = Vector2( 4.51041, 6.875 )
 frames = SubResource( 69 )
 animation = "spider"
-frame = 2
+frame = 1
 playing = true
 
 [node name="light" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer9"]
@@ -1310,6 +1306,7 @@ position = Vector2( 720, 1159 )
 scale = Vector2( 1.86111, 1.9 )
 frames = SubResource( 71 )
 animation = "animal"
+frame = 1
 playing = true
 
 [node name="ParallaxLayer18" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1406,7 +1403,6 @@ position = Vector2( 662, 580 )
 scale = Vector2( 1.89583, 2 )
 frames = SubResource( 81 )
 animation = "shop1"
-frame = 1
 playing = true
 
 [node name="ParallaxLayer11" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1427,6 +1423,7 @@ position = Vector2( 931, 592 )
 scale = Vector2( 1.4375, 1.5 )
 frames = SubResource( 83 )
 animation = "shop3"
+frame = 1
 playing = true
 
 [node name="hero" parent="." instance=ExtResource( 98 )]
@@ -1448,15 +1445,15 @@ drag_margin_v_enabled = true
 smoothing_enabled = true
 editor_draw_limits = true
 
-[node name="enemies" type="Node" parent="."]
+[node name="Enemies" type="Node" parent="."]
 
-[node name="hellking" parent="enemies" instance=ExtResource( 99 )]
+[node name="hellking" parent="Enemies" instance=ExtResource( 99 )]
 position = Vector2( 2100, 572 )
 Hero = NodePath("../../hero")
 HEALTH = 60
 damage_amount = 7
 
-[node name="mainbosss" parent="enemies" instance=ExtResource( 100 )]
+[node name="mainbosss" parent="Enemies" instance=ExtResource( 100 )]
 position = Vector2( 445, 1362 )
 Hero = NodePath("../../hero")
 HEALTH = 100
@@ -1472,14 +1469,5 @@ volume_db = 13.0
 autoplay = true
 max_distance = 3700.0
 
-[node name="Label" type="Label" parent="."]
-margin_left = 81.0
-margin_top = 484.0
-margin_right = 139.0
-margin_bottom = 514.0
-custom_fonts/font = SubResource( 84 )
-text = "LEVEL 5
-"
-align = 1
-valign = 1
-uppercase = true
+[node name="ui" parent="." instance=ExtResource( 103 )]
+Hero = NodePath("../hero")

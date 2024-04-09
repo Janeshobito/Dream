@@ -107,6 +107,7 @@ func _on_Hurtbox_area_entered(area : Area2D):
 
 
 func _on_DeathTimer_timeout():
+	GameManager.Point += 50
 	queue_free()
 	death = false
 

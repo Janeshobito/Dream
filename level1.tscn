@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-[gd_scene load_steps=173 format=2]
-=======
 [gd_scene load_steps=172 format=2]
->>>>>>> cfae7480992a3b0b05e1c7116e1c694571fa471b
 
 [ext_resource path="res://ParallaxLayer8.gd" type="Script" id=1]
 [ext_resource path="res://ParallaxLayer12.gd" type="Script" id=2]
@@ -108,11 +104,7 @@
 [ext_resource path="res://Portal.tscn" type="PackedScene" id=102]
 [ext_resource path="res://StartPortal.tscn" type="PackedScene" id=103]
 [ext_resource path="res://my game assests/bgm/VØJ x Narvent Memory Reboot (Slowed) (128 kbps) (dl.saveservall.xyz).mp3" type="AudioStream" id=104]
-<<<<<<< HEAD
-[ext_resource path="res://Fonts/pansyhand.ttf" type="DynamicFontData" id=105]
-=======
-[ext_resource path="res://pointcounter.tscn" type="PackedScene" id=105]
->>>>>>> cfae7480992a3b0b05e1c7116e1c694571fa471b
+[ext_resource path="res://ui.tscn" type="PackedScene" id=105]
 
 [sub_resource type="SpriteFrames" id=11]
 animations = [ {
@@ -444,10 +436,6 @@ animations = [ {
 
 [sub_resource type="RectangleShape2D" id=71]
 extents = Vector2( 771.5, 35 )
-
-[sub_resource type="DynamicFont" id=72]
-size = 28
-font_data = ExtResource( 105 )
 
 [node name="level1" type="Node2D"]
 position = Vector2( -4, 0 )
@@ -1310,7 +1298,6 @@ position = Vector2( 735, 1212 )
 scale = Vector2( 4.51041, 6.875 )
 frames = SubResource( 69 )
 animation = "spider"
-frame = 1
 playing = true
 
 [node name="light" type="AnimatedSprite" parent="ParallaxBackground/ParallaxLayer9"]
@@ -1324,6 +1311,7 @@ position = Vector2( 720, 1159 )
 scale = Vector2( 1.86111, 1.9 )
 frames = SubResource( 70 )
 animation = "animal"
+frame = 1
 playing = true
 
 [node name="ParallaxLayer18" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1420,10 +1408,7 @@ position = Vector2( 662, 580 )
 scale = Vector2( 1.89583, 2 )
 frames = SubResource( 42 )
 animation = "shop1"
-<<<<<<< HEAD
 frame = 2
-=======
->>>>>>> cfae7480992a3b0b05e1c7116e1c694571fa471b
 playing = true
 
 [node name="ParallaxLayer11" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1434,10 +1419,7 @@ position = Vector2( 1173, 579 )
 scale = Vector2( 2.0625, 2.03125 )
 frames = SubResource( 47 )
 animation = "shop2"
-<<<<<<< HEAD
-=======
-frame = 2
->>>>>>> cfae7480992a3b0b05e1c7116e1c694571fa471b
+frame = 1
 playing = true
 
 [node name="ParallaxLayer12" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -1448,7 +1430,7 @@ position = Vector2( 931, 592 )
 scale = Vector2( 1.4375, 1.5 )
 frames = SubResource( 52 )
 animation = "shop3"
-frame = 1
+frame = 2
 playing = true
 
 [node name="hero" parent="." instance=ExtResource( 99 )]
@@ -1468,15 +1450,6 @@ drag_margin_h_enabled = true
 drag_margin_v_enabled = true
 smoothing_enabled = true
 editor_draw_limits = true
-
-[node name="Control" parent="hero" instance=ExtResource( 105 )]
-margin_left = 95.0
-margin_top = -208.0
-margin_right = 95.0
-margin_bottom = -208.0
-__meta__ = {
-"_edit_use_anchors_": true
-}
 
 [node name="Enemies" type="Node" parent="." groups=["Detector"]]
 
@@ -1597,16 +1570,8 @@ volume_db = 15.0
 autoplay = true
 max_distance = 3500.0
 
-[node name="Label" type="Label" parent="."]
-margin_left = 81.0
-margin_top = 484.0
-margin_right = 139.0
-margin_bottom = 514.0
-custom_fonts/font = SubResource( 72 )
-text = "LEVEL 1"
-align = 1
-valign = 1
-uppercase = true
+[node name="ui" parent="." instance=ExtResource( 105 )]
+Hero = NodePath("../hero")
 
 [connection signal="area_entered" from="Enemies/G1/DetectorG1" to="Enemies/G1" method="_on_DetectorG1_area_entered"]
 [connection signal="area_exited" from="Enemies/G1/DetectorG1" to="Enemies/G1" method="_on_DetectorG1_area_exited"]

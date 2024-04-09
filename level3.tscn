@@ -1,4 +1,4 @@
-[gd_scene load_steps=91 format=2]
+[gd_scene load_steps=90 format=2]
 
 [ext_resource path="res://lake.gd" type="Script" id=1]
 [ext_resource path="res://my game assests/free-fishing-game-assets-pixel-art-pack/2 Character animation/SteamMan_row.png" type="Texture" id=2]
@@ -42,7 +42,7 @@
 [ext_resource path="res://Portal.tscn" type="PackedScene" id=40]
 [ext_resource path="res://StartPortal.tscn" type="PackedScene" id=41]
 [ext_resource path="res://my game assests/bgm/The Neighbourhood - Softcore (Lyrics) I'm too consumed with my own life (128 kbps) (dl.saveservall.xyz).mp3" type="AudioStream" id=42]
-[ext_resource path="res://Fonts/pansyhand.ttf" type="DynamicFontData" id=43]
+[ext_resource path="res://ui.tscn" type="PackedScene" id=44]
 
 [sub_resource type="AtlasTexture" id=36]
 atlas = ExtResource( 28 )
@@ -258,10 +258,6 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="DynamicFont" id=60]
-size = 28
-font_data = ExtResource( 43 )
-
 [node name="level3" type="Node2D"]
 script = ExtResource( 3 )
 
@@ -304,10 +300,7 @@ position = Vector2( 2105, 542.807 )
 scale = Vector2( 14.4167, 4.20602 )
 frames = SubResource( 14 )
 animation = "water"
-<<<<<<< HEAD
-=======
-frame = 3
->>>>>>> d56a54dfa9363f7e7006a9679418d40e5bff6a35
+frame = 1
 playing = true
 
 [node name="lake2" type="AnimatedSprite" parent="ParallaxBackground2/lake"]
@@ -316,11 +309,6 @@ position = Vector2( 2451, 542.653 )
 scale = Vector2( 14.4167, 4.21591 )
 frames = SubResource( 14 )
 animation = "water"
-<<<<<<< HEAD
-frame = 3
-=======
-frame = 2
->>>>>>> d56a54dfa9363f7e7006a9679418d40e5bff6a35
 playing = true
 
 [node name="lake3" type="AnimatedSprite" parent="ParallaxBackground2/lake"]
@@ -329,11 +317,6 @@ position = Vector2( 2794, 542.153 )
 scale = Vector2( 14.4167, 4.18366 )
 frames = SubResource( 14 )
 animation = "water"
-<<<<<<< HEAD
-frame = 3
-=======
-frame = 2
->>>>>>> d56a54dfa9363f7e7006a9679418d40e5bff6a35
 playing = true
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -1321,6 +1304,7 @@ region_rect = Rect2( 3, 141, 88, 99 )
 
 [node name="hero" parent="." instance=ExtResource( 10 )]
 position = Vector2( 74, 454 )
+Health = 200
 
 [node name="Camera2D" type="Camera2D" parent="hero"]
 position = Vector2( 2, 7 )
@@ -1337,27 +1321,27 @@ drag_margin_v_enabled = true
 smoothing_enabled = true
 editor_draw_limits = true
 
-[node name="enemies" type="Node" parent="."]
+[node name="Enemies" type="Node" parent="."]
 
-[node name="fireknight" parent="enemies" instance=ExtResource( 33 )]
+[node name="fireknight" parent="Enemies" instance=ExtResource( 33 )]
 position = Vector2( 7366, 447 )
 Hero = NodePath("../../hero")
 HEALTH = 50
 damage_amount = 6
 
-[node name="electricknight" parent="enemies" instance=ExtResource( 37 )]
+[node name="electricknight" parent="Enemies" instance=ExtResource( 37 )]
 position = Vector2( 6471, 449 )
 Hero = NodePath("../../hero")
 HEALTH = 30
 damage_amount = 5
 
-[node name="metalknight" parent="enemies" instance=ExtResource( 38 )]
+[node name="metalknight" parent="Enemies" instance=ExtResource( 38 )]
 position = Vector2( 5597, 448 )
 Hero = NodePath("../../hero")
 HEALTH = 30
 damage_amount = 5
 
-[node name="windknight" parent="enemies" instance=ExtResource( 39 )]
+[node name="windknight" parent="Enemies" instance=ExtResource( 39 )]
 position = Vector2( 3974, 443 )
 Hero = NodePath("../../hero")
 HEALTH = 30
@@ -1365,7 +1349,7 @@ damage_amount = 5
 
 [node name="Portal" parent="." instance=ExtResource( 40 )]
 position = Vector2( 8233, 449 )
-Enemies = NodePath("../enemies")
+Enemies = NodePath("../Enemies")
 level_count = 3
 
 [node name="StartPortal" parent="." instance=ExtResource( 41 )]
@@ -1378,14 +1362,5 @@ volume_db = 14.0
 autoplay = true
 max_distance = 8500.0
 
-[node name="Label" type="Label" parent="."]
-margin_left = 249.0
-margin_top = 295.0
-margin_right = 307.0
-margin_bottom = 348.0
-custom_fonts/font = SubResource( 60 )
-text = "LEVEL 3
-"
-align = 1
-valign = 1
-uppercase = true
+[node name="ui" parent="." instance=ExtResource( 44 )]
+Hero = NodePath("../hero")

@@ -170,11 +170,12 @@ func death():
 func set_health_bar():
 	$HealthBar.value = health_amount
 
+
 func _on_Timer_timeout():
 	can_shoot = true
 	$Timer.start()
 
-	
+
 
 
 func _on_Hurtbox_area_entered(area):

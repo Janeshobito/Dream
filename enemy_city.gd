@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+
+
 const bullet = preload("res://EnemyBulletCity.tscn")
 
 export(NodePath) var PatrolPoints
@@ -12,7 +14,6 @@ export(int) var speed = 50
 export(int) var wait_time = 3
 export(Vector2) var direction = Vector2.LEFT
 export(int) var HEALTH : int = 5
-
 
 onready var timer = $Timer
 onready var enemy = $AnimatedSprite
@@ -153,6 +154,7 @@ func _on_Hurtbox_area_entered(area : Area2D):
 
 func _on_DeathTimer_timeout():
 	death = false
+	GameManager.Point += 50
 	queue_free()
 
 func player_entered():

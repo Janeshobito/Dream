@@ -180,6 +180,7 @@ position = Vector2( 2.5, -27.75 )
 scale = Vector2( 1, 0.878906 )
 frames = SubResource( 16 )
 animation = "shoot"
+frame = 2
 playing = true
 
 [node name="DeathTimer" type="Timer" parent="AnimatedSprite"]
