@@ -185,7 +185,8 @@ func _on_Hurtbox_area_entered(area):
 		print("Player Health ", health_amount)
 		set_health_bar()
 		
-		if health_amount < 0:
+		if health_amount <= 0:
+			health_amount = 0
 			death = true
 			$DeathTimer.start()
 			death()

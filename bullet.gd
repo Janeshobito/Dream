@@ -1,7 +1,7 @@
 extends AnimatedSprite
 
 var  bullet_impact_effect = preload("res://BulletImpactEffect.tscn")
-export(int) var damage_amount = 2
+export(int) var damage_amount = 1
 
 var speed : int = 600
 var direction : int
